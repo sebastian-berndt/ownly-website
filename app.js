@@ -74,7 +74,7 @@ async function handleSubmit(event) {
                 if (error.code === '23505') {
                     showMessage('This email is already on the waitlist!', 'error');
                 } else {
-                    throw error;
+                    showMessage('DB Error: ' + error.message + ' (code: ' + error.code + ')', 'error');
                 }
             } else {
                 window.location.href = 'thanks.html';
@@ -82,7 +82,7 @@ async function handleSubmit(event) {
         }
     } catch (error) {
         console.error('Error:', error);
-        showMessage('Something went wrong. Please try again later.', 'error');
+        showMessage('Error: ' + (error.message || JSON.stringify(error)), 'error');
     } finally {
         submitBtn.disabled = false;
         submitBtn.textContent = 'Join Waitlist';
