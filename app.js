@@ -65,9 +65,12 @@ async function handleSubmit(event) {
             emailInput.value = '';
         } else {
             // Insert email into waitlist table
-            const { error } = await supabase
+            const { data, error } = await supabase
                 .from('waitlist')
-                .insert([{ email }]);
+                .insert([{ email }])
+                .select();
+
+            alert('Response: ' + JSON.stringify({ data, error }));
 
             if (error) {
                 // Handle duplicate email
