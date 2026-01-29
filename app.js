@@ -77,8 +77,7 @@ async function handleSubmit(event) {
                     throw error;
                 }
             } else {
-                showMessage('Thanks for joining the waitlist! We\'ll be in touch soon.', 'success');
-                emailInput.value = '';
+                window.location.href = 'thanks.html';
             }
         }
     } catch (error) {
