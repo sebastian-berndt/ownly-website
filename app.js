@@ -1,10 +1,17 @@
+alert('JS loaded');
+
 // Supabase Configuration
-// Replace these with your actual Supabase project credentials
 const SUPABASE_URL = 'https://ldabzqoxgogwxixicpml.supabase.co';
 const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_262uXsz-j2gr1HZA_1ukSA_m2Z1_Q39';
 
 // Initialize Supabase client
-const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+let supabase;
+try {
+    supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+    alert('Supabase initialized');
+} catch (e) {
+    alert('Supabase init error: ' + e.message);
+}
 
 // DOM Elements
 const form = document.getElementById('waitlist-form');
