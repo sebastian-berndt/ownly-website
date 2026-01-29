@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ownly - Coming Soon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <header class="hero">
+            <h1 class="logo">Ownly</h1>
+            <p class="tagline">Coming Soon</p>
+            <p class="description">Something exciting is on the way. Be the first to know when we launch.</p>
+        </header>
+
+        <form id="waitlist-form" class="waitlist-form">
+            <div class="input-group">
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                    autocomplete="email"
+                >
+                <button type="submit" id="submit-btn">Join Waitlist</button>
+            </div>
+            <div id="message" class="message" aria-live="polite"></div>
+        </form>
+
+        <footer class="footer">
+            <p>&copy; 2026 Ownly. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="app.js"></script>
+</body>
+</html>
