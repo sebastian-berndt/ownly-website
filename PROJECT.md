@@ -5,12 +5,23 @@ A minimal, clean static landing page for Ownly with a Supabase-powered email wai
 
 ## Project Structure
 ```
-/root/ownly/
-├── index.html      # Main landing page
-├── styles.css      # Minimal, clean styling
-├── app.js          # Supabase integration for waitlist
-└── PROJECT.md      # This file
+/root/ownly-website/
+├── index.html          # Main landing page
+├── styles.css          # Minimal, clean styling
+├── app.js              # Supabase integration for waitlist
+├── PROJECT.md          # This file
+└── SUPABASE_SETUP.md   # Step-by-step Supabase setup guide
 ```
+
+## Roadmap
+
+- [x] Create landing page (index.html)
+- [x] Add styling (styles.css)
+- [x] Add Supabase integration (app.js)
+- [x] Initialize git repo
+- [ ] Configure Supabase (see SUPABASE_SETUP.md)
+- [ ] Deploy to GitHub Pages
+- [ ] Connect custom domain (optional)
 
 ## Implementation Details
 
