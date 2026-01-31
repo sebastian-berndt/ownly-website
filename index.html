@@ -28,15 +28,18 @@
             </div>
             <div id="message" class="message" aria-live="polite"></div>
             <div id="debug" style="margin-top:1rem;padding:0.5rem;background:#fee;color:#900;font-size:0.75rem;text-align:left;">Loading...</div>
-            <script>document.getElementById('debug').innerHTML = 'Inline JS works';</script>
+            <script>
+var d = document.getElementById('debug');
+d.innerHTML = '1.Inline OK<br>';
+</script>
         </form>
 
         <footer class="footer">
-            <p>&copy; 2026 Ownly. All rights reserved. <span style="opacity:0.5">v1.6</span></p>
+            <p>&copy; 2026 Ownly. All rights reserved. <span style="opacity:0.5">v1.7</span></p>
         </footer>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="app.js?v=1.6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" onload="d.innerHTML+='2.Supabase CDN OK<br>'" onerror="d.innerHTML+='2.Supabase CDN FAILED<br>'"></script>
+    <script src="app.js?v=1.7" onload="d.innerHTML+='3.app.js loaded<br>'" onerror="d.innerHTML+='3.app.js FAILED<br>'"></script>
 </body>
 </html>
