@@ -27,15 +27,16 @@
                 <button type="submit" id="submit-btn">Join Waitlist</button>
             </div>
             <div id="message" class="message" aria-live="polite"></div>
-            <div id="debug" style="margin-top:1rem;padding:0.5rem;background:#fee;color:#900;font-size:0.75rem;text-align:left;"></div>
+            <div id="debug" style="margin-top:1rem;padding:0.5rem;background:#fee;color:#900;font-size:0.75rem;text-align:left;">Loading...</div>
+            <script>document.getElementById('debug').innerHTML = 'Inline JS works';</script>
         </form>
 
         <footer class="footer">
-            <p>&copy; 2026 Ownly. All rights reserved. <span style="opacity:0.5">v1.5</span></p>
+            <p>&copy; 2026 Ownly. All rights reserved. <span style="opacity:0.5">v1.6</span></p>
         </footer>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="app.js?v=1.5"></script>
+    <script src="app.js?v=1.6"></script>
 </body>
 </html>
