@@ -1,21 +1,19 @@
-function debug(msg) {
-    const el = document.getElementById('debug');
-    if (el) el.innerHTML += msg + '<br>';
-}
-
-debug('JS loaded');
+var d = document.getElementById('debug');
+d.innerHTML += '4.app.js running<br>';
 
 // Supabase Configuration
 const SUPABASE_URL = 'https://ldabzqoxgogwxixicpml.supabase.co';
 const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_262uXsz-j2gr1HZA_1ukSA_m2Z1_Q39';
 
+d.innerHTML += '5.Creating client<br>';
+
 // Initialize Supabase client
 let supabase;
 try {
     supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
-    debug('Supabase OK');
+    d.innerHTML += '6.Supabase OK<br>';
 } catch (e) {
-    debug('Supabase error: ' + e.message);
+    d.innerHTML += '6.Error: ' + e.message + '<br>';
 }
 
 // DOM Elements
@@ -82,7 +80,7 @@ async function handleSubmit(event) {
                 .insert([{ email }])
                 .select();
 
-            debug('Response: ' + JSON.stringify({ data, error }));
+            d.innerHTML += 'Response: ' + JSON.stringify({ data, error }) + '<br>';
 
             if (error) {
                 // Handle duplicate email
