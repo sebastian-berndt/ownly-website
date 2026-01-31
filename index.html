@@ -35,7 +35,7 @@ d.innerHTML = '1.Inline OK<br>';
         </form>
 
         <footer class="footer">
-            <p>&copy; 2026 Ownly. All rights reserved. <span style="opacity:0.5">v1.9</span></p>
+            <p>&copy; 2026 Ownly. All rights reserved. <span style="opacity:0.5">v1.10</span></p>
         </footer>
     </main>
 
@@ -51,6 +51,36 @@ d.innerHTML = '1.Inline OK<br>';
     } catch(e) {
         d.innerHTML += '4.Error: ' + e.message + '<br>';
     }
+
+    document.getElementById('waitlist-form').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        var email = document.getElementById('email').value.trim().toLowerCase();
+        var btn = document.getElementById('submit-btn');
+        var msg = document.getElementById('message');
+
+        if (!email) { msg.textContent = 'Enter email'; msg.className = 'message error show'; return; }
+
+        btn.disabled = true;
+        btn.textContent = 'Joining...';
+        d.innerHTML += '5.Submitting: ' + email + '<br>';
+
+        try {
+            var result = await supabase.from('waitlist').insert([{ email: email }]).select();
+            d.innerHTML += '6.Result: ' + JSON.stringify(result) + '<br>';
+            if (result.error) {
+                msg.textContent = result.error.message;
+                msg.className = 'message error show';
+            } else {
+                window.location.href = 'thanks.html';
+            }
+        } catch(err) {
+            d.innerHTML += '6.Catch: ' + err.message + '<br>';
+            msg.textContent = err.message;
+            msg.className = 'message error show';
+        }
+        btn.disabled = false;
+        btn.textContent = 'Join Waitlist';
+    });
     </script>
 </body>
 </html>
