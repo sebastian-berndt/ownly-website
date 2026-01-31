@@ -35,11 +35,22 @@ d.innerHTML = '1.Inline OK<br>';
         </form>
 
         <footer class="footer">
-            <p>&copy; 2026 Ownly. All rights reserved. <span style="opacity:0.5">v1.8</span></p>
+            <p>&copy; 2026 Ownly. All rights reserved. <span style="opacity:0.5">v1.9</span></p>
         </footer>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" onload="d.innerHTML+='2.Supabase CDN OK<br>'" onerror="d.innerHTML+='2.Supabase CDN FAILED<br>'"></script>
-    <script src="app.js?v=1.8" onload="d.innerHTML+='3.app.js loaded<br>'" onerror="d.innerHTML+='3.app.js FAILED<br>'"></script>
+    <script>
+    d.innerHTML += '3.Starting init<br>';
+    try {
+        var supabase = window.supabase.createClient(
+            'https://ldabzqoxgogwxixicpml.supabase.co',
+            'sb_publishable_262uXsz-j2gr1HZA_1ukSA_m2Z1_Q39'
+        );
+        d.innerHTML += '4.Supabase OK<br>';
+    } catch(e) {
+        d.innerHTML += '4.Error: ' + e.message + '<br>';
+    }
+    </script>
 </body>
 </html>
