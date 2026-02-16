@@ -27,30 +27,19 @@
                 <button type="submit" id="submit-btn">Join Waitlist</button>
             </div>
             <div id="message" class="message" aria-live="polite"></div>
-            <div id="debug" style="margin-top:1rem;padding:0.5rem;background:#fee;color:#900;font-size:0.75rem;text-align:left;">Loading...</div>
-            <script>
-var d = document.getElementById('debug');
-d.innerHTML = '1.Inline OK<br>';
-</script>
         </form>
 
         <footer class="footer">
-            <p>&copy; 2026 Ownly. All rights reserved. <span style="opacity:0.5">v1.12</span></p>
+            <p>&copy; 2026 Ownly. All rights reserved. <span style="opacity:0.5">v1.13</span></p>
         </footer>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" onload="d.innerHTML+='2.Supabase CDN OK<br>'" onerror="d.innerHTML+='2.Supabase CDN FAILED<br>'"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script>
-    d.innerHTML += '3.Starting init<br>';
-    try {
-        var supabase = window.supabase.createClient(
-            'https://ldabzqoxgogwxixicpml.supabase.co',
-            'sb_publishable_262uXsz-j2gr1HZA_1ukSA_m2Z1_Q39'
-        );
-        d.innerHTML += '4.Supabase OK<br>';
-    } catch(e) {
-        d.innerHTML += '4.Error: ' + e.message + '<br>';
-    }
+    var supabase = window.supabase.createClient(
+        'https://ldabzqoxgogwxixicpml.supabase.co',
+        'sb_publishable_262uXsz-j2gr1HZA_1ukSA_m2Z1_Q39'
+    );
 
     document.getElementById('waitlist-form').addEventListener('submit', async function(e) {
         e.preventDefault();
@@ -63,18 +52,23 @@ d.innerHTML = '1.Inline OK<br>';
         // Validate email format
         var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         if (!emailRegex.test(email)) {
-            msg.textContent = 'Please enter a valid email address';
+            // Find invalid characters
+            var validChars = /[a-zA-Z0-9._%+-@-]/g;
+            var invalidChars = email.replace(validChars, '').split('').filter(function(v, i, a) { return a.indexOf(v) === i; });
+            if (invalidChars.length > 0) {
+                msg.textContent = 'Invalid character(s): ' + invalidChars.join(', ');
+            } else {
+                msg.textContent = 'Please enter a valid email address';
+            }
             msg.className = 'message error show';
             return;
         }
 
         btn.disabled = true;
         btn.textContent = 'Joining...';
-        d.innerHTML += '5.Submitting: ' + email + '<br>';
 
         try {
             var result = await supabase.from('waitlist').insert([{ email: email }]);
-            d.innerHTML += '6.Result: ' + JSON.stringify(result) + '<br>';
             if (result.error) {
                 // Handle duplicate email error
                 if (result.error.code === '23505' || result.error.message.includes('duplicate key')) {
@@ -87,7 +81,6 @@ d.innerHTML = '1.Inline OK<br>';
                 window.location.href = 'thanks.html';
             }
         } catch(err) {
-            d.innerHTML += '6.Catch: ' + err.message + '<br>';
             msg.textContent = 'Something went wrong. Please try again.';
             msg.className = 'message error show';
         }
