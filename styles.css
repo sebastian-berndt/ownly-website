@@ -60,8 +60,47 @@ body {
     animation: fadeInDown 0.6s ease-out 0.2s both;
 }
 
-.waitlist-form {
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
     animation: fadeInUp 0.6s ease-out 0.3s both;
+}
+
+.step {
+    text-align: center;
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.step-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+}
+
+.step-description {
+    color: var(--color-text-muted);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+}
+
+.waitlist-form {
+    animation: fadeInUp 0.6s ease-out 0.4s both;
 }
 
 .input-group {
@@ -204,6 +243,21 @@ button[type="submit"]:disabled {
     button[type="submit"] {
         width: auto;
         white-space: nowrap;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 900px;
+    }
+
+    .steps {
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .step {
+        flex: 1;
     }
 }
 
