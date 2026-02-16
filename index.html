@@ -35,7 +35,7 @@ d.innerHTML = '1.Inline OK<br>';
         </form>
 
         <footer class="footer">
-            <p>&copy; 2026 Ownly. All rights reserved. <span style="opacity:0.5">v1.10</span></p>
+            <p>&copy; 2026 Ownly. All rights reserved. <span style="opacity:0.5">v1.11</span></p>
         </footer>
     </main>
 
@@ -65,7 +65,7 @@ d.innerHTML = '1.Inline OK<br>';
         d.innerHTML += '5.Submitting: ' + email + '<br>';
 
         try {
-            var result = await supabase.from('waitlist').insert([{ email: email }]).select();
+            var result = await supabase.from('waitlist').insert([{ email: email }]);
             d.innerHTML += '6.Result: ' + JSON.stringify(result) + '<br>';
             if (result.error) {
                 msg.textContent = result.error.message;
