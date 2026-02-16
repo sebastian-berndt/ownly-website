@@ -35,7 +35,7 @@ d.innerHTML = '1.Inline OK<br>';
         </form>
 
         <footer class="footer">
-            <p>&copy; 2026 Ownly. All rights reserved. <span style="opacity:0.5">v1.11</span></p>
+            <p>&copy; 2026 Ownly. All rights reserved. <span style="opacity:0.5">v1.12</span></p>
         </footer>
     </main>
 
@@ -68,14 +68,19 @@ d.innerHTML = '1.Inline OK<br>';
             var result = await supabase.from('waitlist').insert([{ email: email }]);
             d.innerHTML += '6.Result: ' + JSON.stringify(result) + '<br>';
             if (result.error) {
-                msg.textContent = result.error.message;
+                // Handle duplicate email error
+                if (result.error.code === '23505' || result.error.message.includes('duplicate key')) {
+                    msg.textContent = 'This email is already on the waitlist!';
+                } else {
+                    msg.textContent = 'Something went wrong. Please try again.';
+                }
                 msg.className = 'message error show';
             } else {
                 window.location.href = 'thanks.html';
             }
         } catch(err) {
             d.innerHTML += '6.Catch: ' + err.message + '<br>';
-            msg.textContent = err.message;
+            msg.textContent = 'Something went wrong. Please try again.';
             msg.className = 'message error show';
         }
         btn.disabled = false;
