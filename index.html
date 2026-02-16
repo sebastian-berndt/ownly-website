@@ -4,24 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ownly - Digital Sovereignty Made Simple</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <span class="badge">Early Access</span>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <div class="badge">Early Access</div>
+            <h1 class="hero-title">Stop Renting Your Digital Life.<br>Own It.</h1>
+            <p class="hero-subtitle">Run your own private cloud, password manager, or website without writing a single line of code. We manage the server; you click "Install."</p>
 
-        <!-- HERO SECTION -->
-        <h1>Stop Renting Your Digital Life.<br>Own It.</h1>
-        <p class="subtitle">Run your own private cloud, password manager, or website without writing a single line of code. We manage the server; you click "Install."</p>
-
-        <!-- HERO WAITLIST CARD -->
-        <div class="waitlist-card">
-            <h3 class="card-title">Join the waitlist</h3>
-            <p class="card-subtitle">Be the first to know when we launch and get 3 months free.</p>
-            <form id="hero-form" class="waitlist-form">
+            <form id="hero-form" class="cta-form">
                 <div class="form-group">
                     <input
                         type="email"
@@ -31,107 +24,98 @@
                         required
                         autocomplete="email"
                     >
-                    <button type="submit" class="btn-primary">Request Access</button>
+                    <button type="submit" class="btn-cta">Request Access</button>
                 </div>
                 <div id="hero-message" class="message" aria-live="polite"></div>
             </form>
-            <p class="disclaimer">No spam. Unsubscribe anytime.</p>
+            <p class="hero-note">Join thousands taking back control • No credit card required</p>
         </div>
+    </section>
 
-        <hr class="divider">
-
-        <!-- PROBLEM SECTION -->
-        <h2>Tired of Big Tech Controlling Your Data?</h2>
-
-        <div class="callout problem-callout">
-            <div class="icon">✗</div>
-            <div class="callout-content">
-                <p>Your personal information sold to advertisers</p>
+    <!-- PROBLEM SECTION -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Tired of Big Tech Controlling Your Data?</h2>
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">✗</div>
+                    <p>Your personal information sold to advertisers</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">✗</div>
+                    <p>Privacy policies that change without notice</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">✗</div>
+                    <p>Data scattered across dozens of platforms</p>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="callout problem-callout">
-            <div class="icon">✗</div>
-            <div class="callout-content">
-                <p>Privacy policies that change without notice</p>
+    <!-- SOLUTION SECTION -->
+    <section class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Why Ownly?</h2>
+            <p class="section-intro">Take back control with one simple platform</p>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔒</div>
+                    <h3>Total Privacy</h3>
+                    <p>Your data stays on your server. We can't see your photos, files, or passwords.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>One-Click Install</h3>
+                    <p>Install Nextcloud, Bitwarden, or Ghost instantly. No Docker or Linux knowledge needed.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Flat Pricing</h3>
+                    <p>Run 10+ apps on one server for a single monthly fee. Stop paying per-user SaaS costs.</p>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="callout problem-callout">
-            <div class="icon">✗</div>
-            <div class="callout-content">
-                <p>Data scattered across dozens of platforms</p>
+    <!-- HOW IT WORKS SECTION -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Sign Up</h3>
+                        <p>Create your account in seconds</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Choose Your Apps</h3>
+                        <p>One-click install your favorite privacy-focused apps</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Take Control</h3>
+                        <p>Enjoy true ownership of your digital life</p>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <hr class="divider">
+    <!-- FINAL CTA SECTION -->
+    <section class="section section-cta">
+        <div class="container">
+            <h2 class="section-title">Ready to Own Your Data?</h2>
+            <p class="section-intro">Be the first to know when we launch and get 3 months free</p>
 
-        <!-- SOLUTION / BENEFITS SECTION -->
-        <h2>Why Ownly?</h2>
-
-        <div class="callout">
-            <div class="icon">🔒</div>
-            <div class="callout-content">
-                <h3>Total Privacy</h3>
-                <p>Your data stays on your server. We can't see your photos, files, or passwords.</p>
-            </div>
-        </div>
-
-        <div class="callout">
-            <div class="icon">⚡</div>
-            <div class="callout-content">
-                <h3>One-Click Install</h3>
-                <p>Install Nextcloud, Bitwarden, or Ghost instantly. No Docker or Linux knowledge needed.</p>
-            </div>
-        </div>
-
-        <div class="callout">
-            <div class="icon">💰</div>
-            <div class="callout-content">
-                <h3>Flat Pricing</h3>
-                <p>Run 10+ apps on one server for a single monthly fee. Stop paying per-user SaaS costs.</p>
-            </div>
-        </div>
-
-        <hr class="divider">
-
-        <!-- HOW IT WORKS -->
-        <h2>How It Works</h2>
-
-        <div class="step-item">
-            <div class="step-number">1</div>
-            <div class="step-content">
-                <h3>Sign Up</h3>
-                <p>Create your account in seconds</p>
-            </div>
-        </div>
-
-        <div class="step-item">
-            <div class="step-number">2</div>
-            <div class="step-content">
-                <h3>Choose Your Apps</h3>
-                <p>One-click install your favorite privacy-focused apps</p>
-            </div>
-        </div>
-
-        <div class="step-item">
-            <div class="step-number">3</div>
-            <div class="step-content">
-                <h3>Take Control</h3>
-                <p>Enjoy true ownership of your digital life</p>
-            </div>
-        </div>
-
-        <hr class="divider">
-
-        <!-- FINAL CTA -->
-        <h2>Ready to Own Your Data?</h2>
-        <p class="subtitle" style="margin-bottom: 2rem;">Join thousands who are taking back control.</p>
-
-        <div class="waitlist-card">
-            <h3 class="card-title">Get Early Access</h3>
-            <p class="card-subtitle">No credit card required • Cancel anytime</p>
-            <form id="footer-form" class="waitlist-form">
+            <form id="footer-form" class="cta-form">
                 <div class="form-group">
                     <input
                         type="email"
@@ -141,17 +125,23 @@
                         required
                         autocomplete="email"
                     >
-                    <button type="submit" class="btn-primary">Request Access</button>
+                    <button type="submit" class="btn-cta">Request Access</button>
                 </div>
                 <div id="footer-message" class="message" aria-live="polite"></div>
             </form>
+            <p class="hero-note">No spam. Unsubscribe anytime.</p>
         </div>
+    </section>
 
-        <footer>
-            <span>© 2026 Ownly <span style="opacity:0.5">v2.1</span></span>
-            <span>Made for digital sovereignty</span>
-        </footer>
-    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <span>© 2026 Ownly <span class="version">v2.2</span></span>
+                <span>Made for digital sovereignty</span>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script>
