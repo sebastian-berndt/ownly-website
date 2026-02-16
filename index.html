@@ -58,7 +58,15 @@ d.innerHTML = '1.Inline OK<br>';
         var btn = document.getElementById('submit-btn');
         var msg = document.getElementById('message');
 
-        if (!email) { msg.textContent = 'Enter email'; msg.className = 'message error show'; return; }
+        if (!email) { msg.textContent = 'Please enter your email'; msg.className = 'message error show'; return; }
+
+        // Validate email format
+        var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!emailRegex.test(email)) {
+            msg.textContent = 'Please enter a valid email address';
+            msg.className = 'message error show';
+            return;
+        }
 
         btn.disabled = true;
         btn.textContent = 'Joining...';
