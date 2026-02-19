@@ -277,86 +277,106 @@ input[type="email"]::placeholder {
 }
 
 /* PROBLEM SECTION */
-.problems-grid {
+/* COMPARISON SECTION */
+.comparison-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 24px;
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.problem-card {
+.comparison-col {
     background: var(--color-bg-white);
-    padding: 32px;
-    border-radius: 12px;
-    border: 2px solid var(--color-border);
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    transition: all 0.3s;
-}
-
-.problem-card:hover {
-    border-color: var(--color-error);
-    box-shadow: 0 8px 24px rgba(220, 38, 38, 0.1);
-    transform: translateY(-4px);
-}
-
-.problem-icon {
-    font-size: 2rem;
-    color: var(--color-error);
-    flex-shrink: 0;
-}
-
-.problem-card p {
-    font-size: 1.0625rem;
-    margin: 0;
-    color: var(--color-text-dark);
-}
-
-/* BENEFITS SECTION */
-.benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 32px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.benefit-card {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 40px 32px;
     border-radius: 16px;
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    text-align: center;
-    transition: all 0.3s;
+    border: 2px solid var(--color-border);
+    overflow: hidden;
 }
 
-.benefit-card:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(255, 255, 255, 0.3);
-    transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+.comparison-col--bad {
+    border-color: #FECACA;
 }
 
-.benefit-icon {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    display: block;
+.comparison-col--good {
+    border-color: #BBF7D0;
 }
 
-.benefit-card h3 {
-    font-size: 1.5rem;
+.comparison-col-header {
+    padding: 20px 28px 16px;
+    border-bottom: 2px solid var(--color-border);
+}
+
+.comparison-col--bad .comparison-col-header {
+    background: #FEF2F2;
+    border-color: #FECACA;
+}
+
+.comparison-col--good .comparison-col-header {
+    background: #F0FDF4;
+    border-color: #BBF7D0;
+}
+
+.comparison-badge {
+    display: inline-block;
+    font-size: 0.8125rem;
     font-weight: 700;
-    margin-bottom: 12px;
-    color: var(--color-text-light);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 999px;
 }
 
-.benefit-card p {
-    font-size: 1.0625rem;
-    opacity: 0.9;
+.comparison-badge--bad {
+    background: #FEE2E2;
+    color: #B91C1C;
+}
+
+.comparison-badge--good {
+    background: #DCFCE7;
+    color: #15803D;
+}
+
+.comparison-list {
+    list-style: none;
+    padding: 8px 0;
     margin: 0;
-    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+.comparison-list li {
+    display: flex;
+    gap: 16px;
+    padding: 20px 28px;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 0.9375rem;
+    line-height: 1.65;
+    color: #374151;
+}
+
+.comparison-list li:last-child {
+    border-bottom: none;
+}
+
+.comparison-list li strong {
+    display: block;
+    color: var(--color-text-dark);
+    margin-bottom: 2px;
+}
+
+.comparison-icon {
+    flex-shrink: 0;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-top: 1px;
+}
+
+.comparison-col--bad .comparison-icon {
+    color: #DC2626;
+}
+
+.comparison-col--good .comparison-icon {
+    color: #16A34A;
 }
 
 /* STEPS SECTION */
@@ -667,8 +687,7 @@ input[type="email"]::placeholder {
         padding: 80px 0 60px;
     }
 
-    .problems-grid,
-    .benefits-grid {
+    .comparison-grid {
         grid-template-columns: 1fr;
     }
 
@@ -703,8 +722,6 @@ input[type="email"]::placeholder {
         padding: 0 16px;
     }
 
-    .problem-card,
-    .benefit-card,
     .step {
         padding: 24px;
     }
