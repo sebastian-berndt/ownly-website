@@ -31,6 +31,87 @@ body {
     padding: 0 24px;
 }
 
+/* APP TICKER */
+.ticker-wrap {
+    background-color: var(--color-bg-white);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    padding: 18px 0;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    overflow: hidden;
+    position: relative;
+}
+
+.ticker-label {
+    flex-shrink: 0;
+    padding: 0 24px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+    position: relative;
+    z-index: 2;
+}
+
+/* fade edges */
+.ticker-wrap::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    background: linear-gradient(to right, transparent, var(--color-bg-white));
+    z-index: 1;
+    pointer-events: none;
+}
+
+.ticker-track {
+    overflow: hidden;
+    flex: 1;
+    min-width: 0;
+}
+
+.ticker-inner {
+    display: flex;
+    gap: 12px;
+    width: max-content;
+    animation: ticker-scroll 32s linear infinite;
+}
+
+.ticker-inner:hover {
+    animation-play-state: paused;
+}
+
+.ticker-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px;
+    background: var(--color-bg-light);
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--color-text-dark);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.ticker-item svg {
+    flex-shrink: 0;
+    border-radius: 4px;
+}
+
+@keyframes ticker-scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
 /* SECTIONS */
 .section {
     padding: 80px 0;

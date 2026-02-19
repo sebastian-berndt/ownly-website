@@ -19,6 +19,7 @@ A conversion-optimized landing page for Ownly — a platform that simplifies sel
 ```
 
 ## Version History
+- **v2.10** - App logo ticker strip between hero and problem section
 - **v2.9** - Legal pages (Privacy Policy, Terms of Service, Imprint) with footer links wired up
 - **v2.8** - Responsive multi-column footer with social links and navigation
 - **v2.7** - Updated How It Works copy (Rent → Marketplace → Install)
