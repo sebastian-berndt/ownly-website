@@ -336,10 +336,11 @@ input[type="email"]::placeholder {
 }
 
 .step-video {
+    position: relative;
     flex-shrink: 0;
     margin-left: auto;
-    width: 320px;
-    height: 200px;
+    width: 40%;
+    aspect-ratio: 16 / 10;
     border-radius: 8px;
     overflow: hidden;
     border: 2px solid var(--color-border);
@@ -347,13 +348,18 @@ input[type="email"]::placeholder {
 }
 
 .step-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
 }
 
 .video-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     display: flex;
@@ -361,17 +367,6 @@ input[type="email"]::placeholder {
     justify-content: center;
     color: var(--color-text-muted);
     font-size: 0.875rem;
-}
-
-/* Show placeholder when video fails to load */
-.step-video video:not([src]),
-.step-video video[src=""] {
-    display: none;
-}
-
-.step-video video:not([src]) + .video-placeholder,
-.step-video video[src=""] + .video-placeholder {
-    display: flex;
 }
 
 /* FOOTER */
@@ -443,7 +438,7 @@ input[type="email"]::placeholder {
 
     .step-video {
         width: 100%;
-        height: 200px;
+        margin-left: 0;
     }
 
     .footer-content {
