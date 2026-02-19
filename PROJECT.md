@@ -19,6 +19,7 @@ A conversion-optimized landing page for Ownly — a platform that simplifies sel
 ```
 
 ## Version History
+- **v2.9** - Legal pages (Privacy Policy, Terms of Service, Imprint) with footer links wired up
 - **v2.8** - Responsive multi-column footer with social links and navigation
 - **v2.7** - Updated How It Works copy (Rent → Marketplace → Install)
 - **v2.6** - Video placeholders for How It Works steps
@@ -55,9 +56,9 @@ A conversion-optimized landing page for Ownly — a platform that simplifies sel
 - [ ] **Footer links** — Wire up Product, Resources, Legal links to real pages
 
 #### Pages to create
-- [ ] **Privacy Policy** page
-- [ ] **Terms of Service** page
-- [ ] **Imprint** page
+- [x] **Privacy Policy** page (`privacy.html`)
+- [x] **Terms of Service** page (`tos.html`)
+- [x] **Imprint** page (`imprint.html`) — fill in legal details before publishing
 - [ ] **FAQ** page (optional)
 
 #### Technical
