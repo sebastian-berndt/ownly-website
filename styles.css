@@ -297,6 +297,7 @@ input[type="email"]::placeholder {
     border: 2px solid var(--color-border);
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 24px;
     transition: all 0.3s;
 }
@@ -336,6 +337,7 @@ input[type="email"]::placeholder {
 
 .step-video {
     flex-shrink: 0;
+    margin-left: auto;
     width: 320px;
     height: 200px;
     border-radius: 8px;
