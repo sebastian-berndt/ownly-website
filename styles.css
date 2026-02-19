@@ -63,9 +63,9 @@ body {
 
 .ticker-inner {
     display: flex;
-    gap: 12px;
+    align-items: center;
     width: max-content;
-    animation: ticker-scroll 36s linear infinite;
+    animation: ticker-scroll 40s linear infinite;
 }
 
 .ticker-inner:hover {
@@ -75,22 +75,33 @@ body {
 .ticker-item {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    padding: 6px 16px;
-    background: var(--color-bg-light);
-    border: 1px solid var(--color-border);
-    border-radius: 999px;
-    font-size: 0.9375rem;
-    font-weight: 500;
-    color: var(--color-text-dark);
+    gap: 12px;
+    padding: 0 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
     white-space: nowrap;
     flex-shrink: 0;
     user-select: none;
+    position: relative;
+}
+
+/* dot separator between items */
+.ticker-item::after {
+    content: '·';
+    position: absolute;
+    right: 0;
+    transform: translateX(50%);
+    font-size: 1.5rem;
+    color: var(--color-border);
+    line-height: 1;
 }
 
 .ticker-item svg {
     flex-shrink: 0;
-    border-radius: 4px;
+    border-radius: 6px;
+    width: 32px;
+    height: 32px;
 }
 
 @keyframes ticker-scroll {

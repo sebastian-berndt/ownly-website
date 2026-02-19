@@ -19,6 +19,7 @@ A conversion-optimized landing page for Ownly — a platform that simplifies sel
 ```
 
 ## Version History
+- **v2.13** - Ticker redesign: larger icons (32px), remove pill bubbles, dot separators
 - **v2.12** - FAQ accordion section (7 questions, native details/summary, no JS)
 - **v2.11** - Fix ticker scroll animation (remove wrapper divs, fix overflow clipping)
 - **v2.10** - App logo ticker strip between hero and problem section
