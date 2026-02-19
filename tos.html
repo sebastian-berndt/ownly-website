@@ -157,18 +157,8 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-bottom" style="border-top: none; padding-top: 0; padding-bottom: 32px;">
-                <span>© 2026 Ownly</span>
-                <span>
-                    <a href="privacy.html" style="color: #9CA3AF; text-decoration: none; margin: 0 12px;">Privacy Policy</a>
-                    <a href="tos.html" style="color: #9CA3AF; text-decoration: none; margin: 0 12px;">Terms of Service</a>
-                    <a href="imprint.html" style="color: #9CA3AF; text-decoration: none; margin: 0 12px;">Imprint</a>
-                </span>
-            </div>
-        </div>
-    </footer>
+    <div id="site-footer"></div>
+    <script>fetch('footer.html').then(function(r){return r.text()}).then(function(h){document.getElementById('site-footer').innerHTML=h})</script>
 
 </body>
 </html>

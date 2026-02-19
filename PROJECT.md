@@ -19,6 +19,7 @@ A conversion-optimized landing page for Ownly — a platform that simplifies sel
 ```
 
 ## Version History
+- **v2.18** - Footer centralized as `footer.html` partial; loaded via fetch on all pages
 - **v2.17** - Comparison table redesign: unified row-by-row layout, SVG icons in header, removed card borders
 - **v2.16** - FAQ copy improvements (Q1, Q5 rewritten); remove all em dashes from copy
 - **v2.15** - Email placeholder changed to "Your email"; section background alternation (How It Works → white); remove false-affordance hover on steps; logos/ folder for real app SVGs

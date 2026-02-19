@@ -15,10 +15,10 @@
         </header>
 
         <a href="index.html" class="back-link">← Back to homepage</a>
-
-        <footer class="footer">
-            <p>&copy; 2026 Ownly. All rights reserved.</p>
-        </footer>
     </main>
+
+    <!-- Footer -->
+    <div id="site-footer"></div>
+    <script>fetch('footer.html').then(function(r){return r.text()}).then(function(h){document.getElementById('site-footer').innerHTML=h})</script>
 </body>
 </html>
