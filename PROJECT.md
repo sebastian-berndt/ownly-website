@@ -19,7 +19,8 @@ A conversion-optimized landing page for Ownly — a platform that simplifies sel
 ```
 
 ## Version History
-- **v2.14** - Problem/Solution section: new headline, side-by-side comparison layout
+- **v2.15** - Email placeholder changed to "Your email"; section background alternation (How It Works → white); remove false-affordance hover on steps; logos/ folder for real app SVGs
+- **v2.14** - Problem/Solution section: new headline, side-by-side "Big Tech Way vs. Ownly Way" comparison layout
 - **v2.13** - Ticker redesign: larger icons (32px), remove pill bubbles, dot separators
 - **v2.12** - FAQ accordion section (7 questions, native details/summary, no JS)
 - **v2.11** - Fix ticker scroll animation (remove wrapper divs, fix overflow clipping)
@@ -39,16 +40,20 @@ A conversion-optimized landing page for Ownly — a platform that simplifies sel
 ## Current Status
 
 ### Done ✅
-- [x] Conversion-optimized landing page (Hero → Problem → Solution → How It Works → CTA)
-- [x] High-contrast section-based design with purple gradient
+- [x] Conversion-optimized landing page (Hero → Comparison → How It Works → FAQ → CTA)
+- [x] High-contrast section-based design with purple gradient; alternating section backgrounds
 - [x] Supabase waitlist backend (insert emails, RLS configured)
-- [x] Dual waitlist forms (hero + footer CTA)
+- [x] Dual waitlist forms (hero + footer CTA) with "Your email" placeholder
 - [x] Strict email validation with invalid character feedback
 - [x] Duplicate email detection with user-friendly message
 - [x] Redirect to thanks.html on successful signup
 - [x] Mobile-first responsive layout
+- [x] App logo ticker strip (inline SVG placeholders; `logos/` folder ready for real SVGs)
+- [x] Side-by-side "Big Tech Way vs. Ownly Way" comparison section
 - [x] How It Works: 3 steps with video placeholder containers
+- [x] FAQ accordion (7 questions, native details/summary, no JS)
 - [x] Multi-column footer with social icons and navigation links
+- [x] Legal pages: Privacy Policy, Terms of Service, Imprint
 - [x] Deployed to GitHub Pages
 
 ### To Do 🔲
@@ -87,22 +92,26 @@ A conversion-optimized landing page for Ownly — a platform that simplifies sel
 - CTA: "Request Access"
 - Placeholder for hero visual
 
-### Problem (Agitate Pain)
-- Data sold to advertisers
-- Privacy policies change without notice
-- Data scattered across platforms
+### App Ticker
+- Scrolling strip of app logos: Nextcloud, Bitwarden, Ghost, Immich, Jellyfin, Vaultwarden, Gitea, Uptime Kuma, Paperless-ngx, Home Assistant, Plex, Syncthing
+- Currently inline SVG placeholders; `logos/` folder ready for real SVGs from simpleicons.org
 
-### Solution / Benefits (Interest & Desire)
-- 🔒 Total Privacy — data stays on your server
-- ⚡ One-Click Install — no Docker/Linux knowledge needed
-- 💰 Flat Pricing — run 10+ apps for one monthly fee
+### Problem / Solution — Comparison (Agitate & Desire)
+- Headline: "Renting your digital life is expensive, risky, and a privacy nightmare."
+- Side-by-side two-column layout: **The Big Tech Way** (red) vs. **The Ownly Way** (green)
+- Three pain/gain pairs: privacy, account control, subscription cost
 
 ### How It Works (Simplicity)
 1. **Rent a Server** — Pick a hoster and plan, running in seconds
 2. **Browse the Marketplace** — Curated self-hostable apps, buy once or subscribe
 3. **Install in One Click** — Install on your server with a button click
+- Each step has a video placeholder container (40% width, 16:10 aspect ratio)
+
+### FAQ (Objection handling)
+- 7 questions covering: technical knowledge, server ownership, available apps, VPS comparison, data security, lock-in, pricing
 
 ### Final CTA (Action)
+- Headline: "Ready to Own Your Data?"
 - Repeats "Request Access" form
 - "No spam. Unsubscribe anytime."
 
