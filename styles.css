@@ -373,15 +373,83 @@ input[type="email"]::placeholder {
 .footer {
     background-color: var(--color-bg-dark);
     color: var(--color-text-light);
-    padding: 32px 0;
+    padding: 64px 0 0;
 }
 
-.footer-content {
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+    padding-bottom: 48px;
+}
+
+/* Brand Column */
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: -0.02em;
+}
+
+.footer-tagline {
+    font-size: 0.9375rem;
+    color: #9CA3AF;
+    margin-bottom: 24px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 16px;
+}
+
+.social-link {
+    color: #6B7280;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.social-link:hover {
+    color: var(--color-text-light);
+}
+
+/* Link Columns */
+.footer-col-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #9CA3AF;
+    margin-bottom: 16px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links a {
+    color: #6B7280;
+    text-decoration: none;
+    font-size: 0.9375rem;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: var(--color-text-light);
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 24px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 0.9375rem;
-    opacity: 0.8;
+    font-size: 0.875rem;
+    color: #6B7280;
 }
 
 .version {
@@ -441,9 +509,14 @@ input[type="email"]::placeholder {
         margin-left: 0;
     }
 
-    .footer-content {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+
+    .footer-bottom {
         flex-direction: column;
-        gap: 12px;
+        gap: 8px;
         text-align: center;
     }
 }
@@ -461,5 +534,9 @@ input[type="email"]::placeholder {
     .benefit-card,
     .step {
         padding: 24px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
     }
 }
