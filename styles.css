@@ -401,13 +401,6 @@ input[type="email"]::placeholder {
     align-items: center;
     justify-content: space-between;
     gap: 24px;
-    transition: all 0.3s;
-}
-
-.step:hover {
-    border-color: var(--color-accent);
-    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.1);
-    transform: translateY(-4px);
 }
 
 .step-number {
