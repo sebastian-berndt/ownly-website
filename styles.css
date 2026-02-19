@@ -436,6 +436,101 @@ input[type="email"]::placeholder {
     font-size: 0.875rem;
 }
 
+/* FAQ ACCORDION */
+.faq-list {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.faq-item {
+    background: var(--color-bg-white);
+    border: 2px solid var(--color-border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: border-color 0.2s;
+}
+
+.faq-item[open] {
+    border-color: var(--color-accent);
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px 24px;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    color: var(--color-text-dark);
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+}
+
+/* Remove default triangle in all browsers */
+.faq-question::-webkit-details-marker { display: none; }
+.faq-question::marker { display: none; }
+
+.faq-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--color-bg-light);
+    border: 2px solid var(--color-border);
+    position: relative;
+    transition: background 0.2s, border-color 0.2s, transform 0.25s;
+}
+
+/* Plus/minus via pseudo-elements */
+.faq-icon::before,
+.faq-icon::after {
+    content: '';
+    position: absolute;
+    background: var(--color-text-muted);
+    border-radius: 2px;
+    transition: transform 0.25s, opacity 0.25s;
+}
+.faq-icon::before {
+    width: 10px; height: 2px;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+.faq-icon::after {
+    width: 2px; height: 10px;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.faq-item[open] .faq-icon {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+}
+.faq-item[open] .faq-icon::before,
+.faq-item[open] .faq-icon::after {
+    background: #fff;
+}
+.faq-item[open] .faq-icon::after {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.faq-answer {
+    padding: 0 24px 20px;
+    border-top: 1px solid var(--color-border);
+}
+
+.faq-answer p {
+    margin: 16px 0 0;
+    font-size: 1rem;
+    color: #374151;
+    line-height: 1.75;
+}
+
 /* FOOTER */
 .footer {
     background-color: var(--color-bg-dark);
