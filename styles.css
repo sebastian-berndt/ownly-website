@@ -118,6 +118,10 @@ body {
     background-color: var(--color-bg-light);
 }
 
+.section-white {
+    background-color: var(--color-bg-white);
+}
+
 .section-dark {
     background-color: var(--color-bg-dark);
     color: var(--color-text-light);
