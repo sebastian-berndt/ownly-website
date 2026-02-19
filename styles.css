@@ -6,13 +6,13 @@
 
 :root {
     --color-bg-white: #FFFFFF;
-    --color-bg-light: #F8F9FA;
-    --color-bg-dark: #1A1D23;
+    --color-bg-light: #F0F1F5;
+    --color-bg-dark: #2E3452;
     --color-text-dark: #0F1419;
     --color-text-light: #FFFFFF;
-    --color-text-muted: #6B7280;
-    --color-accent: #2563EB;
-    --color-accent-hover: #1D4ED8;
+    --color-text-muted: #6F7895;
+    --color-accent: #FF8200;
+    --color-accent-hover: #E07300;
     --color-error: #DC2626;
     --color-error-bg: #FEE2E2;
     --color-border: #E5E7EB;
@@ -128,7 +128,7 @@ body {
 }
 
 .section-cta {
-    background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
+    background: linear-gradient(135deg, #2E3452 0%, #3D4570 100%);
     color: var(--color-text-light);
 }
 
@@ -149,7 +149,7 @@ body {
 
 /* HERO SECTION */
 .hero {
-    background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
+    background: linear-gradient(135deg, #2E3452 0%, #3D4570 100%);
     color: var(--color-text-light);
     padding: 100px 0 80px;
     text-align: center;
@@ -232,8 +232,8 @@ input[type="email"]::placeholder {
     font-size: 1.0625rem;
     font-weight: 600;
     color: var(--color-text-light);
-    background-color: var(--color-bg-dark);
-    border: 2px solid var(--color-bg-dark);
+    background-color: var(--color-accent);
+    border: 2px solid var(--color-accent);
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.2s;
@@ -241,10 +241,10 @@ input[type="email"]::placeholder {
 }
 
 .btn-cta:hover {
-    background-color: #0F1419;
-    border-color: #0F1419;
+    background-color: var(--color-accent-hover);
+    border-color: var(--color-accent-hover);
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 20px rgba(255, 130, 0, 0.35);
 }
 
 .btn-cta:active {
@@ -386,7 +386,7 @@ input[type="email"]::placeholder {
     flex-shrink: 0;
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
+    background: #FF8200;
     color: var(--color-text-light);
     border-radius: 50%;
     display: flex;

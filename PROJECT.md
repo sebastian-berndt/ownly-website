@@ -19,6 +19,7 @@ A conversion-optimized landing page for Ownly — a platform that simplifies sel
 ```
 
 ## Version History
+- **v2.19** - New color palette: Deep Midnight Blue (#2E3452), Vibrant Orange (#FF8200), Muted Slate Blue (#6F7895)
 - **v2.18** - Footer centralized as `footer.html` partial; loaded via fetch on all pages
 - **v2.17** - Comparison table redesign: unified row-by-row layout, SVG icons in header, removed card borders
 - **v2.16** - FAQ copy improvements (Q1, Q5 rewritten); remove all em dashes from copy
@@ -150,11 +151,12 @@ A conversion-optimized landing page for Ownly — a platform that simplifies sel
 | Variable | Color | Usage |
 |---|---|---|
 | `--color-bg-white` | #FFFFFF | Card backgrounds |
-| `--color-bg-light` | #F8F9FA | Alternating sections |
-| `--color-bg-dark` | #1A1D23 | Dark section, footer |
-| `--color-accent` | #2563EB | Step numbers, hover |
+| `--color-bg-light` | #F0F1F5 | Alternating sections |
+| `--color-bg-dark` | #2E3452 | Dark section, footer |
+| `--color-accent` | #FF8200 | Buttons, step numbers, hover |
+| `--color-text-muted` | #6F7895 | Muted text, slate blue |
 | `--color-error` | #DC2626 | Error messages |
-| Hero/CTA gradient | `135deg, #667EEA → #764BA2` | Hero and final CTA |
+| Hero/CTA gradient | `135deg, #2E3452 → #3D4570` | Hero and final CTA |
 
 ---
 
