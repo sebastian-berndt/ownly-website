@@ -141,59 +141,53 @@
             <h2 class="section-title">Renting your digital life is expensive, risky, and a privacy nightmare.</h2>
             <p class="section-intro">You've been handed a bad deal. Here's what you're actually putting up with, and what owning your data looks like instead.</p>
 
-            <div class="comparison-grid">
-                <!-- Left: Big Tech Way -->
-                <div class="comparison-col comparison-col--bad">
-                    <div class="comparison-col-header">
-                        <span class="comparison-badge comparison-badge--bad">The Big Tech Way</span>
+            <div class="comparison-table">
+                <!-- Header row -->
+                <div class="comparison-header">
+                    <div class="comparison-header-cell comparison-header-bad">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7.5" stroke="#DC2626"/><path d="M5 5l6 6M11 5l-6 6" stroke="#DC2626" stroke-width="1.5" stroke-linecap="round"/></svg>
+                        The Big Tech Way
                     </div>
-                    <ul class="comparison-list">
-                        <li>
-                            <span class="comparison-icon">✗</span>
-                            <div>
-                                <strong>You are the product.</strong> Tech giants scan your private files, read your messages, and analyse your family photos to serve you targeted ads.
-                            </div>
-                        </li>
-                        <li>
-                            <span class="comparison-icon">✗</span>
-                            <div>
-                                <strong>Zero control over your own accounts.</strong> An algorithm can lock you out overnight, costing you years of data, with no human support to help.
-                            </div>
-                        </li>
-                        <li>
-                            <span class="comparison-icon">✗</span>
-                            <div>
-                                <strong>Subscription fatigue.</strong> $12/month for a password manager. $10/month for cloud storage. $15/month for notes. You're paying rent on your own data.
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="comparison-header-cell comparison-header-good">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7.5" stroke="#16A34A"/><path d="M4.5 8l2.5 2.5 4.5-5" stroke="#16A34A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        The Ownly Way
+                    </div>
                 </div>
 
-                <!-- Right: Ownly Way -->
-                <div class="comparison-col comparison-col--good">
-                    <div class="comparison-col-header">
-                        <span class="comparison-badge comparison-badge--good">The Ownly Way</span>
+                <!-- Row 1: Privacy -->
+                <div class="comparison-row">
+                    <div class="comparison-cell comparison-cell-bad">
+                        <strong>You are the product.</strong>
+                        <span>Tech giants scan your private files, read your messages, and analyse your family photos to serve you targeted ads.</span>
                     </div>
-                    <ul class="comparison-list">
-                        <li>
-                            <span class="comparison-icon">✓</span>
-                            <div>
-                                <strong>Total privacy, guaranteed by architecture.</strong> Your data lives on your server. We literally cannot see your files, passwords, or photos.
-                            </div>
-                        </li>
-                        <li>
-                            <span class="comparison-icon">✓</span>
-                            <div>
-                                <strong>Your server, your rules.</strong> You are the admin. No algorithm bans, no surprise price hikes, no terms-of-service traps. Ever.
-                            </div>
-                        </li>
-                        <li>
-                            <span class="comparison-icon">✓</span>
-                            <div>
-                                <strong>One flat fee for unlimited apps.</strong> Run Nextcloud, Bitwarden, Jellyfin and more on a single server, for less than the cost of one SaaS subscription.
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="comparison-cell comparison-cell-good">
+                        <strong>Your data is invisible to us.</strong>
+                        <span>Your files live on your server. We literally cannot see them. Privacy is guaranteed by the architecture.</span>
+                    </div>
+                </div>
+
+                <!-- Row 2: Control -->
+                <div class="comparison-row">
+                    <div class="comparison-cell comparison-cell-bad">
+                        <strong>Zero control over your own accounts.</strong>
+                        <span>An algorithm can lock you out overnight, costing you years of data, with no human support to help.</span>
+                    </div>
+                    <div class="comparison-cell comparison-cell-good">
+                        <strong>Your server, your rules.</strong>
+                        <span>You are the admin. No algorithm bans, no surprise price hikes, no terms-of-service traps. Ever.</span>
+                    </div>
+                </div>
+
+                <!-- Row 3: Cost -->
+                <div class="comparison-row">
+                    <div class="comparison-cell comparison-cell-bad">
+                        <strong>Subscription fatigue.</strong>
+                        <span>$12/month for a password manager. $10/month for cloud storage. $15/month for notes. You're paying rent on your own data.</span>
+                    </div>
+                    <div class="comparison-cell comparison-cell-good">
+                        <strong>One flat fee for unlimited apps.</strong>
+                        <span>Run Nextcloud, Bitwarden, Jellyfin and more on a single server, for less than the cost of one SaaS subscription.</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -405,7 +399,7 @@
 
             <!-- Bottom Bar -->
             <div class="footer-bottom">
-                <span>© 2026 Ownly <span class="version">v2.16</span></span>
+                <span>© 2026 Ownly <span class="version">v2.17</span></span>
                 <span>Made for digital sovereignty</span>
             </div>
         </div>

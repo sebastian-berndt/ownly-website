@@ -280,107 +280,86 @@ input[type="email"]::placeholder {
     border: 1px solid var(--color-error);
 }
 
-/* PROBLEM SECTION */
-/* COMPARISON SECTION */
-.comparison-grid {
+/* COMPARISON TABLE */
+.comparison-table {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+}
+
+.comparison-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    max-width: 1000px;
-    margin: 0 auto;
 }
 
-.comparison-col {
-    background: var(--color-bg-white);
-    border-radius: 16px;
-    border: 2px solid var(--color-border);
-    overflow: hidden;
-}
-
-.comparison-col--bad {
-    border-color: #FECACA;
-}
-
-.comparison-col--good {
-    border-color: #BBF7D0;
-}
-
-.comparison-col-header {
-    padding: 20px 28px 16px;
-    border-bottom: 2px solid var(--color-border);
-}
-
-.comparison-col--bad .comparison-col-header {
-    background: #FEF2F2;
-    border-color: #FECACA;
-}
-
-.comparison-col--good .comparison-col-header {
-    background: #F0FDF4;
-    border-color: #BBF7D0;
-}
-
-.comparison-badge {
-    display: inline-block;
+.comparison-header-cell {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
     font-size: 0.8125rem;
     font-weight: 700;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.07em;
     text-transform: uppercase;
-    padding: 4px 12px;
-    border-radius: 999px;
 }
 
-.comparison-badge--bad {
-    background: #FEE2E2;
+.comparison-header-bad {
+    background: #FEF2F2;
     color: #B91C1C;
+    border-right: 1px solid #FECACA;
 }
 
-.comparison-badge--good {
-    background: #DCFCE7;
+.comparison-header-good {
+    background: #F0FDF4;
     color: #15803D;
 }
 
-.comparison-list {
-    list-style: none;
-    padding: 8px 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+.comparison-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid var(--color-border);
 }
 
-.comparison-list li {
-    display: flex;
-    gap: 16px;
-    padding: 20px 28px;
-    border-bottom: 1px solid var(--color-border);
+.comparison-cell {
+    padding: 24px 28px;
     font-size: 0.9375rem;
     line-height: 1.65;
-    color: #374151;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
-.comparison-list li:last-child {
-    border-bottom: none;
-}
-
-.comparison-list li strong {
+.comparison-cell strong {
+    font-size: 0.9375rem;
+    font-weight: 600;
     display: block;
+}
+
+.comparison-cell span {
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.comparison-cell-bad {
+    background: var(--color-bg-white);
+    border-right: 1px solid var(--color-border);
     color: var(--color-text-dark);
-    margin-bottom: 2px;
 }
 
-.comparison-icon {
-    flex-shrink: 0;
-    font-size: 1.125rem;
-    font-weight: 700;
-    margin-top: 1px;
+.comparison-cell-bad strong {
+    color: #991B1B;
 }
 
-.comparison-col--bad .comparison-icon {
-    color: #DC2626;
+.comparison-cell-good {
+    background: #FAFFFE;
+    color: var(--color-text-dark);
 }
 
-.comparison-col--good .comparison-icon {
-    color: #16A34A;
+.comparison-cell-good strong {
+    color: #14532D;
 }
 
 /* STEPS SECTION */
@@ -684,8 +663,19 @@ input[type="email"]::placeholder {
         padding: 80px 0 60px;
     }
 
-    .comparison-grid {
+    .comparison-header,
+    .comparison-row {
         grid-template-columns: 1fr;
+    }
+
+    .comparison-header-bad {
+        border-right: none;
+        border-bottom: 1px solid #FECACA;
+    }
+
+    .comparison-cell-bad {
+        border-right: none;
+        border-bottom: 1px solid var(--color-border);
     }
 
     .step {
