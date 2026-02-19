@@ -19,6 +19,7 @@ A conversion-optimized landing page for Ownly — a platform that simplifies sel
 ```
 
 ## Version History
+- **v2.16** - FAQ copy improvements (Q1, Q5 rewritten); remove all em dashes from copy
 - **v2.15** - Email placeholder changed to "Your email"; section background alternation (How It Works → white); remove false-affordance hover on steps; logos/ folder for real app SVGs
 - **v2.14** - Problem/Solution section: new headline, side-by-side "Big Tech Way vs. Ownly Way" comparison layout
 - **v2.13** - Ticker redesign: larger icons (32px), remove pill bubbles, dot separators
