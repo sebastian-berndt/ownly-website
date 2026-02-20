@@ -19,6 +19,7 @@ A conversion-optimized landing page for Ownly — a platform that simplifies sel
 ```
 
 ## Version History
+- **v2.21** - Added Company column to footer (About Us, Blog, Contact, Open Source)
 - **v2.20** - Updated tagline: "Ownly – Stop Outsourcing Your Digital Life. Own It."
 - **v2.19** - New color palette: Deep Midnight Blue (#2E3452), Vibrant Orange (#FF8200), Muted Slate Blue (#6F7895)
 - **v2.18** - Footer centralized as `footer.html` partial; loaded via fetch on all pages
@@ -124,6 +125,7 @@ A conversion-optimized landing page for Ownly — a platform that simplifies sel
 - Brand: Ownly logo, tagline, social icons (X, Discord, GitHub)
 - Product: Features, App Marketplace, Pricing, Changelog
 - Resources: Documentation, FAQ, Community Forum, Support
+- Company: About Us, Blog, Contact, Open Source
 - Legal: Privacy Policy, Terms of Service, Imprint
 - Bottom bar: copyright + "Made for digital sovereignty"
 
