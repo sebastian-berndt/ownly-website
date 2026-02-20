@@ -206,7 +206,6 @@
                     </div>
                     <div class="step-video">
                         <video src="videos/step-1.webm" autoplay loop muted playsinline></video>
-                        <div class="video-placeholder">Video coming soon</div>
                     </div>
                 </div>
                 <div class="step">
@@ -217,7 +216,6 @@
                     </div>
                     <div class="step-video">
                         <video src="videos/step-2.webm" autoplay loop muted playsinline></video>
-                        <div class="video-placeholder">Video coming soon</div>
                     </div>
                 </div>
                 <div class="step">
@@ -228,7 +226,6 @@
                     </div>
                     <div class="step-video">
                         <video src="videos/step-3.webm" autoplay loop muted playsinline></video>
-                        <div class="video-placeholder">Video coming soon</div>
                     </div>
                 </div>
             </div>
@@ -405,6 +402,13 @@
     // Attach handlers to both forms
     handleFormSubmit('hero-form', 'hero-email', 'hero-message');
     handleFormSubmit('footer-form', 'footer-email', 'footer-message');
+
+    // Hide video containers when videos fail to load
+    document.querySelectorAll('.step-video video').forEach(function(video) {
+        video.addEventListener('error', function() {
+            this.parentElement.style.display = 'none';
+        });
+    });
     </script>
 </body>
 </html>
