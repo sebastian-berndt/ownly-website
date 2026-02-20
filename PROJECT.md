@@ -19,6 +19,7 @@ A conversion-optimized landing page for Ownly — a platform that simplifies sel
 ```
 
 ## Version History
+- **v2.22** - Design improvements: zero roundness (sharp corners), Inter font family, improved typography and contrast, comparison table redesigned with brand colors
 - **v2.21** - Added Company column to footer (About Us, Blog, Contact, Open Source)
 - **v2.20** - Updated tagline: "Ownly – Stop Outsourcing Your Digital Life. Own It."
 - **v2.19** - New color palette: Deep Midnight Blue (#2E3452), Vibrant Orange (#FF8200), Muted Slate Blue (#6F7895)
