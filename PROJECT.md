@@ -19,6 +19,7 @@ A conversion-optimized landing page for Ownly — a platform that simplifies sel
 ```
 
 ## Version History
+- **v2.20** - Updated tagline: "Ownly – Stop Outsourcing Your Digital Life. Own It."
 - **v2.19** - New color palette: Deep Midnight Blue (#2E3452), Vibrant Orange (#FF8200), Muted Slate Blue (#6F7895)
 - **v2.18** - Footer centralized as `footer.html` partial; loaded via fetch on all pages
 - **v2.17** - Comparison table redesign: unified row-by-row layout, SVG icons in header, removed card borders
@@ -91,7 +92,7 @@ A conversion-optimized landing page for Ownly — a platform that simplifies sel
 ## Page Structure
 
 ### Hero (Attention)
-- Headline: "Stop Renting Your Digital Life. Own It."
+- Headline: "Ownly – Stop Outsourcing Your Digital Life. Own It."
 - Sub-headline: Explains server + marketplace + one-click install value prop
 - CTA: "Request Access"
 - Placeholder for hero visual
