@@ -156,6 +156,27 @@ p {
     color: var(--color-text-light);
 }
 
+.section-dark-alt {
+    background-color: #0A0F1E;
+    color: var(--color-text-light);
+}
+
+.section-dark-alt .section-intro {
+    color: #C5D0E8;
+}
+
+.section-dark-alt .feature-card p {
+    color: #E5F0FF;
+}
+
+.section-dark-alt .feature-spotlight-description {
+    color: #C5D0E8;
+}
+
+.section-dark-alt .feature-checklist li {
+    color: #E5F0FF;
+}
+
 .section-cta {
     background: linear-gradient(135deg, #0B1120 0%, #050816 100%);
     color: var(--color-text-light);
@@ -472,9 +493,9 @@ input[type="email"]::placeholder {
 }
 
 .feature-card {
-    background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%);
+    background: rgba(255, 255, 255, 0.05);
     padding: 40px 32px;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     text-align: left;
     border-radius: 8px;
 }
@@ -482,7 +503,7 @@ input[type="email"]::placeholder {
 .feature-icon {
     width: 56px;
     height: 56px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 130, 0, 0.15);
     display: flex;
     align-items: center;
     justify-content: center;
