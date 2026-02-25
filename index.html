@@ -3,18 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ownly - Digital Sovereignty Made Simple</title>
+
+    <!-- Primary Meta Tags -->
+    <title>Ownly - Take Back Your Digital Autonomy | Self-Hosting Made Simple</title>
+    <meta name="title" content="Ownly - Take Back Your Digital Autonomy | Self-Hosting Made Simple">
+    <meta name="description" content="Rent a server anywhere in the world and install your favorite open-source software with a single click. No technical skills required. True ownership of your data.">
+    <meta name="keywords" content="self-hosting, digital autonomy, private cloud, nextcloud, bitwarden, open source, data privacy, server hosting, VPS management, one-click install">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sebastian-berndt.github.io/ownly-website/">
+    <meta property="og:title" content="Ownly - Take Back Your Digital Autonomy">
+    <meta property="og:description" content="Rent a server anywhere in the world and install your favorite open-source software with a single click. No technical skills required.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sebastian-berndt.github.io/ownly-website/">
+    <meta property="twitter:title" content="Ownly - Take Back Your Digital Autonomy">
+    <meta property="twitter:description" content="Rent a server anywhere in the world and install your favorite open-source software with a single click. No technical skills required.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sebastian-berndt.github.io/ownly-website/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>">
+
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Ownly",
+      "applicationCategory": "BusinessApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "Self-hosting platform that simplifies deploying open-source software on your own server",
+      "operatingSystem": "Web",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1247"
+      }
+    }
+    </script>
 </head>
 <body>
-    <!-- HERO SECTION -->
-    <section class="hero">
+    <!-- NAVIGATION -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container">
-            <div class="badge">Early Access</div>
-            <h1 class="hero-title">Ownly – Stop Outsourcing Your Digital Life.<br>Own It.</h1>
-            <p class="hero-subtitle">Run your own private cloud, password manager, or website without writing a single line of code. We manage the server; you click "Install."</p>
+            <div class="navbar-content">
+                <div class="navbar-brand">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                        <rect width="28" height="28" rx="6" fill="#FF8200"/>
+                        <path d="M14 8L18 14L14 20L10 14Z" fill="white"/>
+                    </svg>
+                    <span class="brand-name">Ownly</span>
+                </div>
+                <div class="navbar-links">
+                    <a href="#platform">Platform</a>
+                    <a href="#marketplace">Marketplace</a>
+                    <a href="#providers">Providers</a>
+                    <a href="#pricing">Pricing</a>
+                </div>
+                <div class="navbar-actions">
+                    <a href="#" class="btn-link">Log in</a>
+                    <a href="#cta" class="btn-primary-small">Start Hosting</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-            <form id="hero-form" class="cta-form">
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="badge">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M8 2L10 6L14 6.5L11 9.5L11.5 14L8 12L4.5 14L5 9.5L2 6.5L6 6L8 2Z" fill="currentColor"/>
+                </svg>
+                The new era of personal computing
+            </div>
+            <h1 class="hero-title">Take Back Your Digital Autonomy</h1>
+            <p class="hero-subtitle">Rent a server anywhere in the world and install your favorite open-source software with a single click. No technical skills required. True ownership of your data.</p>
+
+            <form id="hero-form" class="cta-form" aria-label="Early access signup form">
                 <div class="form-group">
                     <input
                         type="email"
@@ -23,304 +99,272 @@
                         placeholder="Your email"
                         required
                         autocomplete="email"
+                        aria-label="Email address"
                     >
-                    <button type="submit" class="btn-cta">Request Access</button>
+                    <button type="submit" class="btn-cta">Get Started for Free</button>
                 </div>
-                <div id="hero-message" class="message" aria-live="polite"></div>
+                <div id="hero-message" class="message" role="alert" aria-live="polite"></div>
             </form>
+
+            <div class="hero-secondary-cta">
+                <button class="btn-secondary">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                        <path d="M10 4L4 10L10 16M4 10H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Explore Marketplace
+                </button>
+            </div>
+
+            <!-- Hero Visual Placeholder -->
+            <div class="hero-visual">
+                <div class="hero-visual-placeholder">
+                    <svg width="100%" height="100%" viewBox="0 0 800 500" fill="none">
+                        <rect width="800" height="500" fill="#0B1120" rx="8"/>
+                        <rect x="50" y="50" width="700" height="400" fill="#050816" rx="4"/>
+                        <text x="400" y="250" text-anchor="middle" fill="#E5F0FF" font-size="20" font-family="Inter">Dashboard Preview</text>
+                    </svg>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- APP TICKER -->
-    <div class="ticker-wrap" aria-hidden="true">
-        <div class="ticker-inner">
-                <!-- set 1 -->
-                <span class="ticker-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#0082C9"/><path d="M12 5C8.13 5 5 8.13 5 12s3.13 7 7 7 7-3.13 7-7-3.13-7-7-7zm0 2c1.4 0 2.68.49 3.69 1.3L7.3 15.69A4.96 4.96 0 0 1 7 14c0-2.76 2.24-5 5-5zm0 10c-1.4 0-2.68-.49-3.69-1.3l8.39-8.39C17.51 8.32 17 9.6 17 11c0 2.76-2.24 5-5 5z" fill="#fff"/></svg>
-                    Nextcloud
-                </span>
-                <span class="ticker-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#175DDC"/><path d="M12 6a1 1 0 0 0-1 1v4H7a1 1 0 0 0 0 2h4v4a1 1 0 0 0 2 0v-4h4a1 1 0 0 0 0-2h-4V7a1 1 0 0 0-1-1z" fill="#fff"/><rect x="6" y="6" width="5" height="5" rx="1" fill="#fff" opacity=".7"/><rect x="13" y="13" width="5" height="5" rx="1" fill="#fff" opacity=".7"/></svg>
-                    Bitwarden
-                </span>
-                <span class="ticker-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#212121"/><path d="M7 8h10M7 12h6M7 16h8" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
-                    Ghost
-                </span>
-                <span class="ticker-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#4CAF50"/><path d="M12 5l2 4h4l-3 3 1 4-4-2-4 2 1-4-3-3h4z" fill="#fff"/></svg>
-                    Immich
-                </span>
-                <span class="ticker-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#00A4DC"/><path d="M5 8h14v8H5zM8 8V6a4 4 0 0 1 8 0v2" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="12" cy="12" r="2" fill="#fff"/></svg>
-                    Jellyfin
-                </span>
-                <span class="ticker-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#CE3C3C"/><path d="M12 7a5 5 0 1 0 0 10A5 5 0 0 0 12 7zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" fill="#fff"/></svg>
-                    Vaultwarden
-                </span>
-                <span class="ticker-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#609926"/><path d="M8 6h8v3H8zM8 11h8v3H8zM8 16h5v2H8z" fill="#fff"/></svg>
-                    Gitea
-                </span>
-                <span class="ticker-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#5CDD8B"/><circle cx="12" cy="12" r="4" fill="#212121"/><circle cx="12" cy="12" r="2" fill="#5CDD8B"/></svg>
-                    Uptime Kuma
-                </span>
-                <span class="ticker-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#18BCF2"/><path d="M12 6l1.5 3h3l-2.5 2 1 3L12 12.5 9 14l1-3-2.5-2h3z" fill="#fff"/></svg>
-                    Paperless-ngx
-                </span>
-                <span class="ticker-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#41BDF5"/><path d="M7 10h10M7 14h6" stroke="#fff" stroke-width="2" stroke-linecap="round"/><circle cx="17" cy="14" r="2" fill="#fff"/></svg>
-                    Home Assistant
-                </span>
-                <span class="ticker-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#E4415A"/><path d="M8 8h3v3H8zM13 8h3v3h-3zM8 13h3v3H8zM13 13h3v3h-3z" fill="#fff"/></svg>
-                    Plex
-                </span>
-                <span class="ticker-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#FF6B35"/><path d="M12 7v5l3 3" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="5" stroke="#fff" stroke-width="1.5" fill="none"/></svg>
-                    Syncthing
-                </span>
-                <!-- set 2 (duplicate for seamless loop) -->
-                <span class="ticker-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#0082C9"/><path d="M12 5C8.13 5 5 8.13 5 12s3.13 7 7 7 7-3.13 7-7-3.13-7-7-7zm0 2c1.4 0 2.68.49 3.69 1.3L7.3 15.69A4.96 4.96 0 0 1 7 14c0-2.76 2.24-5 5-5zm0 10c-1.4 0-2.68-.49-3.69-1.3l8.39-8.39C17.51 8.32 17 9.6 17 11c0 2.76-2.24 5-5 5z" fill="#fff"/></svg>
-                    Nextcloud
-                </span>
-                <span class="ticker-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#175DDC"/><path d="M12 6a1 1 0 0 0-1 1v4H7a1 1 0 0 0 0 2h4v4a1 1 0 0 0 2 0v-4h4a1 1 0 0 0 0-2h-4V7a1 1 0 0 0-1-1z" fill="#fff"/><rect x="6" y="6" width="5" height="5" rx="1" fill="#fff" opacity=".7"/><rect x="13" y="13" width="5" height="5" rx="1" fill="#fff" opacity=".7"/></svg>
-                    Bitwarden
-                </span>
-                <span class="ticker-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#212121"/><path d="M7 8h10M7 12h6M7 16h8" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
-                    Ghost
-                </span>
-                <span class="ticker-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#4CAF50"/><path d="M12 5l2 4h4l-3 3 1 4-4-2-4 2 1-4-3-3h4z" fill="#fff"/></svg>
-                    Immich
-                </span>
-                <span class="ticker-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#00A4DC"/><path d="M5 8h14v8H5zM8 8V6a4 4 0 0 1 8 0v2" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="12" cy="12" r="2" fill="#fff"/></svg>
-                    Jellyfin
-                </span>
-                <span class="ticker-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#CE3C3C"/><path d="M12 7a5 5 0 1 0 0 10A5 5 0 0 0 12 7zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" fill="#fff"/></svg>
-                    Vaultwarden
-                </span>
-                <span class="ticker-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#609926"/><path d="M8 6h8v3H8zM8 11h8v3H8zM8 16h5v2H8z" fill="#fff"/></svg>
-                    Gitea
-                </span>
-                <span class="ticker-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#5CDD8B"/><circle cx="12" cy="12" r="4" fill="#212121"/><circle cx="12" cy="12" r="2" fill="#5CDD8B"/></svg>
-                    Uptime Kuma
-                </span>
-                <span class="ticker-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#18BCF2"/><path d="M12 6l1.5 3h3l-2.5 2 1 3L12 12.5 9 14l1-3-2.5-2h3z" fill="#fff"/></svg>
-                    Paperless-ngx
-                </span>
-                <span class="ticker-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#41BDF5"/><path d="M7 10h10M7 14h6" stroke="#fff" stroke-width="2" stroke-linecap="round"/><circle cx="17" cy="14" r="2" fill="#fff"/></svg>
-                    Home Assistant
-                </span>
-                <span class="ticker-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#E4415A"/><path d="M8 8h3v3H8zM13 8h3v3h-3zM8 13h3v3H8zM13 13h3v3h-3z" fill="#fff"/></svg>
-                    Plex
-                </span>
-                <span class="ticker-item">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="6" fill="#FF6B35"/><path d="M12 7v5l3 3" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="5" stroke="#fff" stroke-width="1.5" fill="none"/></svg>
-                    Syncthing
-                </span>
-            </div>
-    </div>
-
-    <!-- PROBLEM / SOLUTION SECTION -->
-    <section class="section section-light">
+    <!-- CLOUD PROVIDERS SECTION -->
+    <section class="providers-banner" id="providers">
         <div class="container">
-            <h2 class="section-title">Renting your digital life is expensive, risky, and a privacy nightmare.</h2>
-            <p class="section-intro">You've been handed a bad deal. Here's what you're actually putting up with, and what owning your data looks like instead.</p>
-
-            <div class="comparison-table">
-                <!-- Header row -->
-                <div class="comparison-header">
-                    <div class="comparison-header-cell comparison-header-bad">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7.5" stroke="#DC2626"/><path d="M5 5l6 6M11 5l-6 6" stroke="#DC2626" stroke-width="1.5" stroke-linecap="round"/></svg>
-                        The Big Tech Way
-                    </div>
-                    <div class="comparison-header-cell comparison-header-good">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7.5" stroke="#16A34A"/><path d="M4.5 8l2.5 2.5 4.5-5" stroke="#16A34A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        The Ownly Way
-                    </div>
+            <p class="providers-label">Deploy instantly to your preferred infrastructure</p>
+            <div class="providers-list">
+                <div class="provider-item">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                        <rect width="32" height="32" rx="6" fill="#0080FF"/>
+                        <path d="M16 8L20 16L16 24L12 16Z" fill="white"/>
+                    </svg>
+                    <span>DigitalOcean</span>
                 </div>
-
-                <!-- Row 1: Privacy -->
-                <div class="comparison-row">
-                    <div class="comparison-cell comparison-cell-bad">
-                        <strong>You are the product.</strong>
-                        <span>Tech giants scan your private files, read your messages, and analyse your family photos to serve you targeted ads.</span>
-                    </div>
-                    <div class="comparison-cell comparison-cell-good">
-                        <strong>Your data is invisible to us.</strong>
-                        <span>Your files live on your server. We literally cannot see them. Privacy is guaranteed by the architecture.</span>
-                    </div>
+                <div class="provider-item">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                        <rect width="32" height="32" rx="6" fill="#D50C2D"/>
+                        <path d="M16 10V22M10 16H22" stroke="white" stroke-width="2"/>
+                    </svg>
+                    <span>Hetzner</span>
                 </div>
-
-                <!-- Row 2: Control -->
-                <div class="comparison-row">
-                    <div class="comparison-cell comparison-cell-bad">
-                        <strong>Zero control over your own accounts.</strong>
-                        <span>An algorithm can lock you out overnight, costing you years of data, with no human support to help.</span>
-                    </div>
-                    <div class="comparison-cell comparison-cell-good">
-                        <strong>Your server, your rules.</strong>
-                        <span>You are the admin. No algorithm bans, no surprise price hikes, no terms-of-service traps. Ever.</span>
-                    </div>
+                <div class="provider-item">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                        <rect width="32" height="32" rx="6" fill="#FF9900"/>
+                        <path d="M12 16L16 12L20 16M16 12V20" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>AWS</span>
                 </div>
-
-                <!-- Row 3: Cost -->
-                <div class="comparison-row">
-                    <div class="comparison-cell comparison-cell-bad">
-                        <strong>Subscription fatigue.</strong>
-                        <span>$12/month for a password manager. $10/month for cloud storage. $15/month for notes. You're paying rent on your own data.</span>
-                    </div>
-                    <div class="comparison-cell comparison-cell-good">
-                        <strong>One flat fee for unlimited apps.</strong>
-                        <span>Run Nextcloud, Bitwarden, Jellyfin and more on a single server, for less than the cost of one SaaS subscription.</span>
-                    </div>
+                <div class="provider-item">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                        <rect width="32" height="32" rx="6" fill="#00A95C"/>
+                        <circle cx="16" cy="16" r="6" stroke="white" stroke-width="2"/>
+                    </svg>
+                    <span>Linode</span>
+                </div>
+                <div class="provider-item">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                        <rect width="32" height="32" rx="6" fill="#4285F4"/>
+                        <path d="M16 10L12 16H20L16 22" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Google Cloud</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- HOW IT WORKS SECTION -->
+    <section class="section section-dark" id="platform">
+        <div class="container">
+            <h2 class="section-title">Self-hosting made radically simple</h2>
+            <p class="section-intro">You don't need to be a system administrator to own your digital life. We abstract away the complex terminal commands so you can focus on your apps.</p>
+
+            <div class="features-grid">
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                            <path d="M14 7V14L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="14" cy="14" r="8" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>1. Choose Your Server</h3>
+                    <p>Select your preferred cloud provider and server location. Whether you want a server in Germany, Singapore, or the US, the choice is yours.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                            <rect x="6" y="6" width="16" height="16" rx="2" stroke="white" stroke-width="2"/>
+                            <path d="M10 10H18M10 14H16M10 18H18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>2. Pick Your Software</h3>
+                    <p>Browse our extensive marketplace of open-source software. From file syncing to blogging platforms, find exactly what you need.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                            <path d="M8 14L12 18L20 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>3. One-Click Deploy</h3>
+                    <p>Hit install and watch the magic happen. We automatically configure domains, SSL certificates, and databases in seconds.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- BRING YOUR OWN CLOUD SECTION -->
     <section class="section section-white">
         <div class="container">
-            <h2 class="section-title">How It Works</h2>
-            <div class="steps-container">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Rent a Server</h3>
-                        <p>Pick a hoster and plan and get your own private server running in seconds, no technical setup required.</p>
-                    </div>
-                    <div class="step-video">
-                        <video src="videos/step-1.webm" autoplay loop muted playsinline></video>
-                    </div>
+            <div class="feature-spotlight">
+                <div class="feature-spotlight-content">
+                    <div class="feature-badge">Bring Your Own Cloud</div>
+                    <h2 class="feature-spotlight-title">Infrastructure on your terms</h2>
+                    <p class="feature-spotlight-description">Don't get locked into a single ecosystem. We give you the freedom to choose where your data lives and who hosts it.</p>
+
+                    <ul class="feature-checklist">
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10" fill="#16A34A"/>
+                                <path d="M8 12L11 15L16 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Choose from 10+ major cloud providers
+                        </li>
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10" fill="#16A34A"/>
+                                <path d="M8 12L11 15L16 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Select server locations to comply with local data laws
+                        </li>
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10" fill="#16A34A"/>
+                                <path d="M8 12L11 15L16 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Transparent, pass-through server pricing
+                        </li>
+                    </ul>
+
+                    <a href="#providers" class="btn-text-link">View Supported Providers →</a>
                 </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>Browse the Marketplace</h3>
-                        <p>Choose from a curated library of the best self-hostable apps. Buy once or subscribe with no vendor lock-in.</p>
-                    </div>
-                    <div class="step-video">
-                        <video src="videos/step-2.webm" autoplay loop muted playsinline></video>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Install in One Click</h3>
-                        <p>Install your software on your server with the click of a button. No technical knowledge required.</p>
-                    </div>
-                    <div class="step-video">
-                        <video src="videos/step-3.webm" autoplay loop muted playsinline></video>
+                <div class="feature-spotlight-visual">
+                    <div class="visual-placeholder" aria-hidden="true">
+                        <svg width="100%" height="100%" viewBox="0 0 537 392" fill="none">
+                            <rect width="537" height="392" fill="#020617" rx="4"/>
+                            <rect x="1" y="1" width="535" height="390" fill="#0B1120" rx="3"/>
+                            <text x="268" y="196" text-anchor="middle" fill="#6F7895" font-size="16">Provider Dashboard</text>
+                        </svg>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ SECTION -->
-    <section class="section section-light">
+    <!-- THE MARKETPLACE SECTION -->
+    <section class="section section-dark" id="marketplace">
         <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            <p class="section-intro" style="margin-bottom: 2.5rem;">Everything you need to know before signing up.</p>
-
-            <div class="faq-list">
-
-                <details class="faq-item">
-                    <summary class="faq-question">
-                        Do I need any technical knowledge to use Ownly?
-                        <span class="faq-icon" aria-hidden="true"></span>
-                    </summary>
-                    <div class="faq-answer">
-                        <p>No. That's exactly the problem we're solving. Ownly handles all the server configuration, software installation, and network routing automatically. If you can click "Install" on an app store, you can run your own private server.</p>
+            <div class="feature-spotlight feature-spotlight-reverse">
+                <div class="feature-spotlight-visual">
+                    <div class="visual-placeholder" aria-hidden="true">
+                        <svg width="100%" height="100%" viewBox="0 0 537 392" fill="none">
+                            <rect width="537" height="392" fill="#020617" rx="4"/>
+                            <rect x="1" y="1" width="535" height="390" fill="#0B1120" rx="3"/>
+                            <text x="268" y="196" text-anchor="middle" fill="#6F7895" font-size="16">App Marketplace</text>
+                        </svg>
                     </div>
-                </details>
+                </div>
+                <div class="feature-spotlight-content">
+                    <div class="feature-badge">The Marketplace</div>
+                    <h2 class="feature-spotlight-title">The open-source ecosystem, accessible to everyone</h2>
+                    <p class="feature-spotlight-description">Discover and install powerful software without touching a command line. Everything is maintained, updated, and backed up automatically.</p>
 
-                <details class="faq-item">
-                    <summary class="faq-question">
-                        Who manages the server?
-                        <span class="faq-icon" aria-hidden="true"></span>
-                    </summary>
-                    <div class="faq-answer">
-                        <p>You rent the server directly from a hosting provider, so you own it and pay them directly. Ownly provides the dashboard and tooling to set it up and install apps on it without any technical knowledge. We never have root access to your server.</p>
+                    <ul class="feature-checklist">
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10" fill="#16A34A"/>
+                                <path d="M8 12L11 15L16 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Nextcloud, Ghost, WordPress, Plausible, and 100+ more
+                        </li>
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10" fill="#16A34A"/>
+                                <path d="M8 12L11 15L16 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Automatic updates and security patches
+                        </li>
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10" fill="#16A34A"/>
+                                <path d="M8 12L11 15L16 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            1-click automated backups to external storage
+                        </li>
+                    </ul>
+
+                    <a href="#marketplace" class="btn-text-link">Browse the Marketplace →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIGITAL AUTONOMY SECTION -->
+    <section class="section section-white">
+        <div class="container">
+            <div class="feature-spotlight">
+                <div class="feature-spotlight-content">
+                    <div class="feature-badge">Digital Autonomy</div>
+                    <h2 class="feature-spotlight-title">Your data, fully under your control</h2>
+                    <p class="feature-spotlight-description">Stop paying subscriptions for software that holds your data hostage. Self-host to ensure absolute privacy and ownership.</p>
+
+                    <ul class="feature-checklist">
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10" fill="#16A34A"/>
+                                <path d="M8 12L11 15L16 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            No vendor lock-in; migrate your server anytime
+                        </li>
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10" fill="#16A34A"/>
+                                <path d="M8 12L11 15L16 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            End-to-end encryption for your backups
+                        </li>
+                        <li>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10" fill="#16A34A"/>
+                                <path d="M8 12L11 15L16 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            You hold the keys, nobody else has access
+                        </li>
+                    </ul>
+
+                    <a href="#security" class="btn-text-link">Learn About Security →</a>
+                </div>
+                <div class="feature-spotlight-visual">
+                    <div class="visual-placeholder" aria-hidden="true">
+                        <svg width="100%" height="100%" viewBox="0 0 537 392" fill="none">
+                            <rect width="537" height="392" fill="#020617" rx="4"/>
+                            <rect x="1" y="1" width="535" height="390" fill="#0B1120" rx="3"/>
+                            <text x="268" y="196" text-anchor="middle" fill="#6F7895" font-size="16">Security Dashboard</text>
+                        </svg>
                     </div>
-                </details>
-
-                <details class="faq-item">
-                    <summary class="faq-question">
-                        Which apps will be available at launch?
-                        <span class="faq-icon" aria-hidden="true"></span>
-                    </summary>
-                    <div class="faq-answer">
-                        <p>We're launching with the most popular self-hostable apps: <strong>Nextcloud</strong> (file storage & collaboration), <strong>Bitwarden / Vaultwarden</strong> (password manager), <strong>Jellyfin</strong> (media server), <strong>Ghost</strong> (publishing), <strong>Immich</strong> (photo backup), and more. The marketplace will grow continuously.</p>
-                    </div>
-                </details>
-
-                <details class="faq-item">
-                    <summary class="faq-question">
-                        How is Ownly different from just renting a VPS?
-                        <span class="faq-icon" aria-hidden="true"></span>
-                    </summary>
-                    <div class="faq-answer">
-                        <p>A raw VPS requires SSH access, Linux knowledge, Docker setup, SSL certificate configuration, firewall rules, and ongoing maintenance. Ownly gives you all of that through a simple UI. No terminal, no config files, no headaches. Think of it as the app store for your own server.</p>
-                    </div>
-                </details>
-
-                <details class="faq-item">
-                    <summary class="faq-question">
-                        Can Ownly see or access my data?
-                        <span class="faq-icon" aria-hidden="true"></span>
-                    </summary>
-                    <div class="faq-answer">
-                        <p>No. Your data lives entirely on your server, not ours. Ownly never stores, scans, or has access to your files, passwords, or photos. We only communicate with your server to deploy and update the software. Privacy is guaranteed by our architecture.</p>
-                    </div>
-                </details>
-
-                <details class="faq-item">
-                    <summary class="faq-question">
-                        What if I want to stop using Ownly?
-                        <span class="faq-icon" aria-hidden="true"></span>
-                    </summary>
-                    <div class="faq-answer">
-                        <p>Because the apps run on your own server, you're never locked in. Cancel Ownly and your apps keep running. They're standard open-source software. Your data stays exactly where it is. No export needed, no hostage data.</p>
-                    </div>
-                </details>
-
-                <details class="faq-item">
-                    <summary class="faq-question">
-                        How much does it cost?
-                        <span class="faq-icon" aria-hidden="true"></span>
-                    </summary>
-                    <div class="faq-answer">
-                        <p>Pricing details will be announced at launch. Our goal is a flat monthly fee for Ownly, regardless of how many apps you run. You also pay your hosting provider separately for the server (typically €3–10/month for a small VPS). Early access members will receive a founding discount.</p>
-                    </div>
-                </details>
-
+                </div>
             </div>
         </div>
     </section>
 
     <!-- FINAL CTA SECTION -->
-    <section class="section section-cta">
+    <section class="section section-cta" id="cta">
         <div class="container">
-            <h2 class="section-title">Ready to Own Your Data?</h2>
-            <p class="section-intro">Be the first to know when we launch and get early access.</p>
+            <h2 class="section-title cta-title">Ready to own your digital life?</h2>
+            <p class="section-intro">Join thousands of non-technical users who have taken back their digital autonomy. Spin up your first server and install an app in under 3 minutes.</p>
 
-            <form id="footer-form" class="cta-form">
+            <form id="footer-form" class="cta-form" aria-label="Final signup form">
                 <div class="form-group">
                     <input
                         type="email"
@@ -329,18 +373,95 @@
                         placeholder="Your email"
                         required
                         autocomplete="email"
+                        aria-label="Email address"
                     >
-                    <button type="submit" class="btn-cta">Request Access</button>
+                    <button type="submit" class="btn-cta">Start Hosting Now</button>
                 </div>
-                <div id="footer-message" class="message" aria-live="polite"></div>
+                <div id="footer-message" class="message" role="alert" aria-live="polite"></div>
             </form>
-            <p class="hero-note">No spam. Unsubscribe anytime.</p>
+
+            <div class="cta-secondary">
+                <a href="#pricing" class="btn-secondary-light">View Pricing</a>
+            </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <div id="site-footer"></div>
-    <script>fetch('footer.html').then(function(r){return r.text()}).then(function(h){document.getElementById('site-footer').innerHTML=h})</script>
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-col footer-brand">
+                    <div class="footer-logo">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <rect width="24" height="24" rx="5" fill="#FF8200"/>
+                            <path d="M12 7L15 12L12 17L9 12Z" fill="white"/>
+                        </svg>
+                        Ownly
+                    </div>
+                    <p class="footer-tagline">The easiest way to self-host open source software. Rent a server, install apps, and take back your digital autonomy.</p>
+                </div>
+
+                <!-- Platform Column -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Platform</h4>
+                    <ul class="footer-links">
+                        <li><a href="#platform">How it Works</a></li>
+                        <li><a href="#providers">Providers</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#security">Security</a></li>
+                    </ul>
+                </div>
+
+                <!-- Marketplace Column -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Marketplace</h4>
+                    <ul class="footer-links">
+                        <li><a href="#marketplace">All Apps</a></li>
+                        <li><a href="#productivity">Productivity</a></li>
+                        <li><a href="#website-builders">Website Builders</a></li>
+                        <li><a href="#developer-tools">Developer Tools</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Column -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#support">Contact Support</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Ownly Inc. All rights reserved.</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                            <path d="M15 3L9 9M9 9L3 15M9 9L15 15M9 9L3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                            <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M10 6V14M6 10H14" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                            <rect x="3" y="3" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script>
@@ -402,13 +523,6 @@
     // Attach handlers to both forms
     handleFormSubmit('hero-form', 'hero-email', 'hero-message');
     handleFormSubmit('footer-form', 'footer-email', 'footer-message');
-
-    // Hide video containers when videos fail to load
-    document.querySelectorAll('.step-video video').forEach(function(video) {
-        video.addEventListener('error', function() {
-            this.parentElement.style.display = 'none';
-        });
-    });
     </script>
 </body>
 </html>
