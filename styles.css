@@ -126,6 +126,7 @@ p {
     color: var(--color-text-dark);
     background-color: var(--color-accent);
     border: none;
+    border-radius: 6px;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.2s;
@@ -373,6 +374,7 @@ input[type="email"]::placeholder {
     color: var(--color-text-dark);
     background-color: var(--color-accent);
     border: none;
+    border-radius: 6px;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.2s;
@@ -396,6 +398,7 @@ input[type="email"]::placeholder {
     color: var(--color-text-light);
     background: transparent;
     border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.2s;
