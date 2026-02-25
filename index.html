@@ -90,29 +90,9 @@
             <h1 class="hero-title">Take Back Your Digital Autonomy</h1>
             <p class="hero-subtitle">Rent a server anywhere in the world and install your favorite open-source software with a single click. No technical skills required. True ownership of your data.</p>
 
-            <form id="hero-form" class="cta-form" aria-label="Early access signup form">
-                <div class="form-group">
-                    <input
-                        type="email"
-                        id="hero-email"
-                        name="email"
-                        placeholder="Your email"
-                        required
-                        autocomplete="email"
-                        aria-label="Email address"
-                    >
-                    <button type="submit" class="btn-cta">Get Started for Free</button>
-                </div>
-                <div id="hero-message" class="message" role="alert" aria-live="polite"></div>
-            </form>
-
-            <div class="hero-secondary-cta">
-                <button class="btn-secondary">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                        <path d="M10 4L4 10L10 16M4 10H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    Explore Marketplace
-                </button>
+            <div class="cta-buttons">
+                <a href="#platform" class="btn-cta-large">Start Hosting Now</a>
+                <a href="#marketplace" class="btn-secondary-large">Browse Marketplace</a>
             </div>
 
             <!-- Hero Visual Placeholder -->
@@ -129,7 +109,7 @@
     </section>
 
     <!-- CLOUD PROVIDERS SECTION -->
-    <section class="providers-banner" id="providers">
+    <section class="providers-banner section-dark" id="providers">
         <div class="container">
             <p class="providers-label">Deploy instantly to your preferred infrastructure</p>
             <div class="providers-list">
@@ -215,7 +195,7 @@
     </section>
 
     <!-- BRING YOUR OWN CLOUD SECTION -->
-    <section class="section section-white">
+    <section class="section section-dark">
         <div class="container">
             <div class="feature-spotlight">
                 <div class="feature-spotlight-content">
@@ -311,7 +291,7 @@
     </section>
 
     <!-- DIGITAL AUTONOMY SECTION -->
-    <section class="section section-white">
+    <section class="section section-dark">
         <div class="container">
             <div class="feature-spotlight">
                 <div class="feature-spotlight-content">
@@ -364,24 +344,9 @@
             <h2 class="section-title cta-title">Ready to own your digital life?</h2>
             <p class="section-intro">Join thousands of non-technical users who have taken back their digital autonomy. Spin up your first server and install an app in under 3 minutes.</p>
 
-            <form id="footer-form" class="cta-form" aria-label="Final signup form">
-                <div class="form-group">
-                    <input
-                        type="email"
-                        id="footer-email"
-                        name="email"
-                        placeholder="Your email"
-                        required
-                        autocomplete="email"
-                        aria-label="Email address"
-                    >
-                    <button type="submit" class="btn-cta">Start Hosting Now</button>
-                </div>
-                <div id="footer-message" class="message" role="alert" aria-live="polite"></div>
-            </form>
-
-            <div class="cta-secondary">
-                <a href="#pricing" class="btn-secondary-light">View Pricing</a>
+            <div class="cta-buttons">
+                <a href="#hero" class="btn-cta-large">Start Hosting Now</a>
+                <a href="#pricing" class="btn-secondary-large">View Pricing</a>
             </div>
         </div>
     </section>
@@ -462,67 +427,5 @@
             </div>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script>
-    var supabase = window.supabase.createClient(
-        'https://ldabzqoxgogwxixicpml.supabase.co',
-        'sb_publishable_262uXsz-j2gr1HZA_1ukSA_m2Z1_Q39'
-    );
-
-    function handleFormSubmit(formId, emailId, messageId) {
-        document.getElementById(formId).addEventListener('submit', async function(e) {
-            e.preventDefault();
-            var email = document.getElementById(emailId).value.trim().toLowerCase();
-            var btn = e.target.querySelector('button[type="submit"]');
-            var msg = document.getElementById(messageId);
-
-            if (!email) { msg.textContent = 'Please enter your email'; msg.className = 'message error show'; return; }
-
-            // Validate email format
-            var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-            if (!emailRegex.test(email)) {
-                // Find invalid characters
-                var validChars = /[a-zA-Z0-9._%+-@-]/g;
-                var invalidChars = email.replace(validChars, '').split('').filter(function(v, i, a) { return a.indexOf(v) === i; });
-                if (invalidChars.length > 0) {
-                    msg.textContent = 'Invalid character(s): ' + invalidChars.join(', ');
-                } else {
-                    msg.textContent = 'Please enter a valid email address';
-                }
-                msg.className = 'message error show';
-                return;
-            }
-
-            var originalText = btn.textContent;
-            btn.disabled = true;
-            btn.textContent = 'Joining...';
-
-            try {
-                var result = await supabase.from('waitlist').insert([{ email: email }]);
-                if (result.error) {
-                    // Handle duplicate email error
-                    if (result.error.code === '23505' || result.error.message.includes('duplicate key')) {
-                        msg.textContent = 'This email is already on the waitlist!';
-                    } else {
-                        msg.textContent = 'Something went wrong. Please try again.';
-                    }
-                    msg.className = 'message error show';
-                } else {
-                    window.location.href = 'thanks.html';
-                }
-            } catch(err) {
-                msg.textContent = 'Something went wrong. Please try again.';
-                msg.className = 'message error show';
-            }
-            btn.disabled = false;
-            btn.textContent = originalText;
-        });
-    }
-
-    // Attach handlers to both forms
-    handleFormSubmit('hero-form', 'hero-email', 'hero-message');
-    handleFormSubmit('footer-form', 'footer-email', 'footer-message');
-    </script>
 </body>
 </html>

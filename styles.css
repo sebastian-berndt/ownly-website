@@ -275,9 +275,7 @@ p {
 }
 
 .hero-visual-placeholder {
-    border: 2px solid rgba(255, 255, 255, 0.1);
     overflow: hidden;
-    background: #FFFFFF;
     border-radius: 8px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
@@ -360,6 +358,55 @@ input[type="email"]::placeholder {
     font-size: 3rem;
 }
 
+.cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn-cta-large {
+    padding: 18px 40px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-text-dark);
+    background-color: var(--color-accent);
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.btn-cta-large:hover {
+    background-color: var(--color-accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 130, 0, 0.35);
+}
+
+.btn-secondary-large {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 40px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-text-light);
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.btn-secondary-large:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
 /* MESSAGES */
 .message {
     margin-top: 16px;
@@ -384,9 +431,7 @@ input[type="email"]::placeholder {
 
 /* PROVIDERS BANNER */
 .providers-banner {
-    background-color: var(--color-bg-white);
     padding: 64px 0;
-    border-bottom: 1px solid var(--color-border);
 }
 
 .providers-label {
@@ -554,10 +599,9 @@ input[type="email"]::placeholder {
 
 .visual-placeholder {
     width: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     overflow: hidden;
-    background: #F8FAFC;
+    background: transparent;
 }
 
 .visual-placeholder img {
