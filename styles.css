@@ -1235,3 +1235,343 @@ input[type="email"]::placeholder {
         padding: 16px 16px 16px 50px;
     }
 }
+
+/* =========================================
+   ABOUT PAGE
+   ========================================= */
+
+/* About Hero */
+.about-hero {
+    padding: 100px 0 80px;
+    text-align: center;
+}
+
+.about-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--color-text-light);
+    margin-bottom: 24px;
+}
+
+.about-hero-subtitle {
+    font-size: 1.375rem;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+    margin: 0;
+}
+
+/* Our Story Section */
+.about-story {
+    display: grid;
+    grid-template-columns: 559fr 561fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.about-story-content {
+    /* Content column */
+}
+
+.section-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background: rgba(255, 130, 0, 0.1);
+    color: var(--color-accent);
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.about-story-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-text-light);
+    margin-bottom: 24px;
+}
+
+.about-story-text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    margin-bottom: 20px;
+}
+
+.about-story-text:last-child {
+    margin-bottom: 0;
+}
+
+.about-story-visual {
+    /* Visual column */
+}
+
+/* Core Values Section */
+.about-values-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 64px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+
+.value-card {
+    background: #071226;
+    padding: 32px 24px;
+    border-radius: 6px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.value-icon {
+    width: 56px;
+    height: 56px;
+    background: rgba(255, 130, 0, 0.1);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.value-icon svg {
+    flex-shrink: 0;
+}
+
+.value-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-text-light);
+    margin-bottom: 12px;
+}
+
+.value-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+    margin: 0;
+}
+
+/* Team Section */
+.about-team-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 64px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 240px;
+}
+
+.team-member-photo {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 20px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.team-member-photo svg {
+    display: block;
+}
+
+.team-member-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-text-light);
+    margin-bottom: 6px;
+}
+
+.team-member-role {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    margin: 0;
+}
+
+/* CTA Section Variant */
+.section-cta-dark {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.cta-title-alt {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-text-light);
+    margin-bottom: 20px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.btn-secondary-large {
+    padding: 18px 36px;
+    background: transparent;
+    color: var(--color-text-light);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.btn-secondary-large:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* =========================================
+   ABOUT PAGE - RESPONSIVE
+   ========================================= */
+
+@media (max-width: 1024px) {
+    .about-hero-title {
+        font-size: 2.75rem;
+    }
+
+    .about-story {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .about-story-visual {
+        order: -1;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta-title-alt {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 80px 0 60px;
+    }
+
+    .about-hero-title {
+        font-size: 2.25rem;
+    }
+
+    .about-hero-subtitle {
+        font-size: 1.125rem;
+    }
+
+    .about-story-title {
+        font-size: 2rem;
+    }
+
+    .about-story-text {
+        font-size: 1rem;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .cta-title-alt {
+        font-size: 2rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-secondary-large {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero-title {
+        font-size: 1.875rem;
+    }
+
+    .about-hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .about-story-title {
+        font-size: 1.75rem;
+    }
+
+    .value-card {
+        padding: 24px 20px;
+    }
+
+    .cta-title-alt {
+        font-size: 1.75rem;
+    }
+}
+
+/* =========================================
+   MARKETPLACE - EMPTY STATE
+   ========================================= */
+
+.marketplace-empty-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.marketplace-empty-state svg {
+    margin: 0 auto 24px;
+    opacity: 0.5;
+}
+
+.marketplace-empty-state h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-text-light);
+    margin: 0 0 12px 0;
+}
+
+.marketplace-empty-state p {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    margin: 0;
+    max-width: 400px;
+    margin: 0 auto;
+}

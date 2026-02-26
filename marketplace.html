@@ -7,6 +7,7 @@
     <meta name="description" content="Discover, deploy, and manage powerful open-source software with a single click. Browse 100+ applications for your self-hosted infrastructure.">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>">
+    <script src="marketplace.js" defer></script>
 </head>
 <body>
     <!-- NAVIGATION -->
@@ -99,7 +100,11 @@
             </div>
 
             <div class="app-grid-featured">
-                <article class="app-card-featured">
+                <article class="app-card-featured"
+                         data-category="productivity"
+                         data-name="nextcloud"
+                         data-author="nextcloud gmbh"
+                         data-description="safe home for all your data access share protect files calendars contacts communication enterprise">
                     <div class="app-icon-large">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
                             <rect width="40" height="40" rx="8" fill="#0082C9"/>
@@ -112,28 +117,15 @@
                                 <p class="app-author">by Nextcloud GmbH</p>
                                 <p class="app-description">A safe home for all your data. Access, share and protect your files, calendars, contacts, communication & more at home and in your enterprise.</p>
                             </div>
-                            <div class="app-card-footer">
-                                <div class="app-stats">
-                                    <div class="app-stat">
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                            <path d="M2 6L8 2L14 6L8 10L2 6Z" stroke="#9FB0C8" stroke-width="1.5"/>
-                                        </svg>
-                                        <span>45k+</span>
-                                    </div>
-                                    <div class="app-stat">
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                            <path d="M8 2L10 6L14 6.5L11 9.5L11.5 14L8 12L4.5 14L5 9.5L2 6.5L6 6L8 2Z" fill="#9FB0C8"/>
-                                        </svg>
-                                        <span>4.9</span>
-                                    </div>
-                                </div>
-                                <button class="btn-deploy">Deploy Now</button>
-                            </div>
                         </div>
                     </div>
                 </article>
 
-                <article class="app-card-featured">
+                <article class="app-card-featured"
+                         data-category="databases"
+                         data-name="supabase"
+                         data-author="supabase inc"
+                         data-description="open source firebase alternative build weekend scale millions postgres database authentication instant apis edge functions">
                     <div class="app-icon-large">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
                             <rect width="40" height="40" rx="8" fill="#3ECF8E"/>
@@ -145,23 +137,6 @@
                                 <h3 class="app-name">Supabase</h3>
                                 <p class="app-author">by Supabase Inc</p>
                                 <p class="app-description">The open source Firebase alternative. Build in a weekend, scale to millions. Postgres database, Authentication, instant APIs, Edge Functions.</p>
-                            </div>
-                            <div class="app-card-footer">
-                                <div class="app-stats">
-                                    <div class="app-stat">
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                            <path d="M2 6L8 2L14 6L8 10L2 6Z" stroke="#9FB0C8" stroke-width="1.5"/>
-                                        </svg>
-                                        <span>32k+</span>
-                                    </div>
-                                    <div class="app-stat">
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                            <path d="M8 2L10 6L14 6.5L11 9.5L11.5 14L8 12L4.5 14L5 9.5L2 6.5L6 6L8 2Z" fill="#9FB0C8"/>
-                                        </svg>
-                                        <span>4.9</span>
-                                    </div>
-                                </div>
-                                <button class="btn-deploy">Deploy Now</button>
                             </div>
                         </div>
                     </div>
@@ -185,7 +160,11 @@
 
             <div class="app-grid">
                 <!-- Ghost -->
-                <article class="app-card">
+                <article class="app-card"
+                         data-category="cms-blogs"
+                         data-name="ghost"
+                         data-author="ghost foundation"
+                         data-description="turn audience business publishing memberships subscriptions newsletters modern alternative medium substack">
                     <div class="app-card-top">
                         <div class="app-header">
                             <div class="app-icon">
@@ -200,27 +179,14 @@
                         </div>
                         <p class="app-description">Turn your audience into a business. Publishing, memberships, subscriptions and newsletters. The modern alternative to Medium and Substack.</p>
                     </div>
-                    <div class="app-card-bottom">
-                        <div class="app-stats">
-                            <div class="app-stat">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M2 6L8 2L14 6L8 10L2 6Z" stroke="#9FB0C8" stroke-width="1.5"/>
-                                </svg>
-                                <span>28k+</span>
-                            </div>
-                            <div class="app-stat">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M8 2L10 6L14 6.5L11 9.5L11.5 14L8 12L4.5 14L5 9.5L2 6.5L6 6L8 2Z" fill="#9FB0C8"/>
-                                </svg>
-                                <span>4.8</span>
-                            </div>
-                        </div>
-                        <button class="btn-deploy-small">Deploy</button>
-                    </div>
                 </article>
 
                 <!-- WordPress -->
-                <article class="app-card">
+                <article class="app-card"
+                         data-category="cms-blogs"
+                         data-name="wordpress"
+                         data-author="automattic"
+                         data-description="create beautiful website blog app open source software anything imagine">
                     <div class="app-card-top">
                         <div class="app-header">
                             <div class="app-icon">
@@ -235,27 +201,14 @@
                         </div>
                         <p class="app-description">Create a beautiful website, blog, or app. WordPress is open source software you can use to create anything you can imagine.</p>
                     </div>
-                    <div class="app-card-bottom">
-                        <div class="app-stats">
-                            <div class="app-stat">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M2 6L8 2L14 6L8 10L2 6Z" stroke="#9FB0C8" stroke-width="1.5"/>
-                                </svg>
-                                <span>120k+</span>
-                            </div>
-                            <div class="app-stat">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M8 2L10 6L14 6.5L11 9.5L11.5 14L8 12L4.5 14L5 9.5L2 6.5L6 6L8 2Z" fill="#9FB0C8"/>
-                                </svg>
-                                <span>4.7</span>
-                            </div>
-                        </div>
-                        <button class="btn-deploy-small">Deploy</button>
-                    </div>
                 </article>
 
                 <!-- Plausible -->
-                <article class="app-card">
+                <article class="app-card"
+                         data-category="analytics"
+                         data-name="plausible"
+                         data-author="plausible insights"
+                         data-description="simple privacy friendly google analytics alternative lightweight open source web analytics tool no cookies gdpr compliant">
                     <div class="app-card-top">
                         <div class="app-header">
                             <div class="app-icon">
@@ -270,27 +223,14 @@
                         </div>
                         <p class="app-description">Simple and privacy-friendly Google Analytics alternative. Lightweight, open-source web analytics tool with no cookies and fully compliant with GDPR.</p>
                     </div>
-                    <div class="app-card-bottom">
-                        <div class="app-stats">
-                            <div class="app-stat">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M2 6L8 2L14 6L8 10L2 6Z" stroke="#9FB0C8" stroke-width="1.5"/>
-                                </svg>
-                                <span>18k+</span>
-                            </div>
-                            <div class="app-stat">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M8 2L10 6L14 6.5L11 9.5L11.5 14L8 12L4.5 14L5 9.5L2 6.5L6 6L8 2Z" fill="#9FB0C8"/>
-                                </svg>
-                                <span>4.9</span>
-                            </div>
-                        </div>
-                        <button class="btn-deploy-small">Deploy</button>
-                    </div>
                 </article>
 
                 <!-- Gitea -->
-                <article class="app-card">
+                <article class="app-card"
+                         data-category="developer-tools"
+                         data-name="gitea"
+                         data-author="gitea community"
+                         data-description="git cup tea painless self hosted service lightweight code hosting solution written go">
                     <div class="app-card-top">
                         <div class="app-header">
                             <div class="app-icon">
@@ -305,27 +245,14 @@
                         </div>
                         <p class="app-description">Git with a cup of tea. A painless self-hosted Git service that provides a lightweight code hosting solution written in Go.</p>
                     </div>
-                    <div class="app-card-bottom">
-                        <div class="app-stats">
-                            <div class="app-stat">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M2 6L8 2L14 6L8 10L2 6Z" stroke="#9FB0C8" stroke-width="1.5"/>
-                                </svg>
-                                <span>24k+</span>
-                            </div>
-                            <div class="app-stat">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M8 2L10 6L14 6.5L11 9.5L11.5 14L8 12L4.5 14L5 9.5L2 6.5L6 6L8 2Z" fill="#9FB0C8"/>
-                                </svg>
-                                <span>4.8</span>
-                            </div>
-                        </div>
-                        <button class="btn-deploy-small">Deploy</button>
-                    </div>
                 </article>
 
                 <!-- Vaultwarden -->
-                <article class="app-card">
+                <article class="app-card"
+                         data-category="security"
+                         data-name="vaultwarden"
+                         data-author="dani garcia"
+                         data-description="unofficial bitwarden compatible server written rust perfect self hosted deployments password manager">
                     <div class="app-card-top">
                         <div class="app-header">
                             <div class="app-icon">
@@ -340,27 +267,14 @@
                         </div>
                         <p class="app-description">Unofficial Bitwarden compatible server written in Rust, perfect for self-hosted deployments where running the official resource-heavy service might not be ideal.</p>
                     </div>
-                    <div class="app-card-bottom">
-                        <div class="app-stats">
-                            <div class="app-stat">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M2 6L8 2L14 6L8 10L2 6Z" stroke="#9FB0C8" stroke-width="1.5"/>
-                                </svg>
-                                <span>41k+</span>
-                            </div>
-                            <div class="app-stat">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M8 2L10 6L14 6.5L11 9.5L11.5 14L8 12L4.5 14L5 9.5L2 6.5L6 6L8 2Z" fill="#9FB0C8"/>
-                                </svg>
-                                <span>4.9</span>
-                            </div>
-                        </div>
-                        <button class="btn-deploy-small">Deploy</button>
-                    </div>
                 </article>
 
                 <!-- Uptime Kuma -->
-                <article class="app-card">
+                <article class="app-card"
+                         data-category="developer-tools"
+                         data-name="uptime kuma"
+                         data-author="louis lam"
+                         data-description="fancy self hosted monitoring tool monitor http ping port dns record docker containers dashboard">
                     <div class="app-card-top">
                         <div class="app-header">
                             <div class="app-icon">
@@ -375,27 +289,14 @@
                         </div>
                         <p class="app-description">A fancy self-hosted monitoring tool. Monitor HTTP(s), Ping, Port, DNS Record, Docker containers and more with a beautiful dashboard.</p>
                     </div>
-                    <div class="app-card-bottom">
-                        <div class="app-stats">
-                            <div class="app-stat">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M2 6L8 2L14 6L8 10L2 6Z" stroke="#9FB0C8" stroke-width="1.5"/>
-                                </svg>
-                                <span>35k+</span>
-                            </div>
-                            <div class="app-stat">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M8 2L10 6L14 6.5L11 9.5L11.5 14L8 12L4.5 14L5 9.5L2 6.5L6 6L8 2Z" fill="#9FB0C8"/>
-                                </svg>
-                                <span>4.9</span>
-                            </div>
-                        </div>
-                        <button class="btn-deploy-small">Deploy</button>
-                    </div>
                 </article>
 
                 <!-- Discourse -->
-                <article class="app-card">
+                <article class="app-card"
+                         data-category="productivity"
+                         data-name="discourse"
+                         data-author="civilized discourse"
+                         data-description="open source discussion platform built next decade internet mailing list forum chat room">
                     <div class="app-card-top">
                         <div class="app-header">
                             <div class="app-icon">
@@ -410,27 +311,14 @@
                         </div>
                         <p class="app-description">The 100% open source discussion platform built for the next decade of the Internet. Use it as a mailing list, discussion forum, or long-form chat room.</p>
                     </div>
-                    <div class="app-card-bottom">
-                        <div class="app-stats">
-                            <div class="app-stat">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M2 6L8 2L14 6L8 10L2 6Z" stroke="#9FB0C8" stroke-width="1.5"/>
-                                </svg>
-                                <span>19k+</span>
-                            </div>
-                            <div class="app-stat">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M8 2L10 6L14 6.5L11 9.5L11.5 14L8 12L4.5 14L5 9.5L2 6.5L6 6L8 2Z" fill="#9FB0C8"/>
-                                </svg>
-                                <span>4.7</span>
-                            </div>
-                        </div>
-                        <button class="btn-deploy-small">Deploy</button>
-                    </div>
                 </article>
 
                 <!-- MinIO -->
-                <article class="app-card">
+                <article class="app-card"
+                         data-category="databases"
+                         data-name="minio"
+                         data-author="minio inc"
+                         data-description="high performance s3 compatible object storage built large scale ai ml data lake database workloads reliability">
                     <div class="app-card-top">
                         <div class="app-header">
                             <div class="app-icon">
@@ -445,27 +333,14 @@
                         </div>
                         <p class="app-description">High-performance, S3 compatible object storage. Built for large scale AI/ML, data lake and database workloads with ultimate reliability.</p>
                     </div>
-                    <div class="app-card-bottom">
-                        <div class="app-stats">
-                            <div class="app-stat">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M2 6L8 2L14 6L8 10L2 6Z" stroke="#9FB0C8" stroke-width="1.5"/>
-                                </svg>
-                                <span>52k+</span>
-                            </div>
-                            <div class="app-stat">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M8 2L10 6L14 6.5L11 9.5L11.5 14L8 12L4.5 14L5 9.5L2 6.5L6 6L8 2Z" fill="#9FB0C8"/>
-                                </svg>
-                                <span>4.9</span>
-                            </div>
-                        </div>
-                        <button class="btn-deploy-small">Deploy</button>
-                    </div>
                 </article>
 
                 <!-- Outline -->
-                <article class="app-card">
+                <article class="app-card"
+                         data-category="productivity"
+                         data-name="outline"
+                         data-author="general outline"
+                         data-description="fastest wiki knowledge base growing teams beautiful feature rich markdown compatible organize team">
                     <div class="app-card-top">
                         <div class="app-header">
                             <div class="app-icon">
@@ -479,23 +354,6 @@
                             </div>
                         </div>
                         <p class="app-description">The fastest wiki and knowledge base for growing teams. Beautiful, feature rich, and markdown compatible. Organize your team's knowledge.</p>
-                    </div>
-                    <div class="app-card-bottom">
-                        <div class="app-stats">
-                            <div class="app-stat">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M2 6L8 2L14 6L8 10L2 6Z" stroke="#9FB0C8" stroke-width="1.5"/>
-                                </svg>
-                                <span>15k+</span>
-                            </div>
-                            <div class="app-stat">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                    <path d="M8 2L10 6L14 6.5L11 9.5L11.5 14L8 12L4.5 14L5 9.5L2 6.5L6 6L8 2Z" fill="#9FB0C8"/>
-                                </svg>
-                                <span>4.8</span>
-                            </div>
-                        </div>
-                        <button class="btn-deploy-small">Deploy</button>
                     </div>
                 </article>
             </div>
