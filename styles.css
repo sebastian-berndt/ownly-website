@@ -195,7 +195,6 @@ p {
     font-size: 1.0625rem;
     text-align: center;
     margin-bottom: 3.5rem;
-    opacity: 0.85;
     max-width: 660px;
     margin-left: auto;
     margin-right: auto;
@@ -711,6 +710,7 @@ input[type="email"]::placeholder {
 .footer-socials {
     display: flex;
     gap: 16px;
+    margin-top: 24px;
 }
 
 .social-link {
