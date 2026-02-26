@@ -7,21 +7,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 :root {
-    --color-bg-white: #FFFFFF;
-    --color-bg-light: #F0F1F5;
-    --color-bg-dark: #050816;
-    --color-bg-darker: #020617;
-    --color-bg-card: #0B1120;
-    --color-text-dark: #111827;
-    --color-text-light: #E5F0FF;
-    --color-text-muted: #6F7895;
-    --color-text-muted-light: #9CA3AF;
-    --color-accent: #FF8200;
-    --color-accent-hover: #E07300;
-    --color-success: #16A34A;
-    --color-error: #DC2626;
-    --color-error-bg: #FEE2E2;
-    --color-border: #E5E7EB;
+    /* ===== OWNLY PREMIUM TECH COLOR SYSTEM ===== */
+
+    /* ─────────────────────────────────────────────────────── */
+    /* PRIMARY COLORS - Main brand identity                     */
+    /* ─────────────────────────────────────────────────────── */
+    --primary: #FF8533;              /* Primary CTA - warm orange */
+    --primary-hover: #E67300;        /* Primary hover state */
+    --primary-light: #FFB366;        /* Primary light variant */
+    --on-primary: #0D111C;           /* Text on primary (dark) */
+
+    /* ─────────────────────────────────────────────────────── */
+    /* SECONDARY COLORS - Supporting brand colors              */
+    /* ─────────────────────────────────────────────────────── */
+    --secondary: #3B82F6;            /* Trust blue for links/info */
+    --secondary-hover: #2563EB;      /* Secondary hover state */
+    --on-secondary: #FFFFFF;         /* Text on secondary (white) */
+
+    /* ─────────────────────────────────────────────────────── */
+    /* BACKGROUND COLORS - Surface layers                      */
+    /* ─────────────────────────────────────────────────────── */
+    --background: #0A1128;           /* Main background (deep blue) */
+    --background-elevated: #0F1A35;  /* Elevated surfaces (richer blue) */
+    --background-overlay: #152340;   /* Overlay/alternate sections (vibrant blue) */
+    --background-deep: #060F20;      /* Deepest background (deep ocean) */
+
+    /* Light theme backgrounds */
+    --background-light: #FFFFFF;     /* Light theme main */
+    --surface-light: #F0F1F5;        /* Light theme surface */
+
+    /* ─────────────────────────────────────────────────────── */
+    /* TEXT COLORS - Typography hierarchy                      */
+    /* ─────────────────────────────────────────────────────── */
+    --text-primary: #F5F7FA;         /* Primary text on dark */
+    --text-secondary: #A8B0C4;       /* Secondary text on dark */
+    --text-tertiary: #8B93A7;        /* Tertiary/muted text */
+    --text-placeholder: #9CA3AF;     /* Placeholder text */
+
+    /* Light theme text */
+    --text-primary-light: #111827;   /* Primary text on light */
+    --text-secondary-light: #6B7280; /* Secondary text on light */
+
+    /* ─────────────────────────────────────────────────────── */
+    /* SEMANTIC COLORS - States and feedback                   */
+    /* ─────────────────────────────────────────────────────── */
+    --success: #10B981;              /* Success state (green) */
+    --success-bg: #D1FAE5;           /* Success background */
+    --on-success: #FFFFFF;           /* Text on success */
+
+    --error: #DC2626;                /* Error state (red) */
+    --error-bg: #FEE2E2;             /* Error background */
+    --on-error: #FFFFFF;             /* Text on error */
+
+    --warning: #F59E0B;              /* Warning state (amber) */
+    --warning-bg: #FEF3C7;           /* Warning background */
+    --on-warning: #78350F;           /* Text on warning */
+
+    --info: #3B82F6;                 /* Info state (blue) */
+    --info-bg: #DBEAFE;              /* Info background */
+    --on-info: #FFFFFF;              /* Text on info */
+
+    /* ─────────────────────────────────────────────────────── */
+    /* BORDER COLORS - Outlines and dividers                   */
+    /* ─────────────────────────────────────────────────────── */
+    --border: rgba(139, 147, 167, 0.15);      /* Default border */
+    --border-strong: rgba(139, 147, 167, 0.25); /* Emphasized border */
+    --border-light: #E5E7EB;                   /* Light theme border */
+
+    /* ─────────────────────────────────────────────────────── */
+    /* OVERLAY COLORS - Hover states and effects               */
+    /* ─────────────────────────────────────────────────────── */
+    --overlay-primary: rgba(255, 133, 51, 0.08);  /* Primary overlay (8%) */
+    --overlay-primary-strong: rgba(255, 133, 51, 0.15); /* Strong primary overlay (15%) */
+    --overlay-white: rgba(255, 255, 255, 0.05);   /* White overlay (5%) */
+    --overlay-white-medium: rgba(255, 255, 255, 0.1); /* Medium white overlay (10%) */
+
+    /* ─────────────────────────────────────────────────────── */
+    /* SHADOW COLORS - Elevation and depth                     */
+    /* ─────────────────────────────────────────────────────── */
+    --shadow-sm: rgba(0, 0, 0, 0.1);          /* Small shadow */
+    --shadow-md: rgba(0, 0, 0, 0.2);          /* Medium shadow */
+    --shadow-lg: rgba(0, 0, 0, 0.5);          /* Large shadow */
+    --shadow-primary: rgba(255, 130, 0, 0.35); /* Primary glow shadow */
+    --shadow-primary-sm: rgba(255, 130, 0, 0.1); /* Small primary glow */
+
+    /* ─────────────────────────────────────────────────────── */
+    /* OPACITY VARIANTS - Transparent colors                   */
+    /* ─────────────────────────────────────────────────────── */
+    --white-90: rgba(255, 255, 255, 0.9);     /* 90% white */
+    --white-95: rgba(255, 255, 255, 0.95);    /* 95% white */
+    --black-50: rgba(0, 0, 0, 0.5);           /* 50% black */
+
+    /* ─────────────────────────────────────────────────────── */
+    /* COMPONENT SPECIFIC - Special use cases                  */
+    /* ─────────────────────────────────────────────────────── */
+    --icon-bg-primary: rgba(255, 133, 51, 0.25); /* Icon background (25% primary) */
+    --badge-bg-primary: rgba(255, 130, 0, 0.1);  /* Badge background (10% primary) */
+    --input-bg: rgba(255, 255, 255, 0.95);       /* Input background */
+    --button-text-on-light: #071018;             /* Button text on light surfaces */
 }
 
 html {
@@ -30,7 +113,7 @@ html {
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    color: var(--color-text-dark);
+    color: var(--text-primary-light);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -54,12 +137,12 @@ p {
 
 /* NAVIGATION */
 .navbar {
-    background-color: var(--color-bg-dark);
+    background-color: var(--background);
     padding: 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid var(--border);
 }
 
 .navbar-content {
@@ -76,7 +159,7 @@ p {
     gap: 12px;
     font-size: 1.25rem;
     font-weight: 700;
-    color: var(--color-text-light);
+    color: var(--text-primary);
 }
 
 .brand-name {
@@ -90,7 +173,7 @@ p {
 }
 
 .navbar-links a {
-    color: var(--color-text-muted-light);
+    color: var(--text-secondary);
     text-decoration: none;
     font-size: 0.9375rem;
     font-weight: 500;
@@ -98,7 +181,7 @@ p {
 }
 
 .navbar-links a:hover {
-    color: var(--color-text-light);
+    color: var(--text-primary);
 }
 
 .navbar-actions {
@@ -108,7 +191,7 @@ p {
 }
 
 .btn-link {
-    color: var(--color-text-light);
+    color: var(--text-primary);
     text-decoration: none;
     font-size: 0.9375rem;
     font-weight: 500;
@@ -123,8 +206,8 @@ p {
     padding: 10px 20px;
     font-size: 0.9375rem;
     font-weight: 600;
-    color: var(--color-text-dark);
-    background-color: var(--color-accent);
+    color: var(--on-primary);
+    background-color: var(--primary);
     border: none;
     border-radius: 6px;
     text-decoration: none;
@@ -134,7 +217,7 @@ p {
 }
 
 .btn-primary-small:hover {
-    background-color: var(--color-accent-hover);
+    background-color: var(--primary-hover);
     transform: translateY(-1px);
 }
 
@@ -144,42 +227,42 @@ p {
 }
 
 .section-light {
-    background-color: var(--color-bg-light);
+    background-color: var(--surface-light);
 }
 
 .section-white {
-    background-color: var(--color-bg-white);
+    background-color: var(--background-light);
 }
 
 .section-dark {
-    background-color: var(--color-bg-dark);
-    color: var(--color-text-light);
+    background-color: var(--background);
+    color: var(--text-primary);
 }
 
 .section-dark-alt {
-    background-color: #0A0F1E;
-    color: var(--color-text-light);
+    background-color: var(--background-overlay);
+    color: var(--text-primary);
 }
 
 .section-dark-alt .section-intro {
-    color: var(--color-text-light);
+    color: var(--text-primary);
 }
 
 .section-dark-alt .feature-card p {
-    color: var(--color-text-light);
+    color: var(--text-primary);
 }
 
 .section-dark-alt .feature-spotlight-description {
-    color: var(--color-text-muted-light);
+    color: var(--text-secondary);
 }
 
 .section-dark-alt .feature-checklist li {
-    color: var(--color-text-light);
+    color: var(--text-primary);
 }
 
 .section-cta {
-    background: linear-gradient(135deg, #0B1120 0%, #050816 100%);
-    color: var(--color-text-light);
+    background: linear-gradient(135deg, var(--background-overlay) 0%, var(--background) 100%);
+    color: var(--text-primary);
 }
 
 .section-title {
@@ -198,18 +281,18 @@ p {
     max-width: 660px;
     margin-left: auto;
     margin-right: auto;
-    color: var(--color-text-muted-light);
+    color: var(--text-secondary);
     line-height: 1.65;
 }
 
 .section-dark .section-intro {
-    color: var(--color-text-muted-light);
+    color: var(--text-secondary);
 }
 
 /* HERO SECTION */
 .hero {
-    background: var(--color-bg-dark);
-    color: var(--color-text-light);
+    background: var(--background);
+    color: var(--text-primary);
     padding: 80px 0 100px;
     text-align: center;
 }
@@ -218,8 +301,8 @@ p {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: var(--color-bg-card);
-    color: var(--color-text-light);
+    background: var(--background-elevated);
+    color: var(--text-primary);
     padding: 8px 16px;
     font-size: 0.875rem;
     font-weight: 500;
@@ -242,7 +325,7 @@ p {
     margin-left: auto;
     margin-right: auto;
     line-height: 1.6;
-    color: var(--color-text-light);
+    color: var(--text-primary);
 }
 
 .hero-secondary-cta {
@@ -256,16 +339,16 @@ p {
     padding: 12px 24px;
     font-size: 1rem;
     font-weight: 500;
-    color: var(--color-text-light);
+    color: var(--text-primary);
     background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--border);
     cursor: pointer;
     transition: all 0.2s;
 }
 
 .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.3);
+    background: var(--overlay-primary);
+    border-color: var(--border-strong);
 }
 
 .btn-secondary-light {
@@ -275,17 +358,17 @@ p {
     padding: 12px 32px;
     font-size: 1rem;
     font-weight: 500;
-    color: var(--color-text-light);
+    color: var(--text-primary);
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid var(--border-strong);
     text-decoration: none;
     cursor: pointer;
     transition: all 0.2s;
 }
 
 .btn-secondary-light:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.5);
+    background: var(--overlay-primary);
+    border-color: var(--primary-light);
 }
 
 .hero-visual {
@@ -298,7 +381,7 @@ p {
 .hero-visual-placeholder {
     overflow: hidden;
     border-radius: 6px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 60px var(--shadow-lg);
 }
 
 .hero-visual-placeholder img {
@@ -324,30 +407,30 @@ input[type="email"] {
     max-width: 400px;
     padding: 16px 20px;
     font-size: 1rem;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    background: rgba(255, 255, 255, 0.95);
-    color: var(--color-text-dark);
+    border: 2px solid var(--border);
+    background: var(--input-bg);
+    color: var(--text-primary-light);
     outline: none;
     transition: all 0.2s;
     font-family: inherit;
 }
 
 input[type="email"]:focus {
-    border-color: var(--color-accent);
-    background: var(--color-bg-white);
-    box-shadow: 0 0 0 4px rgba(255, 130, 0, 0.1);
+    border-color: var(--primary);
+    background: var(--background-light);
+    box-shadow: 0 0 0 4px var(--shadow-primary-sm);
 }
 
 input[type="email"]::placeholder {
-    color: #9CA3AF;
+    color: var(--text-placeholder);
 }
 
 .btn-cta {
     padding: 16px 32px;
     font-size: 1rem;
     font-weight: 600;
-    color: var(--color-text-dark);
-    background-color: var(--color-accent);
+    color: var(--on-primary);
+    background-color: var(--primary);
     border: none;
     cursor: pointer;
     transition: all 0.2s;
@@ -355,9 +438,9 @@ input[type="email"]::placeholder {
 }
 
 .btn-cta:hover {
-    background-color: var(--color-accent-hover);
+    background-color: var(--primary-hover);
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(255, 130, 0, 0.35);
+    box-shadow: 0 8px 20px var(--shadow-primary);
 }
 
 .btn-cta:active {
@@ -391,8 +474,8 @@ input[type="email"]::placeholder {
     padding: 18px 40px;
     font-size: 1.125rem;
     font-weight: 600;
-    color: var(--color-text-dark);
-    background-color: var(--color-accent);
+    color: var(--on-primary);
+    background-color: var(--primary);
     border: none;
     border-radius: 6px;
     text-decoration: none;
@@ -403,9 +486,9 @@ input[type="email"]::placeholder {
 }
 
 .btn-cta-large:hover {
-    background-color: var(--color-accent-hover);
+    background-color: var(--primary-hover);
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(255, 130, 0, 0.35);
+    box-shadow: 0 8px 20px var(--shadow-primary);
 }
 
 .btn-secondary-large {
@@ -415,9 +498,9 @@ input[type="email"]::placeholder {
     padding: 16px 40px;
     font-size: 1.125rem;
     font-weight: 600;
-    color: var(--color-text-light);
+    color: var(--text-primary);
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid var(--border-strong);
     border-radius: 6px;
     text-decoration: none;
     cursor: pointer;
@@ -426,8 +509,8 @@ input[type="email"]::placeholder {
 }
 
 .btn-secondary-large:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.5);
+    background: var(--overlay-primary);
+    border-color: var(--primary-light);
 }
 
 /* MESSAGES */
@@ -447,9 +530,9 @@ input[type="email"]::placeholder {
 }
 
 .message.error {
-    background-color: var(--color-error-bg);
-    color: var(--color-error);
-    border: 1px solid var(--color-error);
+    background-color: var(--error-bg);
+    color: var(--error);
+    border: 1px solid var(--error);
 }
 
 /* PROVIDERS BANNER */
@@ -460,7 +543,7 @@ input[type="email"]::placeholder {
 .providers-label {
     text-align: center;
     font-size: 0.9375rem;
-    color: var(--color-text-light);
+    color: var(--text-primary);
     margin-bottom: 32px;
     font-weight: 500;
 }
@@ -479,7 +562,7 @@ input[type="email"]::placeholder {
     gap: 12px;
     font-size: 1rem;
     font-weight: 600;
-    color: var(--color-text-light);
+    color: var(--text-primary);
 }
 
 /* FEATURES GRID */
@@ -492,9 +575,9 @@ input[type="email"]::placeholder {
 }
 
 .feature-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--overlay-primary);
     padding: 40px 32px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border);
     text-align: center;
     border-radius: 6px;
 }
@@ -502,7 +585,7 @@ input[type="email"]::placeholder {
 .feature-icon {
     width: 56px;
     height: 56px;
-    background: rgba(255, 130, 0, 0.25);
+    background: var(--icon-bg-primary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -514,12 +597,12 @@ input[type="email"]::placeholder {
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 12px;
-    color: var(--color-text-light);
+    color: var(--text-primary);
 }
 
 .feature-card p {
     font-size: 0.9375rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--white-90);
     line-height: 1.7;
 }
 
@@ -543,8 +626,8 @@ input[type="email"]::placeholder {
 
 .feature-badge {
     display: inline-block;
-    background: var(--color-bg-card);
-    color: var(--color-text-light);
+    background: var(--background-elevated);
+    color: var(--text-primary);
     padding: 6px 12px;
     font-size: 0.875rem;
     font-weight: 600;
@@ -552,7 +635,7 @@ input[type="email"]::placeholder {
 }
 
 .section-dark .feature-badge {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--overlay-primary);
 }
 
 .feature-spotlight-title {
@@ -564,13 +647,13 @@ input[type="email"]::placeholder {
 
 .feature-spotlight-description {
     font-size: 1.125rem;
-    color: var(--color-text-muted);
+    color: var(--text-tertiary);
     margin-bottom: 32px;
     line-height: 1.6;
 }
 
 .section-dark .feature-spotlight-description {
-    color: var(--color-text-muted-light);
+    color: var(--text-secondary);
 }
 
 .feature-checklist {
@@ -586,11 +669,11 @@ input[type="email"]::placeholder {
     align-items: center;
     gap: 12px;
     font-size: 1rem;
-    color: var(--color-text-dark);
+    color: var(--text-primary-light);
 }
 
 .section-dark .feature-checklist li {
-    color: var(--color-text-light);
+    color: var(--text-primary);
 }
 
 .feature-checklist svg {
@@ -601,7 +684,7 @@ input[type="email"]::placeholder {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    color: var(--color-accent);
+    color: var(--primary);
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
@@ -613,7 +696,7 @@ input[type="email"]::placeholder {
 }
 
 .section-dark .btn-text-link {
-    color: var(--color-accent);
+    color: var(--primary);
 }
 
 .feature-spotlight-visual {
@@ -635,8 +718,8 @@ input[type="email"]::placeholder {
 
 /* FOOTER */
 .footer {
-    background-color: var(--color-bg-dark);
-    color: var(--color-text-light);
+    background-color: var(--background);
+    color: var(--text-primary);
     padding: 80px 0 0;
 }
 
@@ -663,7 +746,7 @@ input[type="email"]::placeholder {
 
 .footer-tagline {
     font-size: 0.9375rem;
-    color: var(--color-text-muted-light);
+    color: var(--text-secondary);
     line-height: 1.6;
 }
 
@@ -672,7 +755,7 @@ input[type="email"]::placeholder {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: var(--color-text-light);
+    color: var(--text-primary);
     margin-bottom: 20px;
 }
 
@@ -684,18 +767,18 @@ input[type="email"]::placeholder {
 }
 
 .footer-links a {
-    color: var(--color-text-muted-light);
+    color: var(--text-secondary);
     text-decoration: none;
     font-size: 0.9375rem;
     transition: color 0.2s;
 }
 
 .footer-links a:hover {
-    color: var(--color-text-light);
+    color: var(--text-primary);
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid var(--border);
     padding: 32px 0;
     display: flex;
     justify-content: space-between;
@@ -704,7 +787,7 @@ input[type="email"]::placeholder {
 
 .footer-copyright p {
     font-size: 0.875rem;
-    color: var(--color-text-muted-light);
+    color: var(--text-secondary);
 }
 
 .footer-socials {
@@ -714,14 +797,14 @@ input[type="email"]::placeholder {
 }
 
 .social-link {
-    color: var(--color-text-muted-light);
+    color: var(--text-secondary);
     transition: color 0.2s;
     display: flex;
     align-items: center;
 }
 
 .social-link:hover {
-    color: var(--color-text-light);
+    color: var(--text-primary);
 }
 
 /* RESPONSIVE */
@@ -885,13 +968,13 @@ input[type="email"]::placeholder {
     margin-bottom: 1.5rem;
     line-height: 1.1;
     letter-spacing: -0.03em;
-    color: var(--color-text-light);
+    color: var(--text-primary);
 }
 
 .marketplace-hero-subtitle {
     font-size: 1.125rem;
     margin-bottom: 3rem;
-    color: var(--color-text-muted-light);
+    color: var(--text-secondary);
     line-height: 1.6;
 }
 
@@ -913,18 +996,18 @@ input[type="email"]::placeholder {
     width: 100%;
     padding: 20px 20px 20px 57px;
     font-size: 1rem;
-    background: #071226;
+    background: var(--background-elevated);
     border: none;
-    color: var(--color-text-light);
+    color: var(--text-primary);
     font-family: inherit;
 }
 
 .marketplace-search input::placeholder {
-    color: var(--color-text-muted-light);
+    color: var(--text-secondary);
 }
 
 .marketplace-search input:focus {
-    outline: 2px solid var(--color-accent);
+    outline: 2px solid var(--primary);
     outline-offset: 0;
 }
 
@@ -941,10 +1024,10 @@ input[type="email"]::placeholder {
     align-items: center;
     gap: 8px;
     padding: 12px 21px;
-    background: var(--color-bg-dark);
+    background: var(--background);
     border: none;
     border-radius: 6px;
-    color: var(--color-text-muted-light);
+    color: var(--text-secondary);
     font-family: inherit;
     font-size: 1rem;
     font-weight: 500;
@@ -953,13 +1036,13 @@ input[type="email"]::placeholder {
 }
 
 .category-filter.active {
-    background: var(--color-text-light);
-    color: var(--color-bg-dark);
+    background: var(--text-primary);
+    color: var(--background);
 }
 
 .category-filter:hover:not(.active) {
-    background: rgba(255, 255, 255, 0.1);
-    color: var(--color-text-light);
+    background: var(--overlay-primary);
+    color: var(--text-primary);
 }
 
 .category-count {
@@ -969,15 +1052,15 @@ input[type="email"]::placeholder {
     min-width: 32px;
     height: 25px;
     padding: 0 8px;
-    background: #061026;
-    color: var(--color-text-light);
+    background: var(--background-deep);
+    color: var(--text-primary);
     font-size: 0.875rem;
     font-weight: 600;
 }
 
 .category-filter.active .category-count {
-    background: var(--color-bg-dark);
-    color: var(--color-text-light);
+    background: var(--background);
+    color: var(--text-primary);
 }
 
 /* SECTION HEADERS */
@@ -991,7 +1074,7 @@ input[type="email"]::placeholder {
 .section-title-small {
     font-size: 1.75rem;
     font-weight: 700;
-    color: var(--color-text-light);
+    color: var(--text-primary);
     margin: 0;
 }
 
@@ -1005,7 +1088,7 @@ input[type="email"]::placeholder {
 .app-card-featured {
     display: flex;
     gap: 24px;
-    background: #071226;
+    background: var(--background-elevated);
     padding: 33px;
     border-radius: 6px;
 }
@@ -1014,7 +1097,7 @@ input[type="email"]::placeholder {
     flex-shrink: 0;
     width: 80px;
     height: 80px;
-    background: #081825;
+    background: var(--background-overlay);
     border-radius: 6px;
     display: flex;
     align-items: center;
@@ -1037,19 +1120,19 @@ input[type="email"]::placeholder {
 .app-name {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--color-text-light);
+    color: var(--text-primary);
     margin-bottom: 0.25rem;
 }
 
 .app-author {
     font-size: 0.9375rem;
-    color: var(--color-text-muted-light);
+    color: var(--text-secondary);
     margin-bottom: 1rem;
 }
 
 .app-description {
     font-size: 0.9375rem;
-    color: var(--color-text-muted-light);
+    color: var(--text-secondary);
     line-height: 1.6;
     margin-bottom: 1.5rem;
 }
@@ -1069,14 +1152,14 @@ input[type="email"]::placeholder {
     display: flex;
     align-items: center;
     gap: 6px;
-    color: var(--color-text-muted-light);
+    color: var(--text-secondary);
     font-size: 0.9375rem;
 }
 
 .btn-deploy {
     padding: 10px 20px;
-    background: var(--color-accent);
-    color: #071018;
+    background: var(--primary);
+    color: var(--button-text-on-light);
     border: none;
     border-radius: 6px;
     font-family: inherit;
@@ -1087,7 +1170,7 @@ input[type="email"]::placeholder {
 }
 
 .btn-deploy:hover {
-    background: var(--color-accent-hover);
+    background: var(--primary-hover);
     transform: translateY(-1px);
 }
 
@@ -1099,7 +1182,7 @@ input[type="email"]::placeholder {
 }
 
 .app-card {
-    background: #071226;
+    background: var(--background-elevated);
     padding: 25px;
     border-radius: 6px;
     display: flex;
@@ -1122,7 +1205,7 @@ input[type="email"]::placeholder {
     flex-shrink: 0;
     width: 56px;
     height: 56px;
-    background: #081825;
+    background: var(--background-overlay);
     border-radius: 6px;
     display: flex;
     align-items: center;
@@ -1156,7 +1239,7 @@ input[type="email"]::placeholder {
 .btn-deploy-small {
     padding: 9px 17px;
     background: transparent;
-    color: var(--color-text-light);
+    color: var(--text-primary);
     border: none;
     font-family: inherit;
     font-size: 0.9375rem;
@@ -1166,18 +1249,18 @@ input[type="email"]::placeholder {
 }
 
 .btn-deploy-small:hover {
-    color: var(--color-accent);
+    color: var(--primary);
 }
 
 /* SECTION CTA ALT */
 .section-cta-alt {
-    background: #061026;
+    background: var(--background-deep);
     padding: 80px 0;
     text-align: center;
 }
 
 .section-cta-alt .section-title {
-    color: var(--color-text-light);
+    color: var(--text-primary);
 }
 
 .section-cta-alt .section-intro {
@@ -1255,14 +1338,14 @@ input[type="email"]::placeholder {
     font-size: 3.5rem;
     font-weight: 700;
     line-height: 1.1;
-    color: var(--color-text-light);
+    color: var(--text-primary);
     margin-bottom: 24px;
 }
 
 .about-hero-subtitle {
     font-size: 1.375rem;
     line-height: 1.6;
-    color: var(--color-text-muted);
+    color: var(--text-tertiary);
     margin: 0;
 }
 
@@ -1281,8 +1364,8 @@ input[type="email"]::placeholder {
 .section-badge {
     display: inline-block;
     padding: 6px 14px;
-    background: rgba(255, 130, 0, 0.1);
-    color: var(--color-accent);
+    background: var(--badge-bg-primary);
+    color: var(--primary);
     font-size: 0.875rem;
     font-weight: 600;
     border-radius: 6px;
@@ -1295,14 +1378,14 @@ input[type="email"]::placeholder {
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 1.2;
-    color: var(--color-text-light);
+    color: var(--text-primary);
     margin-bottom: 24px;
 }
 
 .about-story-text {
     font-size: 1.125rem;
     line-height: 1.7;
-    color: var(--color-text-muted);
+    color: var(--text-tertiary);
     margin-bottom: 20px;
 }
 
@@ -1328,7 +1411,7 @@ input[type="email"]::placeholder {
 }
 
 .value-card {
-    background: #071226;
+    background: var(--background-elevated);
     padding: 32px 24px;
     border-radius: 6px;
     text-align: center;
@@ -1338,7 +1421,7 @@ input[type="email"]::placeholder {
 .value-icon {
     width: 56px;
     height: 56px;
-    background: rgba(255, 130, 0, 0.1);
+    background: var(--badge-bg-primary);
     border-radius: 6px;
     display: flex;
     align-items: center;
@@ -1353,14 +1436,14 @@ input[type="email"]::placeholder {
 .value-title {
     font-size: 1.25rem;
     font-weight: 600;
-    color: var(--color-text-light);
+    color: var(--text-primary);
     margin-bottom: 12px;
 }
 
 .value-description {
     font-size: 1rem;
     line-height: 1.6;
-    color: var(--color-text-muted);
+    color: var(--text-tertiary);
     margin: 0;
 }
 
@@ -1398,13 +1481,13 @@ input[type="email"]::placeholder {
 .team-member-name {
     font-size: 1.25rem;
     font-weight: 600;
-    color: var(--color-text-light);
+    color: var(--text-primary);
     margin-bottom: 6px;
 }
 
 .team-member-role {
     font-size: 1rem;
-    color: var(--color-text-muted);
+    color: var(--text-tertiary);
     margin: 0;
 }
 
@@ -1418,7 +1501,7 @@ input[type="email"]::placeholder {
     font-size: 3rem;
     font-weight: 700;
     line-height: 1.2;
-    color: var(--color-text-light);
+    color: var(--text-primary);
     margin-bottom: 20px;
 }
 
@@ -1432,8 +1515,8 @@ input[type="email"]::placeholder {
 .btn-secondary-large {
     padding: 18px 36px;
     background: transparent;
-    color: var(--color-text-light);
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: var(--text-primary);
+    border: 2px solid var(--border-strong);
     border-radius: 6px;
     font-size: 1.125rem;
     font-weight: 600;
@@ -1443,8 +1526,8 @@ input[type="email"]::placeholder {
 }
 
 .btn-secondary-large:hover {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(255, 255, 255, 0.3);
+    background: var(--overlay-primary);
+    border-color: var(--primary-light);
 }
 
 /* =========================================
@@ -1564,13 +1647,13 @@ input[type="email"]::placeholder {
 .marketplace-empty-state h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--color-text-light);
+    color: var(--text-primary);
     margin: 0 0 12px 0;
 }
 
 .marketplace-empty-state p {
     font-size: 1rem;
-    color: var(--color-text-muted);
+    color: var(--text-tertiary);
     margin: 0;
     max-width: 400px;
     margin: 0 auto;
