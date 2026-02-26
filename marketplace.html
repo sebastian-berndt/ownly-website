@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Marketplace - Ownly | Self-Hosting Made Simple</title>
+    <meta name="description" content="Discover, deploy, and manage powerful open-source software with a single click. Browse 100+ applications for your self-hosted infrastructure.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="navbar-brand">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                        <rect width="28" height="28" rx="6" fill="#FF8200"/>
+                        <path d="M14 8L18 14L14 20L10 14Z" fill="white"/>
+                    </svg>
+                    <span class="brand-name">Ownly</span>
+                </div>
+                <div class="navbar-links">
+                    <a href="index.html#platform">Platform</a>
+                    <a href="marketplace.html">Marketplace</a>
+                    <a href="index.html#providers">Providers</a>
+                    <a href="#pricing">Pricing</a>
+                </div>
+                <div class="navbar-actions">
+                    <a href="#" class="btn-link">Log in</a>
+                    <a href="index.html#cta" class="btn-primary-small">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MARKETPLACE HERO -->
+    <section class="marketplace-hero section-dark">
+        <div class="container">
+            <div class="marketplace-hero-content">
+                <h1 class="marketplace-hero-title">Open Source App Marketplace</h1>
+                <p class="marketplace-hero-subtitle">Discover, deploy, and manage powerful open-source software with a single click. Everything you need to take back your digital autonomy.</p>
+
+                <div class="marketplace-search">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <circle cx="11" cy="11" r="7" stroke="#9FB0C8" stroke-width="2"/>
+                        <path d="M16 16L20 20" stroke="#9FB0C8" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <input type="search" placeholder="Search 100+ open source apps..." aria-label="Search applications">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORY FILTERS -->
+    <section class="section section-dark-alt">
+        <div class="container">
+            <div class="category-filters">
+                <button class="category-filter active">
+                    All Applications
+                    <span class="category-count">142</span>
+                </button>
+                <button class="category-filter">
+                    Productivity
+                    <span class="category-count">34</span>
+                </button>
+                <button class="category-filter">
+                    CMS & Blogs
+                    <span class="category-count">28</span>
+                </button>
+                <button class="category-filter">
+                    Analytics
+                    <span class="category-count">12</span>
+                </button>
+                <button class="category-filter">
+                    Databases
+                    <span class="category-count">15</span>
+                </button>
+                <button class="category-filter">
+                    Developer Tools
+                    <span class="category-count">41</span>
+                </button>
+                <button class="category-filter">
+                    Security
+                    <span class="category-count">12</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRENDING APPS -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z" fill="#FF8200"/>
+                </svg>
+                <h2 class="section-title-small">Trending Now</h2>
+            </div>
+
+            <div class="app-grid-featured">
+                <article class="app-card-featured">
+                    <div class="app-icon-large">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect width="40" height="40" rx="8" fill="#0082C9"/>
+                        </svg>
+                    </div>
+                    <div class="app-card-content">
+                        <div class="app-card-header">
+                            <div>
+                                <h3 class="app-name">Nextcloud</h3>
+                                <p class="app-author">by Nextcloud GmbH</p>
+                                <p class="app-description">A safe home for all your data. Access, share and protect your files, calendars, contacts, communication & more at home and in your enterprise.</p>
+                            </div>
+                            <div class="app-card-footer">
+                                <div class="app-stats">
+                                    <div class="app-stat">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                            <path d="M2 6L8 2L14 6L8 10L2 6Z" stroke="#9FB0C8" stroke-width="1.5"/>
+                                        </svg>
+                                        <span>45k+</span>
+                                    </div>
+                                    <div class="app-stat">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                            <path d="M8 2L10 6L14 6.5L11 9.5L11.5 14L8 12L4.5 14L5 9.5L2 6.5L6 6L8 2Z" fill="#9FB0C8"/>
+                                        </svg>
+                                        <span>4.9</span>
+                                    </div>
+                                </div>
+                                <button class="btn-deploy">Deploy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="app-card-featured">
+                    <div class="app-icon-large">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect width="40" height="40" rx="8" fill="#3ECF8E"/>
+                        </svg>
+                    </div>
+                    <div class="app-card-content">
+                        <div class="app-card-header">
+                            <div>
+                                <h3 class="app-name">Supabase</h3>
+                                <p class="app-author">by Supabase Inc</p>
+                                <p class="app-description">The open source Firebase alternative. Build in a weekend, scale to millions. Postgres database, Authentication, instant APIs, Edge Functions.</p>
+                            </div>
+                            <div class="app-card-footer">
+                                <div class="app-stats">
+                                    <div class="app-stat">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                            <path d="M2 6L8 2L14 6L8 10L2 6Z" stroke="#9FB0C8" stroke-width="1.5"/>
+                                        </svg>
+                                        <span>32k+</span>
+                                    </div>
+                                    <div class="app-stat">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                            <path d="M8 2L10 6L14 6.5L11 9.5L11.5 14L8 12L4.5 14L5 9.5L2 6.5L6 6L8 2Z" fill="#9FB0C8"/>
+                                        </svg>
+                                        <span>4.9</span>
+                                    </div>
+                                </div>
+                                <button class="btn-deploy">Deploy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ALL APPLICATIONS -->
+    <section class="section section-dark-alt">
+        <div class="container">
+            <div class="section-header">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <rect x="3" y="3" width="7" height="7" rx="1" stroke="#FF8200" stroke-width="2"/>
+                    <rect x="14" y="3" width="7" height="7" rx="1" stroke="#FF8200" stroke-width="2"/>
+                    <rect x="3" y="14" width="7" height="7" rx="1" stroke="#FF8200" stroke-width="2"/>
+                    <rect x="14" y="14" width="7" height="7" rx="1" stroke="#FF8200" stroke-width="2"/>
+                </svg>
+                <h2 class="section-title-small">All Applications</h2>
+            </div>
+
+            <div class="app-grid">
+                <!-- Ghost -->
+                <article class="app-card">
+                    <div class="app-card-top">
+                        <div class="app-header">
+                            <div class="app-icon">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <rect width="28" height="28" rx="6" fill="#738A94"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="app-name">Ghost</h3>
+                                <p class="app-author">by Ghost Foundation</p>
+                            </div>
+                        </div>
+                        <p class="app-description">Turn your audience into a business. Publishing, memberships, subscriptions and newsletters. The modern alternative to Medium and Substack.</p>
+                    </div>
+                    <div class="app-card-bottom">
+                        <div class="app-stats">
+                            <div class="app-stat">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M2 6L8 2L14 6L8 10L2 6Z" stroke="#9FB0C8" stroke-width="1.5"/>
+                                </svg>
+                                <span>28k+</span>
+                            </div>
+                            <div class="app-stat">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8 2L10 6L14 6.5L11 9.5L11.5 14L8 12L4.5 14L5 9.5L2 6.5L6 6L8 2Z" fill="#9FB0C8"/>
+                                </svg>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                        <button class="btn-deploy-small">Deploy</button>
+                    </div>
+                </article>
+
+                <!-- WordPress -->
+                <article class="app-card">
+                    <div class="app-card-top">
+                        <div class="app-header">
+                            <div class="app-icon">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <rect width="28" height="28" rx="6" fill="#21759B"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="app-name">WordPress</h3>
+                                <p class="app-author">by Automattic</p>
+                            </div>
+                        </div>
+                        <p class="app-description">Create a beautiful website, blog, or app. WordPress is open source software you can use to create anything you can imagine.</p>
+                    </div>
+                    <div class="app-card-bottom">
+                        <div class="app-stats">
+                            <div class="app-stat">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M2 6L8 2L14 6L8 10L2 6Z" stroke="#9FB0C8" stroke-width="1.5"/>
+                                </svg>
+                                <span>120k+</span>
+                            </div>
+                            <div class="app-stat">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8 2L10 6L14 6.5L11 9.5L11.5 14L8 12L4.5 14L5 9.5L2 6.5L6 6L8 2Z" fill="#9FB0C8"/>
+                                </svg>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                        <button class="btn-deploy-small">Deploy</button>
+                    </div>
+                </article>
+
+                <!-- Plausible -->
+                <article class="app-card">
+                    <div class="app-card-top">
+                        <div class="app-header">
+                            <div class="app-icon">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <rect width="28" height="28" rx="6" fill="#5850EC"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="app-name">Plausible</h3>
+                                <p class="app-author">by Plausible Insights</p>
+                            </div>
+                        </div>
+                        <p class="app-description">Simple and privacy-friendly Google Analytics alternative. Lightweight, open-source web analytics tool with no cookies and fully compliant with GDPR.</p>
+                    </div>
+                    <div class="app-card-bottom">
+                        <div class="app-stats">
+                            <div class="app-stat">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M2 6L8 2L14 6L8 10L2 6Z" stroke="#9FB0C8" stroke-width="1.5"/>
+                                </svg>
+                                <span>18k+</span>
+                            </div>
+                            <div class="app-stat">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8 2L10 6L14 6.5L11 9.5L11.5 14L8 12L4.5 14L5 9.5L2 6.5L6 6L8 2Z" fill="#9FB0C8"/>
+                                </svg>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <button class="btn-deploy-small">Deploy</button>
+                    </div>
+                </article>
+
+                <!-- Gitea -->
+                <article class="app-card">
+                    <div class="app-card-top">
+                        <div class="app-header">
+                            <div class="app-icon">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <rect width="28" height="28" rx="6" fill="#609926"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="app-name">Gitea</h3>
+                                <p class="app-author">by Gitea Community</p>
+                            </div>
+                        </div>
+                        <p class="app-description">Git with a cup of tea. A painless self-hosted Git service that provides a lightweight code hosting solution written in Go.</p>
+                    </div>
+                    <div class="app-card-bottom">
+                        <div class="app-stats">
+                            <div class="app-stat">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M2 6L8 2L14 6L8 10L2 6Z" stroke="#9FB0C8" stroke-width="1.5"/>
+                                </svg>
+                                <span>24k+</span>
+                            </div>
+                            <div class="app-stat">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8 2L10 6L14 6.5L11 9.5L11.5 14L8 12L4.5 14L5 9.5L2 6.5L6 6L8 2Z" fill="#9FB0C8"/>
+                                </svg>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                        <button class="btn-deploy-small">Deploy</button>
+                    </div>
+                </article>
+
+                <!-- Vaultwarden -->
+                <article class="app-card">
+                    <div class="app-card-top">
+                        <div class="app-header">
+                            <div class="app-icon">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <rect width="28" height="28" rx="6" fill="#175DDC"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="app-name">Vaultwarden</h3>
+                                <p class="app-author">by Dani García</p>
+                            </div>
+                        </div>
+                        <p class="app-description">Unofficial Bitwarden compatible server written in Rust, perfect for self-hosted deployments where running the official resource-heavy service might not be ideal.</p>
+                    </div>
+                    <div class="app-card-bottom">
+                        <div class="app-stats">
+                            <div class="app-stat">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M2 6L8 2L14 6L8 10L2 6Z" stroke="#9FB0C8" stroke-width="1.5"/>
+                                </svg>
+                                <span>41k+</span>
+                            </div>
+                            <div class="app-stat">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8 2L10 6L14 6.5L11 9.5L11.5 14L8 12L4.5 14L5 9.5L2 6.5L6 6L8 2Z" fill="#9FB0C8"/>
+                                </svg>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <button class="btn-deploy-small">Deploy</button>
+                    </div>
+                </article>
+
+                <!-- Uptime Kuma -->
+                <article class="app-card">
+                    <div class="app-card-top">
+                        <div class="app-header">
+                            <div class="app-icon">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <rect width="28" height="28" rx="6" fill="#5CDD8B"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="app-name">Uptime Kuma</h3>
+                                <p class="app-author">by Louis Lam</p>
+                            </div>
+                        </div>
+                        <p class="app-description">A fancy self-hosted monitoring tool. Monitor HTTP(s), Ping, Port, DNS Record, Docker containers and more with a beautiful dashboard.</p>
+                    </div>
+                    <div class="app-card-bottom">
+                        <div class="app-stats">
+                            <div class="app-stat">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M2 6L8 2L14 6L8 10L2 6Z" stroke="#9FB0C8" stroke-width="1.5"/>
+                                </svg>
+                                <span>35k+</span>
+                            </div>
+                            <div class="app-stat">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8 2L10 6L14 6.5L11 9.5L11.5 14L8 12L4.5 14L5 9.5L2 6.5L6 6L8 2Z" fill="#9FB0C8"/>
+                                </svg>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <button class="btn-deploy-small">Deploy</button>
+                    </div>
+                </article>
+
+                <!-- Discourse -->
+                <article class="app-card">
+                    <div class="app-card-top">
+                        <div class="app-header">
+                            <div class="app-icon">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <rect width="28" height="28" rx="6" fill="#000000"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="app-name">Discourse</h3>
+                                <p class="app-author">by Civilized Discourse</p>
+                            </div>
+                        </div>
+                        <p class="app-description">The 100% open source discussion platform built for the next decade of the Internet. Use it as a mailing list, discussion forum, or long-form chat room.</p>
+                    </div>
+                    <div class="app-card-bottom">
+                        <div class="app-stats">
+                            <div class="app-stat">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M2 6L8 2L14 6L8 10L2 6Z" stroke="#9FB0C8" stroke-width="1.5"/>
+                                </svg>
+                                <span>19k+</span>
+                            </div>
+                            <div class="app-stat">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8 2L10 6L14 6.5L11 9.5L11.5 14L8 12L4.5 14L5 9.5L2 6.5L6 6L8 2Z" fill="#9FB0C8"/>
+                                </svg>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                        <button class="btn-deploy-small">Deploy</button>
+                    </div>
+                </article>
+
+                <!-- MinIO -->
+                <article class="app-card">
+                    <div class="app-card-top">
+                        <div class="app-header">
+                            <div class="app-icon">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <rect width="28" height="28" rx="6" fill="#C72E49"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="app-name">MinIO</h3>
+                                <p class="app-author">by MinIO Inc</p>
+                            </div>
+                        </div>
+                        <p class="app-description">High-performance, S3 compatible object storage. Built for large scale AI/ML, data lake and database workloads with ultimate reliability.</p>
+                    </div>
+                    <div class="app-card-bottom">
+                        <div class="app-stats">
+                            <div class="app-stat">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M2 6L8 2L14 6L8 10L2 6Z" stroke="#9FB0C8" stroke-width="1.5"/>
+                                </svg>
+                                <span>52k+</span>
+                            </div>
+                            <div class="app-stat">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8 2L10 6L14 6.5L11 9.5L11.5 14L8 12L4.5 14L5 9.5L2 6.5L6 6L8 2Z" fill="#9FB0C8"/>
+                                </svg>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <button class="btn-deploy-small">Deploy</button>
+                    </div>
+                </article>
+
+                <!-- Outline -->
+                <article class="app-card">
+                    <div class="app-card-top">
+                        <div class="app-header">
+                            <div class="app-icon">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <rect width="28" height="28" rx="6" fill="#0066FF"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="app-name">Outline</h3>
+                                <p class="app-author">by General Outline</p>
+                            </div>
+                        </div>
+                        <p class="app-description">The fastest wiki and knowledge base for growing teams. Beautiful, feature rich, and markdown compatible. Organize your team's knowledge.</p>
+                    </div>
+                    <div class="app-card-bottom">
+                        <div class="app-stats">
+                            <div class="app-stat">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M2 6L8 2L14 6L8 10L2 6Z" stroke="#9FB0C8" stroke-width="1.5"/>
+                                </svg>
+                                <span>15k+</span>
+                            </div>
+                            <div class="app-stat">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8 2L10 6L14 6.5L11 9.5L11.5 14L8 12L4.5 14L5 9.5L2 6.5L6 6L8 2Z" fill="#9FB0C8"/>
+                                </svg>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                        <button class="btn-deploy-small">Deploy</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- REQUEST APP CTA -->
+    <section class="section section-cta-alt">
+        <div class="container">
+            <h2 class="section-title">Can't find your favorite app?</h2>
+            <p class="section-intro">We are constantly adding new open-source software to our marketplace. Let us know what you want to see next.</p>
+            <a href="#" class="btn-cta-large">Request an Application</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-col footer-brand">
+                    <div class="footer-logo">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <rect width="24" height="24" rx="5" fill="#FF8200"/>
+                            <path d="M12 7L15 12L12 17L9 12Z" fill="white"/>
+                        </svg>
+                        Ownly
+                    </div>
+                    <p class="footer-tagline">The easiest way to self-host open source software. Rent a server, install apps, and take back your digital autonomy.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                <path d="M15 3L9 9M9 9L3 15M9 9L15 15M9 9L3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M10 6V14M6 10H14" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                <rect x="3" y="3" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Platform Column -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Platform</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#platform">How it Works</a></li>
+                        <li><a href="index.html#providers">Providers</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#security">Security</a></li>
+                    </ul>
+                </div>
+
+                <!-- Marketplace Column -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Marketplace</h4>
+                    <ul class="footer-links">
+                        <li><a href="marketplace.html">All Apps</a></li>
+                        <li><a href="#productivity">Productivity</a></li>
+                        <li><a href="#website-builders">Website Builders</a></li>
+                        <li><a href="#developer-tools">Developer Tools</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Column -->
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#support">Contact Support</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2026 Ownly Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
