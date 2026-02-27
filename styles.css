@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 :root {
     /* ===== OWNLY PREMIUM TECH COLOR SYSTEM ===== */
@@ -12,7 +12,7 @@
     /* ─────────────────────────────────────────────────────── */
     /* PRIMARY COLORS - Main brand identity                     */
     /* ─────────────────────────────────────────────────────── */
-    --primary: #FF8533;              /* Primary CTA - warm orange */
+    --primary: #FF8200;              /* Primary CTA - warm orange */
     --primary-hover: #E67300;        /* Primary hover state */
     --primary-light: #FFB366;        /* Primary light variant */
     --on-primary: #0A0E1A;           /* Text on primary (subtle blue-gray) */
@@ -78,8 +78,7 @@
     /* ─────────────────────────────────────────────────────── */
     /* OVERLAY COLORS - Hover states and effects               */
     /* ─────────────────────────────────────────────────────── */
-    --overlay-primary: rgba(255, 133, 51, 0.08);  /* Primary overlay (8%) */
-    --overlay-primary-strong: rgba(255, 133, 51, 0.15); /* Strong primary overlay (15%) */
+    --overlay-primary: rgba(255, 130, 0, 0.08);  /* Primary overlay (8%) */
     --overlay-white: rgba(255, 255, 255, 0.05);   /* White overlay (5%) */
     --overlay-white-medium: rgba(255, 255, 255, 0.1); /* Medium white overlay (10%) */
 
@@ -102,7 +101,7 @@
     /* ─────────────────────────────────────────────────────── */
     /* COMPONENT SPECIFIC - Special use cases                  */
     /* ─────────────────────────────────────────────────────── */
-    --icon-bg-primary: rgba(255, 133, 51, 0.25); /* Icon background (25% primary) */
+    --icon-bg-primary: rgba(255, 130, 0, 0.25); /* Icon background (25% primary) */
     --badge-bg-primary: rgba(255, 130, 0, 0.1);  /* Badge background (10% primary) */
     --input-bg: rgba(255, 255, 255, 0.95);       /* Input background */
     --button-text-on-light: #071018;             /* Button text on light surfaces */
@@ -228,14 +227,6 @@ p {
     padding: 80px 0;
 }
 
-.section-light {
-    background-color: var(--surface-light);
-}
-
-.section-white {
-    background-color: var(--background-light);
-}
-
 .section-dark {
     background-color: var(--background);
     color: var(--text-primary);
@@ -284,7 +275,7 @@ p {
     margin-left: auto;
     margin-right: auto;
     color: var(--text-secondary);
-    line-height: 1.65;
+    line-height: 1.6;
 }
 
 .section-dark .section-intro {
@@ -330,49 +321,6 @@ p {
     color: var(--text-primary);
 }
 
-.hero-secondary-cta {
-    margin-top: 16px;
-}
-
-.btn-secondary {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 12px 24px;
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--text-primary);
-    background: transparent;
-    border: 1px solid var(--border);
-    cursor: pointer;
-    transition: all 0.2s;
-}
-
-.btn-secondary:hover {
-    background: var(--overlay-primary);
-    border-color: var(--border-strong);
-}
-
-.btn-secondary-light {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 12px 32px;
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--text-primary);
-    background: transparent;
-    border: 2px solid var(--border-strong);
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-
-.btn-secondary-light:hover {
-    background: var(--overlay-primary);
-    border-color: var(--primary-light);
-}
-
 .hero-visual {
     margin-top: 60px;
     max-width: 900px;
@@ -386,24 +334,7 @@ p {
     box-shadow: 0 20px 60px var(--shadow-lg);
 }
 
-.hero-visual-placeholder img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
 /* FORMS */
-.cta-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.cta-form .form-group {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-}
-
 input[type="email"] {
     flex: 1;
     max-width: 400px;
@@ -427,49 +358,8 @@ input[type="email"]::placeholder {
     color: var(--text-placeholder);
 }
 
-.btn-cta {
-    padding: 16px 32px;
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--on-primary);
-    background-color: var(--primary);
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s;
-    white-space: nowrap;
-}
-
-.btn-cta:hover {
-    background-color: var(--primary-hover);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px var(--shadow-primary);
-}
-
-.btn-cta:active {
-    transform: translateY(0);
-}
-
-.btn-cta:disabled {
-    opacity: 0.7;
-    cursor: not-allowed;
-    transform: none;
-}
-
-.cta-secondary {
-    margin-top: 24px;
-    text-align: center;
-}
-
 .cta-title {
     font-size: 3rem;
-}
-
-.cta-buttons {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
 .btn-cta-large {
@@ -491,50 +381,6 @@ input[type="email"]::placeholder {
     background-color: var(--primary-hover);
     transform: translateY(-2px);
     box-shadow: 0 8px 20px var(--shadow-primary);
-}
-
-.btn-secondary-large {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 16px 40px;
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: var(--text-primary);
-    background: transparent;
-    border: 2px solid var(--border-strong);
-    border-radius: 6px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.2s;
-    white-space: nowrap;
-}
-
-.btn-secondary-large:hover {
-    background: var(--overlay-primary);
-    border-color: var(--primary-light);
-}
-
-/* MESSAGES */
-.message {
-    margin-top: 16px;
-    padding: 12px 20px;
-    font-size: 0.9375rem;
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    text-align: center;
-}
-
-.message.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.message.error {
-    background-color: var(--error-bg);
-    color: var(--error);
-    border: 1px solid var(--error);
 }
 
 /* PROVIDERS BANNER */
@@ -577,7 +423,7 @@ input[type="email"]::placeholder {
 }
 
 .feature-card {
-    background: var(--overlay-primary);
+    background: var(--background-elevated);
     padding: 40px 32px;
     border: 1px solid var(--border);
     text-align: center;
@@ -605,7 +451,7 @@ input[type="email"]::placeholder {
 .feature-card p {
     font-size: 0.9375rem;
     color: var(--white-90);
-    line-height: 1.7;
+    line-height: 1.6;
 }
 
 /* FEATURE SPOTLIGHT */
@@ -712,12 +558,6 @@ input[type="email"]::placeholder {
     background: transparent;
 }
 
-.visual-placeholder img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
 /* FOOTER */
 .footer {
     background-color: var(--background);
@@ -787,11 +627,6 @@ input[type="email"]::placeholder {
     align-items: center;
 }
 
-.footer-copyright p {
-    font-size: 0.875rem;
-    color: var(--text-secondary);
-}
-
 .footer-socials {
     display: flex;
     gap: 16px;
@@ -859,16 +694,8 @@ input[type="email"]::placeholder {
         font-size: 1rem;
     }
 
-    .cta-form .form-group {
-        flex-direction: column;
-    }
-
     input[type="email"] {
         max-width: 100%;
-    }
-
-    .btn-cta {
-        width: 100%;
     }
 
     .section {
@@ -976,7 +803,7 @@ input[type="email"]::placeholder {
 .marketplace-hero-subtitle {
     font-size: 1.25rem;
     margin-bottom: 3rem;
-    color: var(--text-secondary);
+    color: var(--text-tertiary);
     line-height: 1.6;
 }
 
@@ -1139,43 +966,6 @@ input[type="email"]::placeholder {
     margin-bottom: 1.5rem;
 }
 
-.app-card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.app-stats {
-    display: flex;
-    gap: 16px;
-}
-
-.app-stat {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    color: var(--text-secondary);
-    font-size: 0.9375rem;
-}
-
-.btn-deploy {
-    padding: 10px 20px;
-    background: var(--primary);
-    color: var(--button-text-on-light);
-    border: none;
-    border-radius: 6px;
-    font-family: inherit;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-
-.btn-deploy:hover {
-    background: var(--primary-hover);
-    transform: translateY(-1px);
-}
-
 /* APP GRID */
 .app-grid {
     display: grid;
@@ -1226,32 +1016,8 @@ input[type="email"]::placeholder {
 
 .app-card .app-description {
     font-size: 0.875rem;
-    line-height: 1.7;
+    line-height: 1.6;
     margin-bottom: 0;
-}
-
-.app-card-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1.5rem;
-    padding-top: 1.5rem;
-}
-
-.btn-deploy-small {
-    padding: 9px 17px;
-    background: transparent;
-    color: var(--text-primary);
-    border: none;
-    font-family: inherit;
-    font-size: 0.9375rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-
-.btn-deploy-small:hover {
-    color: var(--primary);
 }
 
 /* SECTION CTA ALT */
@@ -1387,7 +1153,7 @@ input[type="email"]::placeholder {
 
 .about-story-text {
     font-size: 1.125rem;
-    line-height: 1.7;
+    line-height: 1.6;
     color: var(--text-tertiary);
     margin-bottom: 20px;
 }
@@ -1494,20 +1260,6 @@ input[type="email"]::placeholder {
     margin: 0;
 }
 
-/* CTA Section Variant */
-.section-cta-dark {
-    padding: 100px 0;
-    text-align: center;
-}
-
-.cta-title-alt {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.2;
-    color: var(--text-primary);
-    margin-bottom: 20px;
-}
-
 .cta-buttons {
     display: flex;
     gap: 16px;
@@ -1555,9 +1307,6 @@ input[type="email"]::placeholder {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .cta-title-alt {
-        font-size: 2.5rem;
-    }
 }
 
 @media (max-width: 768px) {
@@ -1591,10 +1340,6 @@ input[type="email"]::placeholder {
         gap: 32px;
     }
 
-    .cta-title-alt {
-        font-size: 2rem;
-    }
-
     .cta-buttons {
         flex-direction: column;
         align-items: center;
@@ -1623,9 +1368,6 @@ input[type="email"]::placeholder {
         padding: 24px 20px;
     }
 
-    .cta-title-alt {
-        font-size: 1.75rem;
-    }
 }
 
 /* =========================================
@@ -1663,7 +1405,7 @@ input[type="email"]::placeholder {
    ═══════════════════════════════════════════════════════════ */
 
 .providers-hero {
-    padding: 100px 0 60px;
+    padding: 100px 0 80px;
     text-align: center;
 }
 
@@ -1700,7 +1442,7 @@ input[type="email"]::placeholder {
 
 .provider-card {
     background: var(--background-elevated);
-    border-radius: 8px;
+    border-radius: 6px;
     padding: 33px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -1736,7 +1478,7 @@ input[type="email"]::placeholder {
 
 .provider-description {
     color: var(--text-secondary);
-    line-height: 1.5;
+    line-height: 1.6;
     margin-bottom: 24px;
 }
 
@@ -1804,7 +1546,7 @@ input[type="email"]::placeholder {
 
 .request-provider-card {
     background: var(--background-deep);
-    border-radius: 12px;
+    border-radius: 6px;
     padding: 33px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2044,4 +1786,9 @@ input[type="email"]::placeholder {
     .legal-hero-subtitle {
         font-size: 1rem;
     }
+}
+
+/* UTILITIES */
+.btn-full-width {
+    width: 100%;
 }
