@@ -398,7 +398,7 @@ p {
     margin: 0 auto;
 }
 
-.form-group {
+.cta-form .form-group {
     display: flex;
     gap: 12px;
     justify-content: center;
@@ -859,7 +859,7 @@ input[type="email"]::placeholder {
         font-size: 1rem;
     }
 
-    .form-group {
+    .cta-form .form-group {
         flex-direction: column;
     }
 
