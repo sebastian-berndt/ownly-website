@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ - Ownly</title>
-    <meta name="description" content="Frequently asked questions about Ownly. Learn about self-hosting, supported cloud providers, app installation, privacy, and billing.">
+    <title>Contact Support - Ownly</title>
+    <meta name="description" content="Get in touch with the Ownly team. Contact us for technical support, questions about self-hosting, or general inquiries.">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>">
 </head>
@@ -35,114 +35,97 @@
     </nav>
 
     <!-- HERO -->
-    <section class="legal-hero section-dark">
+    <section class="contact-hero section-dark">
         <div class="container">
-            <div class="legal-hero-content">
-                <h1 class="legal-hero-title">Frequently Asked Questions</h1>
-                <p class="legal-hero-subtitle">Everything you need to know about Ownly</p>
+            <div class="contact-hero-content">
+                <h1 class="contact-hero-title">Get in Touch</h1>
+                <p class="contact-hero-subtitle">Have questions about self-hosting or need technical support? Our team is here to help you regain your digital autonomy.</p>
             </div>
         </div>
     </section>
 
-    <!-- Content -->
-    <main class="legal-content section-dark-alt">
+    <!-- CONTACT CONTENT -->
+    <section class="contact-section section-dark-alt">
         <div class="container">
+            <div class="contact-grid">
 
-            <h2>Getting Started</h2>
+                <!-- LEFT: Contact Info -->
+                <div class="contact-info">
 
-            <details>
-                <summary>What is Ownly?</summary>
-                <p>Ownly is a self-hosting platform that lets you run your own cloud apps — email, file storage, password managers, and more — on infrastructure you control. Instead of handing your data to big tech companies, Ownly makes it simple to deploy and manage open-source software on your own server with just a few clicks.</p>
-            </details>
+                    <div class="contact-info-item">
+                        <div class="contact-info-header">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                            </svg>
+                            <h3>Email Us</h3>
+                        </div>
+                        <p>support@ownly.com<br>Response time: within 24 hours</p>
+                    </div>
 
-            <details>
-                <summary>Do I need technical skills?</summary>
-                <p>No. Ownly is designed for people who have never touched a terminal. The platform handles server provisioning, app installation, updates, and security so you can focus on using your apps, not managing infrastructure.</p>
-            </details>
+                    <div class="contact-info-item">
+                        <div class="contact-info-header">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            </svg>
+                            <h3>Community Forum</h3>
+                        </div>
+                        <p>Join thousands of self-hosters in our community. Get help, share setups, and discuss open-source.</p>
+                        <a href="#" class="btn-text-link">Join the discussion <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+                    </div>
 
-            <details>
-                <summary>How do I get started?</summary>
-                <p>Sign up for an Ownly account, choose a <a href="hosters.html">supported cloud hoster</a>, and pick the apps you want from the <a href="marketplace.html">Marketplace</a>. Ownly will provision a server and install everything for you automatically.</p>
-            </details>
+                    <div class="contact-help-card">
+                        <div class="contact-help-header">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                                <path d="M12 17h.01"/>
+                            </svg>
+                            <h4>Looking for quick answers?</h4>
+                        </div>
+                        <p>Browse our FAQ for common questions about setup, hosting, apps, privacy, and billing.</p>
+                        <a href="faq.html" class="btn-help-center">Check our FAQ</a>
+                    </div>
 
-            <hr class="legal-divider">
+                </div>
 
-            <h2>Hosting & Infrastructure</h2>
+                <!-- RIGHT: Contact Form -->
+                <div class="contact-form-card">
+                    <form class="contact-form">
+                        <div class="contact-form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name" class="form-input" placeholder="e.g. Jane">
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" class="form-input" placeholder="e.g. Doe">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-input" placeholder="jane@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">What can we help you with?</label>
+                            <select id="subject" class="form-input form-select">
+                                <option value="technical">Technical Support</option>
+                                <option value="billing">Billing & Account</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-input form-textarea" placeholder="Please describe your issue or inquiry in detail..." rows="6"></textarea>
+                        </div>
+                        <button type="submit" class="btn-cta-large btn-full-width">Send Message</button>
+                    </form>
+                </div>
 
-            <details>
-                <summary>Which cloud hosters are supported?</summary>
-                <p>Ownly currently supports Hetzner, with more providers coming soon. You can see the full list and compare options on the <a href="hosters.html">Hosters</a> page. All supported providers offer EU-based data centers.</p>
-            </details>
-
-            <details>
-                <summary>Can I choose where my data is stored?</summary>
-                <p>Yes. When setting up your server, you select a data center region from the available options. This means you can ensure your data stays in a specific country or jurisdiction — ideal for GDPR compliance or personal preference.</p>
-            </details>
-
-            <details>
-                <summary>How much does hosting cost?</summary>
-                <p>Hosting costs depend on the cloud provider and server size you choose. Typical plans start at around 4-5 EUR/month for a basic server. You pay the hoster directly for infrastructure, and Ownly charges a separate platform fee. Check <a href="index.html#pricing">Pricing</a> for current details.</p>
-            </details>
-
-            <hr class="legal-divider">
-
-            <h2>Apps & Software</h2>
-
-            <details>
-                <summary>What apps can I install?</summary>
-                <p>The <a href="marketplace.html">App Marketplace</a> offers a growing catalog of open-source applications including file storage (Nextcloud), email (Stalwart Mail), password managers (Vaultwarden), photo management, and more. New apps are added regularly.</p>
-            </details>
-
-            <details>
-                <summary>How are apps installed?</summary>
-                <p>One click. Select an app from the Marketplace and Ownly handles everything — pulling the latest stable release, configuring it, setting up networking and SSL certificates, and connecting it to your domain.</p>
-            </details>
-
-            <details>
-                <summary>Are apps kept up to date?</summary>
-                <p>Yes. Ownly monitors for new releases and can apply updates automatically. You stay in control of when updates happen, and you can review changes before they are applied.</p>
-            </details>
-
-            <hr class="legal-divider">
-
-            <h2>Privacy & Security</h2>
-
-            <details>
-                <summary>Who has access to my data?</summary>
-                <p>Only you. Your server runs on infrastructure you control, and Ownly does not have standing access to your data. The platform manages your server through secure, scoped operations — but your files, emails, and passwords remain yours alone.</p>
-            </details>
-
-            <details>
-                <summary>Does Ownly collect telemetry from my servers?</summary>
-                <p>No. Ownly does not install telemetry agents or collect usage data from your hosted applications. The platform only communicates with your server to perform management operations you initiate, such as installing apps or applying updates.</p>
-            </details>
-
-            <details>
-                <summary>Are backups encrypted?</summary>
-                <p>Yes. Backups are encrypted before they leave your server. You hold the encryption key, which means not even the backup storage provider can read your data.</p>
-            </details>
-
-            <hr class="legal-divider">
-
-            <h2>Account & Billing</h2>
-
-            <details>
-                <summary>Can I switch hosters later?</summary>
-                <p>Yes. Ownly is designed to avoid vendor lock-in. You can migrate your server and data to a different supported hoster at any time through the platform dashboard.</p>
-            </details>
-
-            <details>
-                <summary>What happens if I cancel?</summary>
-                <p>Your data is yours. If you cancel your Ownly subscription, you keep full access to your server and apps — you just lose the managed platform features like one-click updates and the dashboard. You can also export all your data before cancelling.</p>
-            </details>
-
-            <details>
-                <summary>Is there a free plan?</summary>
-                <p>Ownly offers a free tier so you can explore the platform and set up your first server. Check the <a href="index.html#pricing">Pricing</a> page for details on what is included and available paid plans.</p>
-            </details>
-
+            </div>
         </div>
-    </main>
+    </section>
 
     <!-- FOOTER -->
     <footer class="footer" role="contentinfo">
