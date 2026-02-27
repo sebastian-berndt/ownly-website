@@ -4,111 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imprint - Ownly</title>
+    <meta name="description" content="Legal disclosure (Impressum) for Ownly, pursuant to § 5 TMG and § 18 MStV.">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .legal-header {
-            background: linear-gradient(135deg, #2E3452 0%, #3D4570 100%);
-            color: var(--color-text-light);
-            padding: 60px 0 40px;
-            text-align: center;
-        }
-        .legal-header h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            letter-spacing: -0.03em;
-            margin-bottom: 0.5rem;
-        }
-        .legal-header p {
-            opacity: 0.85;
-            font-size: 1rem;
-        }
-        .legal-nav {
-            background: var(--color-bg-dark);
-            padding: 16px 0;
-        }
-        .legal-nav .container {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 0.9375rem;
-        }
-        .legal-nav a {
-            color: #9CA3AF;
-            text-decoration: none;
-        }
-        .legal-nav a:hover {
-            color: var(--color-text-light);
-        }
-        .legal-nav span {
-            color: #6B7280;
-        }
-        .legal-content {
-            padding: 60px 0 80px;
-        }
-        .legal-content .container {
-            max-width: 760px;
-        }
-        .legal-content h2 {
-            font-size: 1.375rem;
-            font-weight: 700;
-            margin: 2.5rem 0 0.75rem;
-            color: var(--color-text-dark);
-        }
-        .legal-content h2:first-child {
-            margin-top: 0;
-        }
-        .legal-content p {
-            font-size: 1rem;
-            color: #374151;
-            line-height: 1.75;
-            margin-bottom: 1rem;
-        }
-        .legal-content a {
-            color: var(--color-accent);
-            text-decoration: none;
-        }
-        .legal-content a:hover {
-            text-decoration: underline;
-        }
-        .legal-divider {
-            border: none;
-            border-top: 1px solid var(--color-border);
-            margin: 2rem 0;
-        }
-        .imprint-placeholder {
-            background: var(--color-bg-light);
-            border: 2px dashed var(--color-border);
-            border-radius: 12px;
-            padding: 32px;
-            color: var(--color-text-muted);
-            font-size: 0.9375rem;
-            line-height: 1.75;
-        }
-        .imprint-placeholder strong {
-            color: var(--color-text-dark);
-        }
-    </style>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>">
 </head>
 <body>
-    <!-- Header -->
-    <div class="legal-header">
+    <!-- NAVIGATION -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container">
-            <h1>Imprint</h1>
-            <p>Legal disclosure (Impressum)</p>
-        </div>
-    </div>
-
-    <!-- Breadcrumb -->
-    <nav class="legal-nav" aria-label="Breadcrumb">
-        <div class="container">
-            <a href="index.html">Ownly</a>
-            <span>›</span>
-            <span style="color: #D1D5DB;">Imprint</span>
+            <div class="navbar-content">
+                <div class="navbar-brand">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                        <rect width="28" height="28" rx="6" fill="#FF8200"/>
+                        <path d="M14 8L18 14L14 20L10 14Z" fill="white"/>
+                    </svg>
+                    <span class="brand-name">Ownly</span>
+                </div>
+                <div class="navbar-links">
+                    <a href="index.html#platform">Platform</a>
+                    <a href="marketplace.html">Marketplace</a>
+                    <a href="index.html#providers">Providers</a>
+                    <a href="index.html#pricing">Pricing</a>
+                </div>
+                <div class="navbar-actions">
+                    <a href="#" class="btn-link">Log in</a>
+                    <a href="index.html#cta" class="btn-primary-small">Sign up</a>
+                </div>
+            </div>
         </div>
     </nav>
 
+    <!-- HERO -->
+    <section class="legal-hero section-dark">
+        <div class="container">
+            <div class="legal-hero-content">
+                <h1 class="legal-hero-title">Imprint</h1>
+                <p class="legal-hero-subtitle">Legal disclosure (Impressum)</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Content -->
-    <main class="legal-content">
+    <main class="legal-content section-dark-alt">
         <div class="container">
 
             <p>Information pursuant to § 5 TMG (German Telemedia Act) and § 18 MStV (German State Media Treaty).</p>
@@ -145,7 +82,7 @@
         </div>
     </main>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <div id="site-footer"></div>
     <script>fetch('footer.html').then(function(r){return r.text()}).then(function(h){document.getElementById('site-footer').innerHTML=h})</script>
 

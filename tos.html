@@ -4,159 +4,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service - Ownly</title>
+    <meta name="description" content="Terms of Service for the Ownly self-hosting platform. Read about account terms, billing, acceptable use, and your rights.">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .legal-header {
-            background: linear-gradient(135deg, #2E3452 0%, #3D4570 100%);
-            color: var(--color-text-light);
-            padding: 60px 0 40px;
-            text-align: center;
-        }
-        .legal-header h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            letter-spacing: -0.03em;
-            margin-bottom: 0.5rem;
-        }
-        .legal-header p {
-            opacity: 0.85;
-            font-size: 1rem;
-        }
-        .legal-nav {
-            background: var(--color-bg-dark);
-            padding: 16px 0;
-        }
-        .legal-nav .container {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 0.9375rem;
-        }
-        .legal-nav a {
-            color: #9CA3AF;
-            text-decoration: none;
-        }
-        .legal-nav a:hover {
-            color: var(--color-text-light);
-        }
-        .legal-nav span {
-            color: #6B7280;
-        }
-        .legal-content {
-            padding: 60px 0 80px;
-        }
-        .legal-content .container {
-            max-width: 760px;
-        }
-        .legal-content h2 {
-            font-size: 1.375rem;
-            font-weight: 700;
-            margin: 2.5rem 0 0.75rem;
-            color: var(--color-text-dark);
-        }
-        .legal-content h2:first-child {
-            margin-top: 0;
-        }
-        .legal-content p {
-            font-size: 1rem;
-            color: #374151;
-            line-height: 1.75;
-            margin-bottom: 1rem;
-        }
-        .legal-content ul {
-            margin: 0.5rem 0 1rem 1.5rem;
-            color: #374151;
-            line-height: 1.75;
-        }
-        .legal-content ul li {
-            margin-bottom: 0.375rem;
-        }
-        .legal-content a {
-            color: var(--color-accent);
-            text-decoration: none;
-        }
-        .legal-content a:hover {
-            text-decoration: underline;
-        }
-        .legal-divider {
-            border: none;
-            border-top: 1px solid var(--color-border);
-            margin: 2rem 0;
-        }
-    </style>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>">
 </head>
 <body>
-    <!-- Header -->
-    <div class="legal-header">
+    <!-- NAVIGATION -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container">
-            <h1>Terms of Service</h1>
-            <p>Last updated: February 2026</p>
-        </div>
-    </div>
-
-    <!-- Breadcrumb -->
-    <nav class="legal-nav" aria-label="Breadcrumb">
-        <div class="container">
-            <a href="index.html">Ownly</a>
-            <span>›</span>
-            <span style="color: #D1D5DB;">Terms of Service</span>
+            <div class="navbar-content">
+                <div class="navbar-brand">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                        <rect width="28" height="28" rx="6" fill="#FF8200"/>
+                        <path d="M14 8L18 14L14 20L10 14Z" fill="white"/>
+                    </svg>
+                    <span class="brand-name">Ownly</span>
+                </div>
+                <div class="navbar-links">
+                    <a href="index.html#platform">Platform</a>
+                    <a href="marketplace.html">Marketplace</a>
+                    <a href="index.html#providers">Providers</a>
+                    <a href="index.html#pricing">Pricing</a>
+                </div>
+                <div class="navbar-actions">
+                    <a href="#" class="btn-link">Log in</a>
+                    <a href="index.html#cta" class="btn-primary-small">Sign up</a>
+                </div>
+            </div>
         </div>
     </nav>
 
+    <!-- HERO -->
+    <section class="legal-hero section-dark">
+        <div class="container">
+            <div class="legal-hero-content">
+                <h1 class="legal-hero-title">Terms of Service</h1>
+                <p class="legal-hero-subtitle">Last updated: February 2026</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Content -->
-    <main class="legal-content">
+    <main class="legal-content section-dark-alt">
         <div class="container">
 
-            <p>By accessing this website or signing up for the Ownly waitlist, you agree to these Terms of Service. Please read them carefully.</p>
+            <p><em>Note: These terms are a best-effort template and should be reviewed by a qualified lawyer before launch.</em></p>
+
+            <p>By creating an account or using the Ownly platform, you agree to these Terms of Service ("Terms"). Please read them carefully before using our services.</p>
 
             <hr class="legal-divider">
 
             <h2>1. About Ownly</h2>
-            <p>Ownly is a pre-launch platform that aims to simplify self-hosting of open-source applications such as Nextcloud, Bitwarden, and Ghost. These terms govern your use of the Ownly website and waitlist service in their current pre-launch form.</p>
+            <p>Ownly is a paid SaaS hosting platform operated by [YOUR NAME], a sole proprietor based in [YOUR CITY], Germany. Ownly makes it easy to deploy and manage open-source applications — such as Nextcloud, Vaultwarden, and Ghost — on your own cloud server, without requiring technical expertise.</p>
+            <p>These Terms govern your use of the Ownly website, platform, and all related services.</p>
 
-            <h2>2. Waitlist</h2>
-            <p>By submitting your email address you are expressing interest in the Ownly product. Joining the waitlist:</p>
+            <h2>2. Account Terms</h2>
+            <p>To use Ownly you must create an account. By registering, you agree that:</p>
             <ul>
-                <li>Does not constitute a purchase or subscription.</li>
-                <li>Does not guarantee access to the product or any specific feature.</li>
-                <li>Does not create any contractual obligation on either party.</li>
+                <li>You are at least 16 years of age.</li>
+                <li>You provide accurate, complete, and current registration information.</li>
+                <li>You are responsible for maintaining the security of your account credentials.</li>
+                <li>You may not create more than one account per person.</li>
+                <li>You are responsible for all activity that occurs under your account.</li>
             </ul>
-            <p>We reserve the right to modify, delay, or discontinue the product at any time without liability.</p>
+            <p>We reserve the right to suspend or terminate accounts that violate these Terms.</p>
 
-            <h2>3. Acceptable Use</h2>
-            <p>When using this website you agree not to:</p>
+            <h2>3. Service Description</h2>
+            <p>Ownly provides the following services:</p>
             <ul>
-                <li>Submit false, misleading, or third-party email addresses.</li>
-                <li>Attempt to disrupt, overload, or gain unauthorized access to any part of our infrastructure.</li>
-                <li>Use automated tools to submit bulk entries to the waitlist.</li>
-                <li>Engage in any activity that violates applicable law.</li>
+                <li><strong>Server provisioning</strong> — We provision and manage cloud servers on your behalf through third-party infrastructure providers.</li>
+                <li><strong>App marketplace</strong> — A curated selection of open-source applications that can be deployed with one click.</li>
+                <li><strong>Automated deployment</strong> — We handle installation, configuration, updates, and backups of your selected applications.</li>
+                <li><strong>Management dashboard</strong> — A web interface to monitor and manage your servers and applications.</li>
+            </ul>
+            <p>The specific features available to you depend on your chosen plan.</p>
+
+            <h2>4. Payment &amp; Billing</h2>
+            <p>Ownly is a paid service. By subscribing to a plan, you agree to the following:</p>
+            <ul>
+                <li>All prices are displayed inclusive of VAT where applicable.</li>
+                <li>Billing occurs on a recurring basis (monthly or annually) depending on the plan you choose.</li>
+                <li>Payment is due at the beginning of each billing cycle.</li>
+                <li>We may change pricing with at least 30 days' prior notice. Price changes take effect at the start of your next billing cycle after the notice period.</li>
+                <li>If payment fails, we may suspend your services after reasonable notice and a grace period.</li>
+            </ul>
+            <p>Infrastructure costs charged by third-party providers (e.g., server hosting fees) are billed separately where applicable and subject to those providers' own terms.</p>
+
+            <h2>5. Right of Withdrawal (Widerrufsrecht)</h2>
+            <p>If you are a consumer within the European Union, you have a statutory right to withdraw from a distance contract within 14 days of its conclusion, without giving any reason.</p>
+            <p>To exercise this right, you must inform us of your decision by a clear statement (e.g., email). You can find our contact details in the <a href="imprint.html">Imprint</a>.</p>
+            <p><strong>Exception for digital services:</strong> If you expressly consent to the commencement of the service before the withdrawal period has expired and acknowledge that you thereby lose your right of withdrawal, the right of withdrawal ceases once the service has begun. We will ask for this consent during the sign-up process.</p>
+
+            <h2>6. Acceptable Use</h2>
+            <p>You agree not to use the Ownly platform to:</p>
+            <ul>
+                <li>Host, store, or distribute illegal content under German or EU law.</li>
+                <li>Run cryptocurrency mining or similar resource-abusive workloads.</li>
+                <li>Send spam, phishing, or unsolicited bulk communications.</li>
+                <li>Attempt to gain unauthorized access to other users' servers or data.</li>
+                <li>Disrupt, overload, or interfere with the platform or its infrastructure.</li>
+                <li>Resell, sublicense, or redistribute Ownly services without permission.</li>
+                <li>Violate any applicable local, national, or international law.</li>
+            </ul>
+            <p>We reserve the right to suspend or terminate accounts that violate this policy, with or without prior notice depending on the severity of the violation.</p>
+
+            <h2>7. User Data &amp; Content</h2>
+            <p>You retain full ownership of all data and content you create, upload, or store through the Ownly platform ("User Content").</p>
+            <ul>
+                <li>Ownly facilitates hosting of your User Content on infrastructure provisioned on your behalf but does not claim ownership of it.</li>
+                <li>You are solely responsible for the legality, reliability, and appropriateness of your User Content.</li>
+                <li>You may export your data at any time through the tools provided on the platform.</li>
+            </ul>
+            <p>Upon termination of your account, we will retain your data for a grace period of 30 days during which you may export it. After this period, your data will be permanently deleted.</p>
+
+            <h2>8. Third-Party Services</h2>
+            <p>Ownly relies on third-party providers to deliver its services, including but not limited to:</p>
+            <ul>
+                <li><strong>Cloud infrastructure</strong> — Server hosting provided by Hetzner and potentially other providers.</li>
+                <li><strong>Open-source applications</strong> — Apps available through the marketplace are developed by third-party authors and are subject to their respective open-source licenses.</li>
+                <li><strong>Payment processing</strong> — Payments are processed by third-party payment providers.</li>
+            </ul>
+            <p>Your use of third-party applications deployed through Ownly is subject to the terms and licenses of those applications. Ownly is not responsible for the functionality, security, or data practices of third-party software.</p>
+
+            <h2>9. Service Availability</h2>
+            <p>We strive to provide reliable and continuous access to the platform. However:</p>
+            <ul>
+                <li>Ownly is provided on a best-effort basis. We do not guarantee a specific uptime percentage or provide an SLA.</li>
+                <li>We may perform planned maintenance from time to time. We will notify you of significant planned downtime in advance where possible.</li>
+                <li>We are not liable for interruptions caused by third-party infrastructure providers, force majeure events, or circumstances beyond our reasonable control.</li>
             </ul>
 
-            <h2>4. Intellectual Property</h2>
-            <p>All content on this website — including text, design, graphics, and code — is the property of Ownly or its licensors. You may not reproduce, distribute, or create derivative works without written permission, except where permitted by applicable law.</p>
+            <h2>10. Termination</h2>
+            <p>Either party may terminate this agreement:</p>
+            <ul>
+                <li><strong>By you:</strong> You may cancel your subscription and close your account at any time through the platform. Cancellation takes effect at the end of the current billing period.</li>
+                <li><strong>By Ownly:</strong> We may terminate or suspend your account for violation of these Terms with reasonable notice, or immediately in cases of severe violations (e.g., illegal activity, security threats).</li>
+            </ul>
+            <p>Upon termination, you will have 30 days to export your data (see Section 7). After this period, all data associated with your account will be permanently deleted.</p>
 
-            <h2>5. Disclaimer of Warranties</h2>
-            <p>This website and the waitlist service are provided "as is" and "as available" without any warranty of any kind. We do not warrant that the website will be uninterrupted, error-free, or free of harmful components.</p>
+            <h2>11. Intellectual Property</h2>
+            <p>All content on the Ownly website and platform — including text, design, graphics, logos, and proprietary code — is the property of Ownly or its licensors and is protected by applicable intellectual property laws.</p>
+            <p>Open-source applications available through the platform are licensed under their respective open-source licenses. Ownly does not claim ownership of these applications. Their original authors and contributors retain all rights as defined by their licenses.</p>
 
-            <h2>6. Limitation of Liability</h2>
-            <p>To the maximum extent permitted by law, Ownly shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of this website or the waitlist, even if we have been advised of the possibility of such damages.</p>
+            <h2>12. Disclaimer of Warranties</h2>
+            <p>To the extent permitted by German law:</p>
+            <ul>
+                <li>Features provided free of charge are offered "as is" without warranty of any kind.</li>
+                <li>For paid services, statutory warranty rights under the German Civil Code (BGB) apply and remain unaffected.</li>
+            </ul>
+            <p>We do not warrant that third-party applications deployed through the platform will be free of defects, compatible with your use case, or continuously available.</p>
 
-            <h2>7. External Links</h2>
-            <p>This website may contain links to third-party websites. We are not responsible for the content or privacy practices of those sites and encourage you to review their respective terms and policies.</p>
+            <h2>13. Limitation of Liability</h2>
+            <p>Our liability is governed by the following rules, in compliance with German law:</p>
+            <ul>
+                <li><strong>Unlimited liability:</strong> We are fully liable for damages caused by intent (Vorsatz), gross negligence (grobe Fahrlässigkeit), and for injury to life, body, or health, as well as under mandatory statutory provisions (e.g., the Product Liability Act).</li>
+                <li><strong>Material obligations (Kardinalpflichten):</strong> In cases of slight negligence (leichte Fahrlässigkeit) breaching a material contractual obligation — i.e., an obligation whose fulfilment is essential for the proper performance of the contract and on whose compliance the customer regularly relies — our liability is limited to the foreseeable, contract-typical damages.</li>
+                <li><strong>Other cases:</strong> Liability for slight negligence in breaching non-material obligations is excluded.</li>
+            </ul>
 
-            <h2>8. Governing Law</h2>
-            <p>These terms are governed by and construed in accordance with the laws of Germany. Any disputes arising from these terms shall be subject to the exclusive jurisdiction of the competent courts in Germany.</p>
+            <h2>14. Governing Law &amp; Jurisdiction</h2>
+            <p>These Terms are governed by and construed in accordance with the laws of the Federal Republic of Germany, excluding the UN Convention on Contracts for the International Sale of Goods (CISG).</p>
+            <p>The place of jurisdiction for all disputes arising from or in connection with these Terms is [YOUR CITY], Germany, to the extent legally permissible.</p>
+            <p>If you are a consumer within the EU, you retain the right to bring proceedings in the courts of your place of residence. Mandatory consumer protection provisions of your country of residence remain unaffected.</p>
 
-            <h2>9. Changes to These Terms</h2>
-            <p>We reserve the right to update these Terms of Service at any time. Continued use of the website after changes are posted constitutes your acceptance of the updated terms.</p>
+            <h2>15. Dispute Resolution</h2>
+            <p>The European Commission provides a platform for online dispute resolution (ODR): <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr</a>.</p>
+            <p>In accordance with § 36 of the German Consumer Dispute Resolution Act (VSBG), we declare that we are neither obligated nor willing to participate in dispute resolution proceedings before a consumer arbitration board.</p>
 
-            <h2>10. Contact</h2>
-            <p>For questions about these terms, see our <a href="imprint.html">Imprint</a> for contact details.</p>
+            <h2>16. Changes to These Terms</h2>
+            <p>We reserve the right to modify these Terms at any time. For material changes, we will provide at least 30 days' advance notice via email or through the platform.</p>
+            <p>If you continue to use the platform after the changes take effect, you accept the updated Terms. If you do not agree to the changes, you may cancel your account before the changes become effective.</p>
+
+            <h2>17. Contact</h2>
+            <p>For questions about these Terms, please see our <a href="imprint.html">Imprint</a> for full contact details.</p>
 
         </div>
     </main>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <div id="site-footer"></div>
     <script>fetch('footer.html').then(function(r){return r.text()}).then(function(h){document.getElementById('site-footer').innerHTML=h})</script>
 
