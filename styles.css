@@ -619,6 +619,13 @@ input[type="email"]::placeholder {
     color: var(--text-primary);
 }
 
+.footer-links a.disabled {
+    color: var(--text-secondary);
+    opacity: 0.4;
+    pointer-events: none;
+    cursor: default;
+}
+
 .footer-bottom {
     border-top: 1px solid var(--border);
     padding: 32px 0;
