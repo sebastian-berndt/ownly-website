@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imprint - Ownly</title>
-    <meta name="description" content="Legal disclosure (Impressum) for Ownly, pursuant to § 5 TMG and § 18 MStV.">
+    <title>FAQ - Ownly</title>
+    <meta name="description" content="Frequently asked questions about Ownly. Learn about self-hosting, supported cloud providers, app installation, privacy, and billing.">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>">
 </head>
@@ -38,8 +38,8 @@
     <section class="legal-hero section-dark">
         <div class="container">
             <div class="legal-hero-content">
-                <h1 class="legal-hero-title">Imprint</h1>
-                <p class="legal-hero-subtitle">Legal disclosure (Impressum)</p>
+                <h1 class="legal-hero-title">Frequently Asked Questions</h1>
+                <p class="legal-hero-subtitle">Everything you need to know about Ownly</p>
             </div>
         </div>
     </section>
@@ -48,36 +48,58 @@
     <main class="legal-content section-dark-alt">
         <div class="container">
 
-            <p>Information pursuant to § 5 TMG (German Telemedia Act) and § 18 MStV (German State Media Treaty).</p>
+            <h2>What is Ownly?</h2>
+            <p>Ownly is a self-hosting platform that lets you run your own cloud apps — email, file storage, password managers, and more — on infrastructure you control. Instead of handing your data to big tech companies, Ownly makes it simple to deploy and manage open-source software on your own server with just a few clicks.</p>
+
+            <h2>Do I need technical skills?</h2>
+            <p>No. Ownly is designed for people who have never touched a terminal. The platform handles server provisioning, app installation, updates, and security so you can focus on using your apps, not managing infrastructure.</p>
+
+            <h2>How do I get started?</h2>
+            <p>Sign up for an Ownly account, choose a <a href="hosters.html">supported cloud hoster</a>, and pick the apps you want from the <a href="marketplace.html">Marketplace</a>. Ownly will provision a server and install everything for you automatically.</p>
 
             <hr class="legal-divider">
 
-            <div class="imprint-placeholder">
-                <strong>TODO: Fill in your legal details below before publishing.</strong><br><br>
-                <strong>Name / Company:</strong> [Your full name or registered company name]<br>
-                <strong>Address:</strong> [Street and house number]<br>
-                [Postal code] [City]<br>
-                Germany<br><br>
-                <strong>Contact:</strong><br>
-                Email: [your@email.com]<br><br>
-                <strong>VAT ID (if applicable):</strong> DE[XXXXXXXXX]<br><br>
-                <strong>Responsible for content (§ 18 Abs. 2 MStV):</strong><br>
-                [Full name]<br>
-                [Address as above]
-            </div>
+            <h2>Which cloud hosters are supported?</h2>
+            <p>Ownly currently supports Hetzner, with more providers coming soon. You can see the full list and compare options on the <a href="hosters.html">Hosters</a> page. All supported providers offer EU-based data centers.</p>
 
-            <h2>Dispute Resolution</h2>
-            <p>The European Commission provides a platform for online dispute resolution (ODR): <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer">https://ec.europa.eu/consumers/odr</a>.</p>
-            <p>We are not obliged to participate in dispute resolution proceedings before a consumer arbitration board and do not do so voluntarily.</p>
+            <h2>Can I choose where my data is stored?</h2>
+            <p>Yes. When setting up your server, you select a data center region from the available options. This means you can ensure your data stays in a specific country or jurisdiction — ideal for GDPR compliance or personal preference.</p>
 
-            <h2>Liability for Content</h2>
-            <p>As a service provider, we are responsible for our own content on these pages in accordance with general law pursuant to § 7 Abs. 1 TMG. However, pursuant to §§ 8 to 10 TMG, we are not obligated as a service provider to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.</p>
+            <h2>How much does hosting cost?</h2>
+            <p>Hosting costs depend on the cloud provider and server size you choose. Typical plans start at around 4-5 EUR/month for a basic server. You pay the hoster directly for infrastructure, and Ownly charges a separate platform fee. Check <a href="index.html#pricing">Pricing</a> for current details.</p>
 
-            <h2>Liability for Links</h2>
-            <p>Our offering contains links to external third-party websites, the contents of which we have no influence over. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the linked pages is always responsible for the content of those pages.</p>
+            <hr class="legal-divider">
 
-            <h2>Copyright</h2>
-            <p>The content and works created by the site operators on these pages are subject to German copyright law. Duplication, processing, distribution, or any form of commercialization beyond the scope of copyright law requires the written consent of the respective author or creator.</p>
+            <h2>What apps can I install?</h2>
+            <p>The <a href="marketplace.html">App Marketplace</a> offers a growing catalog of open-source applications including file storage (Nextcloud), email (Stalwart Mail), password managers (Vaultwarden), photo management, and more. New apps are added regularly.</p>
+
+            <h2>How are apps installed?</h2>
+            <p>One click. Select an app from the Marketplace and Ownly handles everything — pulling the latest stable release, configuring it, setting up networking and SSL certificates, and connecting it to your domain.</p>
+
+            <h2>Are apps kept up to date?</h2>
+            <p>Yes. Ownly monitors for new releases and can apply updates automatically. You stay in control of when updates happen, and you can review changes before they are applied.</p>
+
+            <hr class="legal-divider">
+
+            <h2>Who has access to my data?</h2>
+            <p>Only you. Your server runs on infrastructure you control, and Ownly does not have standing access to your data. The platform manages your server through secure, scoped operations — but your files, emails, and passwords remain yours alone.</p>
+
+            <h2>Does Ownly collect telemetry from my servers?</h2>
+            <p>No. Ownly does not install telemetry agents or collect usage data from your hosted applications. The platform only communicates with your server to perform management operations you initiate, such as installing apps or applying updates.</p>
+
+            <h2>Are backups encrypted?</h2>
+            <p>Yes. Backups are encrypted before they leave your server. You hold the encryption key, which means not even the backup storage provider can read your data.</p>
+
+            <hr class="legal-divider">
+
+            <h2>Can I switch hosters later?</h2>
+            <p>Yes. Ownly is designed to avoid vendor lock-in. You can migrate your server and data to a different supported hoster at any time through the platform dashboard.</p>
+
+            <h2>What happens if I cancel?</h2>
+            <p>Your data is yours. If you cancel your Ownly subscription, you keep full access to your server and apps — you just lose the managed platform features like one-click updates and the dashboard. You can also export all your data before cancelling.</p>
+
+            <h2>Is there a free plan?</h2>
+            <p>Ownly offers a free tier so you can explore the platform and set up your first server. Check the <a href="index.html#pricing">Pricing</a> page for details on what is included and available paid plans.</p>
 
         </div>
     </main>
