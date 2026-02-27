@@ -36,9 +36,9 @@ CREATE POLICY "Allow anonymous inserts" ON waitlist
 
 ---
 
-## Step 3: Update app.js
+## Step 3: Update credentials
 
-Give Claude the two values to update app.js, or manually edit:
+Add your Supabase credentials to the inline JavaScript in `index.html`:
 
 ```javascript
 const SUPABASE_URL = 'https://your-project-url.supabase.co';

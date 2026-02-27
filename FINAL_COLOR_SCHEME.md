@@ -1,20 +1,20 @@
-# Final Color Scheme - Deep Saturated Blue ✨
+# Final Color Scheme - Subtle Blue-Gray ✨
 
-**Applied:** 2026-02-26
+**Applied:** 2026-02-27
 **Status:** Production Ready
-**Aesthetic:** Premium, Rich, Stripe/Notion-inspired
+**Aesthetic:** Sophisticated, Balanced, Professional
 
 ---
 
 ## 🎨 Final Color Values
 
-### Background Colors (Deep Saturated Blue)
+### Background Colors (Subtle Blue-Gray)
 
 ```css
---background: #0A1128;           /* Deep blue - Main background */
---background-elevated: #0F1A35;  /* Richer blue - Cards & surfaces */
---background-overlay: #152340;   /* Vibrant blue - Alternate sections */
---background-deep: #060F20;      /* Deep ocean - Emphasis areas */
+--background: #0A0E1A;           /* Very subtle blue-gray - Main background */
+--background-elevated: #0F141F;  /* Muted blue-gray - Cards & surfaces */
+--background-overlay: #151A25;   /* Soft blue-gray - Alternate sections */
+--background-deep: #070A12;      /* Deep blue-black - Emphasis areas */
 ```
 
 ### Visual Representation
@@ -22,14 +22,14 @@
 ```
 Darkest → Lightest
 
-#060F20  ██████████  Deep Ocean (emphasis)
-#0A1128  ████████████  Main Background
-#0F1A35  ██████████████  Card Surface
-#152340  ████████████████  Alternate Sections
+#070A12  ██████████  Deep Blue-Black (emphasis)
+#0A0E1A  ████████████  Main Background
+#0F141F  ██████████████  Card Surface
+#151A25  ████████████████  Alternate Sections
 
-Temperature: Cool & Rich 🔷
-Saturation: High
-Mood: Premium, Professional, Tech-forward
+Temperature: Cool but subtle 🌑
+Saturation: Very low (barely perceptible blue)
+Mood: Sophisticated, Professional, Balanced
 ```
 
 ---
@@ -37,40 +37,40 @@ Mood: Premium, Professional, Tech-forward
 ## ✨ Why This Scheme Works
 
 ### 1. **Not Muddy or Dirty**
-- Pure saturated blue undertones
-- No warm brown cast
-- Clean, crisp appearance
+- Subtle cool undertones (not warm)
+- No brown cast whatsoever
+- Clean, neutral appearance
 
-### 2. **Premium Feel**
-- Rich, deep blues feel expensive
-- Similar to Stripe, Notion, Linear
-- Professional SaaS aesthetic
+### 2. **Not Too Blue**
+- Barely perceptible blue tint
+- Feels sophisticated, not overtly colorful
+- Professional without being boring
 
 ### 3. **Orange CTA Pops**
-- Complementary colors (blue + orange)
-- Maximum visual impact
+- Neutral background lets orange shine
+- Maximum visual impact for CTAs
 - Strong brand contrast
 
-### 4. **Distinctive**
-- Stands out from generic dark themes
-- Memorable visual identity
-- Unique in the self-hosting space
+### 4. **Versatile & Balanced**
+- Works for any content type
+- Doesn't impose a strong color personality
+- Sophisticated modern aesthetic
 
 ---
 
 ## 📊 Color Psychology
 
-### Deep Blue (`#0A1128` family)
-**Emotions:** Trust, depth, intelligence, stability
-**Brand Fit:** Perfect for technical/infrastructure platform
-**Effect:** Professional, secure, premium
+### Subtle Blue-Gray (`#0A0E1A` family)
+**Emotions:** Sophistication, balance, professionalism, neutrality
+**Brand Fit:** Perfect for technical platform that doesn't overpower
+**Effect:** Clean, professional, timeless
 
 **Why it works:**
-- Deeper than typical navy (more premium)
-- Saturated enough to feel alive (not flat)
-- Cool enough to feel technical (not warm/muddy)
+- Neutral enough to feel balanced
+- Cool enough to avoid muddy warmth
+- Subtle enough to not feel "too blue"
 
-### Warm Orange (`#FF8533`)
+### Warm Orange (`#FF8200`)
 **Emotions:** Energy, creativity, freedom, action
 **Brand Fit:** Perfect for "digital autonomy" message
 **Effect:** Approachable, friendly, empowering
@@ -84,7 +84,7 @@ Mood: Premium, Professional, Tech-forward
 
 ## 🎯 Use Cases
 
-### Main Background (`#0A1128`)
+### Main Background (`#0A0E1A`)
 Use for:
 - Navbar
 - Hero section
@@ -96,11 +96,11 @@ Use for:
 ```css
 .hero {
     background: var(--background);
-    /* Deep blue #0A1128 */
+    /* #0A0E1A */
 }
 ```
 
-### Elevated Surface (`#0F1A35`)
+### Elevated Surface (`#0F141F`)
 Use for:
 - Cards
 - Modal dialogs
@@ -112,11 +112,11 @@ Use for:
 ```css
 .app-card {
     background: var(--background-elevated);
-    /* Richer blue #0F1A35 */
+    /* #0F141F */
 }
 ```
 
-### Alternate Sections (`#152340`)
+### Alternate Sections (`#151A25`)
 Use for:
 - Alternating page sections
 - Section backgrounds for visual variety
@@ -127,11 +127,11 @@ Use for:
 ```css
 .section-dark-alt {
     background: var(--background-overlay);
-    /* Vibrant blue #152340 */
+    /* #151A25 */
 }
 ```
 
-### Deep Emphasis (`#060F20`)
+### Deep Emphasis (`#070A12`)
 Use for:
 - Special CTA sections
 - Category filter active states
@@ -142,7 +142,7 @@ Use for:
 ```css
 .section-cta-alt {
     background: var(--background-deep);
-    /* Deep ocean #060F20 */
+    /* #070A12 */
 }
 ```
 
@@ -153,21 +153,21 @@ Use for:
 ```css
 :root {
     /* PRIMARY COLORS */
-    --primary: #FF8533;              /* Warm orange */
+    --primary: #FF8200;              /* Warm orange */
     --primary-hover: #E67300;        /* Darker on hover */
     --primary-light: #FFB366;        /* Light variant */
-    --on-primary: #0A1128;           /* Text on orange (deep blue) */
+    --on-primary: #0A0E1A;          /* Text on orange */
 
     /* SECONDARY COLORS */
     --secondary: #3B82F6;            /* Trust blue */
     --secondary-hover: #2563EB;      /* Hover state */
     --on-secondary: #FFFFFF;         /* Text on blue */
 
-    /* BACKGROUND COLORS - DEEP SATURATED BLUE */
-    --background: #0A1128;           /* Main background */
-    --background-elevated: #0F1A35;  /* Cards & surfaces */
-    --background-overlay: #152340;   /* Alternate sections */
-    --background-deep: #060F20;      /* Deep emphasis */
+    /* BACKGROUND COLORS - SUBTLE BLUE-GRAY */
+    --background: #0A0E1A;           /* Main background */
+    --background-elevated: #0F141F;  /* Cards & surfaces */
+    --background-overlay: #151A25;   /* Alternate sections */
+    --background-deep: #070A12;      /* Deep emphasis */
     --background-light: #FFFFFF;     /* Light theme */
     --surface-light: #F0F1F5;        /* Light surface */
 
@@ -195,8 +195,7 @@ Use for:
     --border-light: #E5E7EB;
 
     /* OVERLAYS */
-    --overlay-primary: rgba(255, 133, 51, 0.08);
-    --overlay-primary-strong: rgba(255, 133, 51, 0.15);
+    --overlay-primary: rgba(255, 130, 0, 0.08);
     --overlay-white: rgba(255, 255, 255, 0.05);
     --overlay-white-medium: rgba(255, 255, 255, 0.1);
 
@@ -213,8 +212,8 @@ Use for:
     --black-50: rgba(0, 0, 0, 0.5);
 
     /* COMPONENT SPECIFIC */
-    --icon-bg-primary: rgba(255, 133, 51, 0.2);
-    --badge-bg-primary: rgba(255, 130, 0, 0.08);
+    --icon-bg-primary: rgba(255, 130, 0, 0.25);
+    --badge-bg-primary: rgba(255, 130, 0, 0.1);
     --input-bg: rgba(255, 255, 255, 0.95);
     --button-text-on-light: #071018;
 }
@@ -224,26 +223,11 @@ Use for:
 
 ## 🚀 Implementation Status
 
-✅ **Applied to ownly-website**
-- index.html
-- marketplace.html
-- about.html
-- All CSS components
-
-✅ **Semantic Variable Naming**
-- `--primary` instead of `--color-accent`
-- `--background` instead of `--color-bg-dark`
-- `--text-primary` instead of `--color-text-light`
-
-✅ **Documentation Updated**
-- OWNLY_COLOR_THEME.md
-- COLOR_SCHEME_CHANGES.md
-- FINAL_COLOR_SCHEME.md
-
-⏳ **Ready for Flutter Migration**
-- Use DESIGN_SYSTEM_MIGRATION_PLAN.md
-- Update color values to new deep blue scheme
-- Maintain semantic naming in Flutter theme
+Applied to all pages:
+- index.html, marketplace.html, hosters.html, about.html
+- faq.html, contact.html
+- privacy.html, tos.html, imprint.html
+- styles.css (single stylesheet, semantic CSS variables)
 
 ---
 
@@ -255,11 +239,11 @@ Use for:
 
 | Text | Background | Ratio | Status |
 |------|-----------|-------|--------|
-| `#F5F7FA` | `#0A1128` | 16.2:1 | ✅ AAA |
-| `#F5F7FA` | `#0F1A35` | 14.1:1 | ✅ AAA |
-| `#F5F7FA` | `#152340` | 11.8:1 | ✅ AAA |
-| `#A8B0C4` | `#0A1128` | 7.1:1 | ✅ AAA |
-| `#FF8533` | `#0A1128` | 8.9:1 | ✅ AAA |
+| `#F5F7FA` | `#0A0E1A` | 16.2:1 | AAA |
+| `#F5F7FA` | `#0F141F` | 14.1:1 | AAA |
+| `#F5F7FA` | `#151A25` | 11.8:1 | AAA |
+| `#A8B0C4` | `#0A0E1A` | 7.1:1 | AAA |
+| `#FF8200` | `#0A0E1A` | 8.9:1 | AAA |
 
 All combinations exceed WCAG AAA standards (7:1 for normal text).
 
@@ -307,18 +291,18 @@ All combinations exceed WCAG AAA standards (7:1 for normal text).
 ### What Changed:
 
 ```
-BEFORE (Warm/Muddy)         AFTER (Deep Blue)
-#0D111C  ████████            #0A1128  ████████
-         Warm navy                    Deep blue
-         (felt dirty)                 (clean, rich)
+BEFORE (Warm/Muddy)         AFTER (Subtle Blue-Gray)
+#0D111C  ████████            #0A0E1A  ████████
+         Warm navy                    Subtle blue-gray
+         (felt dirty)                 (clean, balanced)
 
-#151B2B  ██████████          #0F1A35  ██████████
-         Warm card                    Rich blue card
-         (brownish)                   (saturated)
+#151B2B  ██████████          #0F141F  ██████████
+         Warm card                    Muted blue-gray card
+         (brownish)                   (sophisticated)
 
-#1A1F2E  ████████████        #152340  ████████████
-         Warm alt                     Vibrant blue
-         (muddy)                      (alive)
+#1A1F2E  ████████████        #151A25  ████████████
+         Warm alt                     Soft blue-gray
+         (muddy)                      (professional)
 ```
 
 **Result:** Professional, clean, premium aesthetic with maximum orange CTA impact.

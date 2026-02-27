@@ -1,7 +1,7 @@
 # Ownly Website
 
 ## Overview
-A conversion-optimized landing page for Ownly — a platform that simplifies self-hosting apps like Nextcloud and Bitwarden. Built following proven landing page principles to maximize email signups.
+A conversion-optimized marketing site for Ownly — a platform that simplifies self-hosting apps like Nextcloud and Vaultwarden. Built with static HTML/CSS, deployed via GitHub Pages.
 
 ## Live URL
 **https://sebastian-berndt.github.io/ownly-website/**
@@ -10,159 +10,97 @@ A conversion-optimized landing page for Ownly — a platform that simplifies sel
 ```
 /ownly-website/
 ├── index.html          # Main landing page
-├── thanks.html         # Post-signup confirmation page
+├── marketplace.html    # App marketplace (filterable catalog)
+├── marketplace.js      # Marketplace search & category filtering
+├── hosters.html        # Cloud hosting providers comparison
+├── about.html          # About Us / team page
+├── faq.html            # FAQ with expandable accordions
+├── contact.html        # Contact support form
+├── privacy.html        # Privacy Policy
+├── tos.html            # Terms of Service
+├── imprint.html        # Legal imprint (Impressum)
+├── footer.html         # Footer HTML partial (reference template)
 ├── styles.css          # All styling
-├── videos/             # Screen recording placeholders (step-1/2/3.webm)
-├── app.js              # Legacy (unused, superseded by inline JS)
+├── videos/             # Screen recording placeholders
+├── .env.example        # Environment variable template
 ├── PROJECT.md          # This file
-└── SUPABASE_SETUP.md   # Supabase setup guide
+├── FINAL_COLOR_SCHEME.md # Color system documentation
+└── SUPABASE_SETUP.md   # Supabase waitlist setup guide
 ```
 
-## Version History
-- **v2.22** - Design improvements: zero roundness (sharp corners), Inter font family, improved typography and contrast, comparison table redesigned with brand colors
-- **v2.21** - Added Company column to footer (About Us, Blog, Contact, Open Source)
-- **v2.20** - Updated tagline: "Ownly – Stop Outsourcing Your Digital Life. Own It."
-- **v2.19** - New color palette: Deep Midnight Blue (#2E3452), Vibrant Orange (#FF8200), Muted Slate Blue (#6F7895)
-- **v2.18** - Footer centralized as `footer.html` partial; loaded via fetch on all pages
-- **v2.17** - Comparison table redesign: unified row-by-row layout, SVG icons in header, removed card borders
-- **v2.16** - FAQ copy improvements (Q1, Q5 rewritten); remove all em dashes from copy
-- **v2.15** - Email placeholder changed to "Your email"; section background alternation (How It Works → white); remove false-affordance hover on steps; logos/ folder for real app SVGs
-- **v2.14** - Problem/Solution section: new headline, side-by-side "Big Tech Way vs. Ownly Way" comparison layout
-- **v2.13** - Ticker redesign: larger icons (32px), remove pill bubbles, dot separators
-- **v2.12** - FAQ accordion section (7 questions, native details/summary, no JS)
-- **v2.11** - Fix ticker scroll animation (remove wrapper divs, fix overflow clipping)
-- **v2.10** - App logo ticker strip between hero and problem section
-- **v2.9** - Legal pages (Privacy Policy, Terms of Service, Imprint) with footer links wired up
-- **v2.8** - Responsive multi-column footer with social links and navigation
-- **v2.7** - Updated How It Works copy (Rent → Marketplace → Install)
-- **v2.6** - Video placeholders for How It Works steps
-- **v2.5** - Responsive aspect-ratio video containers
-- **v2.2** - High-contrast section-based redesign
-- **v2.1** - Notion-inspired redesign
-- **v2.0** - Complete redesign following conversion optimization principles
-- **v1.13** - Production-ready: debug messages removed, strict email validation
+## Pages
 
----
+| Page | File | Description |
+|------|------|-------------|
+| Landing | `index.html` | Hero, features, pricing, CTA |
+| Marketplace | `marketplace.html` | Filterable app catalog with category filters |
+| Hosters | `hosters.html` | Cloud provider comparison cards with request form |
+| About | `about.html` | Mission, values, team section |
+| FAQ | `faq.html` | 15 questions in expandable `<details>/<summary>` accordions, grouped by section |
+| Contact | `contact.html` | Support contact form with sidebar info (email, community, FAQ link) |
+| Privacy | `privacy.html` | Privacy Policy |
+| Terms | `tos.html` | Terms of Service |
+| Imprint | `imprint.html` | Legal disclosure (Impressum) |
+
+## Design System
+
+### Color Palette (Subtle Blue-Gray)
+See `FINAL_COLOR_SCHEME.md` for full documentation.
+
+| Variable | Value | Usage |
+|----------|-------|-------|
+| `--primary` | `#FF8200` | Primary CTA, buttons, accents |
+| `--primary-hover` | `#E67300` | Hover state |
+| `--background` | `#0A0E1A` | Main background |
+| `--background-elevated` | `#0F141F` | Cards & surfaces |
+| `--background-overlay` | `#151A25` | Alternate sections |
+| `--background-deep` | `#070A12` | Deep emphasis areas |
+| `--text-primary` | `#F5F7FA` | Primary text on dark |
+| `--text-secondary` | `#A8B0C4` | Secondary text |
+| `--text-tertiary` | `#8B93A7` | Muted text |
+
+### Typography
+- Font: Inter (400, 500, 600, 700, 800)
+- Sharp corners (border-radius: 6px for cards/buttons)
+
+### Shared Components
+- **Navbar** — Sticky, dark, consistent across all pages
+- **Footer** — 5-column grid (Brand, Product, Resources, Company, Legal)
+- **Form inputs** — `.form-group`, `.form-input` classes reused across hosters and contact pages
+- **Section patterns** — `.section-dark`, `.section-dark-alt` for alternating backgrounds
 
 ## Current Status
 
-### Done ✅
-- [x] Conversion-optimized landing page (Hero → Comparison → How It Works → FAQ → CTA)
-- [x] High-contrast section-based design with purple gradient; alternating section backgrounds
-- [x] Supabase waitlist backend (insert emails, RLS configured)
-- [x] Dual waitlist forms (hero + footer CTA) with "Your email" placeholder
-- [x] Strict email validation with invalid character feedback
-- [x] Duplicate email detection with user-friendly message
-- [x] Redirect to thanks.html on successful signup
-- [x] Mobile-first responsive layout
-- [x] App logo ticker strip (inline SVG placeholders; `logos/` folder ready for real SVGs)
-- [x] Side-by-side "Big Tech Way vs. Ownly Way" comparison section
-- [x] How It Works: 3 steps with video placeholder containers
-- [x] FAQ accordion (7 questions, native details/summary, no JS)
-- [x] Multi-column footer with social icons and navigation links
-- [x] Legal pages: Privacy Policy, Terms of Service, Imprint
+### Done
+- [x] Landing page (Hero, Features, Pricing, CTA)
+- [x] App Marketplace with search & category filtering
+- [x] Cloud Hosters comparison page with provider request form
+- [x] About Us page (mission, values, team)
+- [x] FAQ page with expandable accordions (5 sections, 15 questions)
+- [x] Contact Support page with form
+- [x] Legal pages (Privacy Policy, Terms of Service, Imprint)
+- [x] Consistent navbar & footer across all pages
+- [x] Fully responsive design (1024px, 768px, 480px breakpoints)
 - [x] Deployed to GitHub Pages
 
-### To Do 🔲
+### To Do
+- [ ] Hero visual — Replace placeholder with product screenshot or mockup
+- [ ] Screen recordings — Add step-by-step demo videos
+- [ ] Social proof — Testimonials, user count, or "Featured in" badges
+- [ ] Social links — Wire up footer social icons to real URLs
+- [ ] Wire up disabled links (Documentation, Community, Blog)
+- [ ] Analytics — Add Plausible or similar
+- [ ] Custom domain — Configure DNS and GitHub Pages
+- [ ] Contact form backend — Connect to email service or API
+- [ ] Imprint — Fill in actual legal details before publishing
 
-#### Content
-- [ ] **Hero visual** — Replace placeholder with actual product screenshot or mockup
-- [ ] **Screen recordings** — Add `videos/step-1.webm`, `step-2.webm`, `step-3.webm`
-- [ ] **Social proof** — Add testimonials, user count, or "Featured in" badges
-- [ ] **Social links** — Wire up footer social icons (X, Discord, GitHub) to real URLs
-- [ ] **Footer links** — Wire up Product, Resources, Legal links to real pages
+## Technical Notes
 
-#### Pages to create
-- [x] **Privacy Policy** page (`privacy.html`)
-- [x] **Terms of Service** page (`tos.html`)
-- [x] **Imprint** page (`imprint.html`) — fill in legal details before publishing
-- [ ] **FAQ** page (optional)
+### Supabase (Waitlist)
+See `SUPABASE_SETUP.md` for setup. Used for email signups on the landing page.
 
-#### Technical
-- [ ] **Analytics** — Add Plausible or Google Analytics
-- [ ] **Custom domain** — Configure DNS and GitHub Pages custom domain
-- [ ] **Email confirmation flow** — Send confirmation email after signup
-- [ ] **Admin dashboard** — View and export waitlist entries from Supabase
-
-#### Growth / Optimization
-- [ ] **A/B test** headline variations
-- [ ] **Exit-intent popup** for abandoning visitors
-- [ ] **Referral system** — "Share and get early access"
-
----
-
-## Page Structure
-
-### Hero (Attention)
-- Headline: "Ownly – Stop Outsourcing Your Digital Life. Own It."
-- Sub-headline: Explains server + marketplace + one-click install value prop
-- CTA: "Request Access"
-- Placeholder for hero visual
-
-### App Ticker
-- Scrolling strip of app logos: Nextcloud, Bitwarden, Ghost, Immich, Jellyfin, Vaultwarden, Gitea, Uptime Kuma, Paperless-ngx, Home Assistant, Plex, Syncthing
-- Currently inline SVG placeholders; `logos/` folder ready for real SVGs from simpleicons.org
-
-### Problem / Solution — Comparison (Agitate & Desire)
-- Headline: "Renting your digital life is expensive, risky, and a privacy nightmare."
-- Side-by-side two-column layout: **The Big Tech Way** (red) vs. **The Ownly Way** (green)
-- Three pain/gain pairs: privacy, account control, subscription cost
-
-### How It Works (Simplicity)
-1. **Rent a Server** — Pick a hoster and plan, running in seconds
-2. **Browse the Marketplace** — Curated self-hostable apps, buy once or subscribe
-3. **Install in One Click** — Install on your server with a button click
-- Each step has a video placeholder container (40% width, 16:10 aspect ratio)
-
-### FAQ (Objection handling)
-- 7 questions covering: technical knowledge, server ownership, available apps, VPS comparison, data security, lock-in, pricing
-
-### Final CTA (Action)
-- Headline: "Ready to Own Your Data?"
-- Repeats "Request Access" form
-- "No spam. Unsubscribe anytime."
-
-### Footer
-- Brand: Ownly logo, tagline, social icons (X, Discord, GitHub)
-- Product: Features, App Marketplace, Pricing, Changelog
-- Resources: Documentation, FAQ, Community Forum, Support
-- Company: About Us, Blog, Contact, Open Source
-- Legal: Privacy Policy, Terms of Service, Imprint
-- Bottom bar: copyright + "Made for digital sovereignty"
-
----
-
-## Technical Implementation
-
-### Supabase
-- **Project URL:** `https://ldabzqoxgogwxixicpml.supabase.co`
-- **Key type:** `sb_publishable_*` (new anon key format)
-- **Table:** `waitlist` (id UUID, email TEXT UNIQUE, created_at TIMESTAMPTZ)
-- **RLS:** Enabled — INSERT and SELECT policies for `public` role
-
-### Email Validation
-- Regex: `/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/`
-- Shows specific invalid characters on failure
-- Handles duplicate email (PostgreSQL error `23505`)
-
-### Videos
-- Expected at `videos/step-1.webm`, `step-2.webm`, `step-3.webm`
-- `autoplay loop muted playsinline` for silent background-style playback
-- Fallback "Video coming soon" placeholder shown until files are added
-- Responsive: 40% width with `aspect-ratio: 16/10` on desktop, 100% on mobile
-
-### Color Palette
-| Variable | Color | Usage |
-|---|---|---|
-| `--color-bg-white` | #FFFFFF | Card backgrounds |
-| `--color-bg-light` | #F0F1F5 | Alternating sections |
-| `--color-bg-dark` | #2E3452 | Dark section, footer |
-| `--color-accent` | #FF8200 | Buttons, step numbers, hover |
-| `--color-text-muted` | #6F7895 | Muted text, slate blue |
-| `--color-error` | #DC2626 | Error messages |
-| Hero/CTA gradient | `135deg, #2E3452 → #3D4570` | Hero and final CTA |
-
----
+### Marketplace Filtering
+`marketplace.js` handles search input and category filter buttons. Filters app cards by matching against name, author, and description text.
 
 ## Deployment
 ```bash
