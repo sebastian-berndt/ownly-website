@@ -25,6 +25,7 @@ A conversion-optimized marketing site for Ownly — a platform that simplifies s
 ├── .env.example        # Environment variable template
 ├── PROJECT.md          # This file
 ├── FINAL_COLOR_SCHEME.md # Color system documentation
+├── pricing.html        # Pricing plans page
 └── SUPABASE_SETUP.md   # Supabase waitlist setup guide
 ```
 
@@ -41,6 +42,7 @@ A conversion-optimized marketing site for Ownly — a platform that simplifies s
 | Privacy | `privacy.html` | Privacy Policy |
 | Terms | `tos.html` | Terms of Service |
 | Imprint | `imprint.html` | Legal disclosure (Impressum) |
+| Pricing | `pricing.html` | Pricing plans and comparison |
 
 ## Design System
 
