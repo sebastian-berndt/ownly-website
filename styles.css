@@ -181,7 +181,8 @@ p {
     transition: color 0.2s;
 }
 
-.navbar-links a:hover {
+.navbar-links a:hover,
+.navbar-links a.active {
     color: var(--text-primary);
 }
 
@@ -254,7 +255,9 @@ p {
 }
 
 .section-cta {
-    background: linear-gradient(135deg, var(--background-overlay) 0%, var(--background) 100%);
+    background: var(--background-deep);
+    background-image: radial-gradient(ellipse 60% 40% at 50% 100%, rgba(255, 130, 0, 0.06), transparent);
+    border-top: 1px solid var(--border);
     color: var(--text-primary);
 }
 
@@ -285,6 +288,7 @@ p {
 /* HERO SECTION */
 .hero {
     background: var(--background);
+    background-image: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(255, 130, 0, 0.08), transparent);
     color: var(--text-primary);
     padding: 80px 0 100px;
     text-align: center;
@@ -294,12 +298,14 @@ p {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: var(--background-elevated);
-    color: var(--text-primary);
-    padding: 8px 16px;
+    background: var(--badge-bg-primary);
+    color: var(--primary-light);
+    padding: 8px 18px;
     font-size: 0.875rem;
     font-weight: 500;
     margin-bottom: 32px;
+    border-radius: 100px;
+    border: 1px solid rgba(255, 130, 0, 0.15);
 }
 
 .hero-title {
@@ -313,12 +319,11 @@ p {
 .hero-subtitle {
     font-size: 1.25rem;
     margin-bottom: 3rem;
-    opacity: 0.95;
     max-width: 660px;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.6;
-    color: var(--text-primary);
+    color: var(--text-secondary);
 }
 
 .hero-visual {
@@ -330,8 +335,9 @@ p {
 
 .hero-visual-placeholder {
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 16px;
     box-shadow: 0 20px 60px var(--shadow-lg);
+    border: 1px solid var(--border);
 }
 
 /* FORMS */
@@ -427,7 +433,13 @@ input[type="email"]::placeholder {
     padding: 40px 32px;
     border: 1px solid var(--border);
     text-align: center;
-    border-radius: 6px;
+    border-radius: 12px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--border-strong);
 }
 
 .feature-icon {
@@ -438,7 +450,7 @@ input[type="email"]::placeholder {
     align-items: center;
     justify-content: center;
     margin: 0 auto 24px;
-    border-radius: 6px;
+    border-radius: 12px;
 }
 
 .feature-card h3 {
@@ -474,16 +486,20 @@ input[type="email"]::placeholder {
 
 .feature-badge {
     display: inline-block;
-    background: var(--background-elevated);
-    color: var(--text-primary);
-    padding: 6px 12px;
-    font-size: 0.875rem;
+    background: var(--badge-bg-primary);
+    color: var(--primary-light);
+    padding: 6px 14px;
+    font-size: 0.8125rem;
     font-weight: 600;
     margin-bottom: 24px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 1px solid rgba(255, 130, 0, 0.15);
 }
 
 .section-dark .feature-badge {
-    background: var(--overlay-primary);
+    background: var(--badge-bg-primary);
 }
 
 .feature-spotlight-title {
@@ -553,9 +569,10 @@ input[type="email"]::placeholder {
 
 .visual-placeholder {
     width: 100%;
-    border-radius: 6px;
+    border-radius: 12px;
     overflow: hidden;
     background: transparent;
+    border: 1px solid var(--border);
 }
 
 /* FOOTER */
@@ -1449,8 +1466,9 @@ input[type="email"]::placeholder {
 
 .provider-card {
     background: var(--background-elevated);
-    border-radius: 6px;
+    border-radius: 12px;
     padding: 33px;
+    border: 1px solid var(--border);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -2101,12 +2119,18 @@ input[type="email"]::placeholder {
 .pricing-card {
     background: var(--background-elevated);
     border: 1px solid var(--border);
-    border-radius: 12px;
+    border-radius: 16px;
     padding: 40px;
     position: relative;
     display: flex;
     flex-direction: column;
     text-align: left;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-strong);
 }
 
 .pricing-card-popular {
@@ -2655,6 +2679,49 @@ input[type="email"]::placeholder {
     .app-detail-cta-title {
         font-size: 1.75rem;
     }
+}
+
+/* SOVEREIGNTY BADGE */
+.sovereignty-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.badge-sovereignty {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(16, 185, 129, 0.08);
+    color: var(--success);
+    padding: 8px 18px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    border-radius: 100px;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.badge-global {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(59, 130, 246, 0.08);
+    color: var(--secondary);
+    padding: 8px 18px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    border-radius: 100px;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* PROVIDER TIER SECTIONS */
+.providers-section-flush {
+    padding: 60px 0 0;
 }
 
 /* UTILITIES */
